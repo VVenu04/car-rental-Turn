@@ -1,0 +1,71 @@
+﻿@model CarRentalSystem.Models.User
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h2>Customer Details</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>@Model.FullName</h4>
+            </div>
+            <div class="card-body">
+                <p><strong>Username:</strong> @Model.Username</p>
+                <p><strong>Email:</strong> @Model.Email</p>
+                <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+                <p><strong>Date Joined:</strong> @Model.DateJoined.ToShortDateString()</p>
+            </div>
+            <div class="card-footer">
+                <a asp-action="ViewCustomers" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> Back to Customer List
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <h4>Booking History</h4>
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Car</th>
+                    <th>Pickup Date</th>
+                    <th>Return Date</th>
+                    <th>Total Cost</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Bookings.Any())
+                {
+                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
+                    {
+                        <tr>
+                            <td>@booking.Car.CarName</td>
+                            <td>@booking.PickupDate.ToShortDateString()</td>
+                            <td>@booking.ReturnDate.ToShortDateString()</td>
+                            <td>$@booking.TotalCost.ToString("F2")</td>
+                            <td>
+                                <span class="badge
+                                            @(booking.BookingStatus == "Confirmed" ? "bg-success" :
+                                                                            booking.BookingStatus == "Completed" ? "bg-info" : "bg-secondary")">
+                            @booking.BookingStatus
+                        </span>
+                    </td>
+                </tr>
+                                }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">This customer has no booking history.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

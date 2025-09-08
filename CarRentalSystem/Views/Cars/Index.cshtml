@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CarRentalSystem.Models.Car>
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Browse Cars";
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("Role");
+}
+
+<h1>Our Fleet</h1>
+
+@if (userRole == "Admin")
+{
+    <p>
+        <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Add New Car</a>
+    </p>
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="@Url.Content(item.ImageUrl)" class="card-img-top" alt="@item.CarName" style="height: 220px; object-fit: cover;" />
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@item.CarName (@item.CarModel)</h5>
+                    <p class="card-text">@item.Description</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Type: @item.CarType</li>
+                        <li class="list-group-item">Capacity: @item.SeatingCapacity seats</li>
+                        <li class="list-group-item">Transmission: @item.Transmission</li>
+                        <li class="list-group-item"><strong>Rate: $@item.DailyRate.ToString("F2") / day</strong></li>
+                    </ul>
+                    <div class="mt-auto pt-3 text-center">
+                        @if (item.IsAvailable)
+                        {
+                            <a asp-controller="Bookings" asp-action="Create" asp-route-carId="@item.CarID" class="btn btn-primary">Book Now</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary" disabled>Not Available</button>
+                        }
+                        <a asp-action="Details" asp-route-id="@item.CarID" class="btn btn-outline-secondary">Details</a>
+                    </div>
+                </div>
+
+                @if (userRole == "Admin")
+                {
+                    <div class="card-footer text-center">
+                        <a asp-action="Edit" asp-route-id="@item.CarID" class="btn btn-sm btn-outline-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.CarID" class="btn btn-sm btn-outline-danger">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,94 @@
+﻿@model CarRentalSystem.Models.Car
+
+@{
+    ViewData["Title"] = "Edit Car";
+}
+
+<h1>Edit Car Details</h1>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CarID" />
+            <input type="hidden" asp-for="ImageUrl" />
+            <input type="hidden" asp-for="DateAdded" />
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Current Image:</p>
+                    <img src="@Url.Content(Model.ImageUrl)" alt="Current Image" class="img-thumbnail" style="max-width: 200px;" />
+                </div>
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <label for="imageFile" class="control-label">Upload New Image (Optional)</label>
+                        <input name="imageFile" type="file" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CarName" class="control-label"></label>
+                    <input asp-for="CarName" class="form-control" />
+                    <span asp-validation-for="CarName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CarModel" class="control-label">Model Year</label>
+                    <input asp-for="CarModel" class="form-control" />
+                    <span asp-validation-for="CarModel" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CarType" class="control-label"></label>
+                    <input asp-for="CarType" class="form-control" />
+                    <span asp-validation-for="CarType" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="DailyRate" class="control-label"></label>
+                    <input asp-for="DailyRate" class="form-control" />
+                    <span asp-validation-for="DailyRate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Transmission" class="control-label"></label>
+                    <input asp-for="Transmission" class="form-control" />
+                    <span asp-validation-for="Transmission" class="text-danger"></span>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="FuelType" class="control-label"></label>
+                    <input asp-for="FuelType" class="form-control" />
+                    <span asp-validation-for="FuelType" class="text-danger"></span>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="SeatingCapacity" class="control-label"></label>
+                    <input asp-for="SeatingCapacity" class="form-control" />
+                    <span asp-validation-for="SeatingCapacity" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsAvailable" /> @Html.DisplayNameFor(model => model.IsAvailable)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

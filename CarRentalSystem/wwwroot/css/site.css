@@ -1,0 +1,55 @@
+/* General Body & Font Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px; /* Prevent content from hiding behind the fixed navbar */
+}
+
+main {
+    min-height: calc(100vh - 250px); /* Ensure footer stays down on short pages */
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Navbar state for the top of the page */
+.navbar-transparent {
+    background-color: transparent !important;
+}
+
+/* Navbar state when scrolled */
+.navbar-scrolled {
+    background-color: #212529 !important; /* Bootstrap's bg-dark color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* Custom button styling for navbar */
+.navbar .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Footer Styling */
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CarRentalSystem.Models.Car>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center bg-light p-5 rounded-3 mb-4">
+    <h1 class="display-4">Welcome to Car Rental System</h1>
+    <p class="lead">The best place to find your next rental car. Reliable, affordable, and easy.</p>
+    <hr class="my-4">
+    <p>Explore our wide range of vehicles to suit all your needs.</p>
+    <a class="btn btn-primary btn-lg" asp-controller="Cars" asp-action="Index" role="button">Browse Cars</a>
+    <a class="btn btn-secondary btn-lg" asp-controller="Account" asp-action="Register" role="button">Register / Login</a>
+</div>
+
+<div class="container">
+    <h2 class="text-center mb-4">Featured Cars</h2>
+    <div class="row">
+        @foreach (var car in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="@Url.Content(car.ImageUrl)" class="card-img-top" alt="@car.CarName" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@car.CarName</h5>
+                        <p class="card-text">
+                            <small class="text-muted">@car.CarType | @car.Transmission</small>
+                        </p>
+                        <p class="card-text">Starting at <strong>$@car.DailyRate.ToString("F2")</strong>/day</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-controller="Cars" asp-action="Details" asp-route-id="@car.CarID" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
