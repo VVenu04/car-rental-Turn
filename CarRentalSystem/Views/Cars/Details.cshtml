@@ -22,6 +22,8 @@
                 <li class="list-group-item"><strong>Transmission:</strong> @Model.Transmission</li>
                 <li class="list-group-item"><strong>Fuel:</strong> @Model.FuelType</li>
                 <li class="list-group-item"><strong>Seats:</strong> @Model.SeatingCapacity</li>
+                <li class="list-group-item"><strong>Mileage:</strong> @Model.Mileage?.ToString("N0") km</li>
+
                 <li class="list-group-item">
                     <strong>Availability:</strong>
                     @if (Model.IsAvailable)

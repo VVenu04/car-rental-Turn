@@ -71,6 +71,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\images\cars\9477558c-8fab-4873-a229-acaeabaecbb5_15f71a8e-6e55-422f-9b61-bc24cf21d130_1589785b-9d8e-4807-b39c-9afd63f9eb17_download (11).jpeg
 C:\UnicomTic\car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
 C:\UnicomTic\car rental\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
 C:\UnicomTic\car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

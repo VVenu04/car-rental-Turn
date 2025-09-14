@@ -60,29 +60,29 @@ namespace CarRentalSystem.Controllers
         {
             if (!IsAdmin()) return Unauthorized();
 
-            // We make the imageFile parameter nullable with 'IFormFile?' to be explicit
+            
+            // If no image file is uploaded, add a model error.
+            if (imageFile == null || imageFile.Length == 0)
+            {
+                ModelState.AddModelError("imageFile", "Please select an image file to upload.");
+            }
+            
 
             if (ModelState.IsValid)
             {
-                if (imageFile != null && imageFile.Length > 0)
-                {
-                    var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
-                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
-                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                    await imageFile.CopyToAsync(new FileStream(filePath, FileMode.Create));
-                    car.ImageUrl = "/images/cars/" + uniqueFileName;
-                }
-                else
-                {
-                    // If no image is uploaded, use a default placeholder.
-                    car.ImageUrl = "/images/cars/placeholder.png";
-                }
+                // This code now only runs if an image was provided and all other fields are valid.
+                var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
+                var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                await imageFile.CopyToAsync(new FileStream(filePath, FileMode.Create));
+                car.ImageUrl = "/images/cars/" + uniqueFileName;
 
                 car.DateAdded = DateTime.Now;
                 _context.Add(car);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Cars");
             }
+
             return View(car);
         }
 
@@ -106,7 +106,6 @@ namespace CarRentalSystem.Controllers
             if (!IsAdmin()) return Unauthorized();
             if (id != car.CarID) return NotFound();
 
-            // We handle the image manually, so remove any potential validation errors for it.
             ModelState.Remove("ImageUrl");
             ModelState.Remove("imageFile");
 

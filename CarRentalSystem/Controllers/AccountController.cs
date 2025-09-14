@@ -15,13 +15,13 @@ namespace CarRentalSystem.Controllers
             _context = context;
         }
 
-        // GET: Register
+        //  Register
         public IActionResult Register()
         {
             return View();
         }
 
-        // POST: Register
+        //  Register
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(User user)
@@ -36,7 +36,6 @@ namespace CarRentalSystem.Controllers
                     return View(user);
                 }
 
-                // Simple Base64 encoding for password (NOT FOR PRODUCTION!)
                 user.Password = Convert.ToBase64String(Encoding.UTF8.GetBytes(user.Password));
                 user.Role = "Customer"; // Ensure role is set to Customer
                 user.DateJoined = DateTime.Now;

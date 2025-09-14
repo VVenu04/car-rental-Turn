@@ -29,6 +29,7 @@
                         <li class="list-group-item">Capacity: @item.SeatingCapacity seats</li>
                         <li class="list-group-item">Transmission: @item.Transmission</li>
                         <li class="list-group-item"><strong>Rate: $@item.DailyRate.ToString("F2") / day</strong></li>
+                        <li class="list-group-item">Mileage: @item.Mileage?.ToString("N0") km</li>
                     </ul>
                     <div class="mt-auto pt-3 text-center">
                         @if (item.IsAvailable)

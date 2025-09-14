@@ -29,10 +29,10 @@
             [StringLength(100)]
             public string FullName { get; set; }
 
-            [Phone]
-            public string PhoneNumber { get; set; }
+        [RegularExpression(@"^\d{9,10}$", ErrorMessage = "Phone number must be a valid number between 9 and 10 digits.")]
+        public string PhoneNumber { get; set; }
 
-            public DateTime DateJoined { get; set; } = DateTime.Now;
+        public DateTime DateJoined { get; set; } = DateTime.Now;
 
             public bool IsActive { get; set; } = true;
 
