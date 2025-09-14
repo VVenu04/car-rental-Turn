@@ -140,19 +140,27 @@ namespace CarRentalSystem.Controllers
         // POST: EditProfile
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditProfile(int id, [Bind("UserID,FullName,PhoneNumber")] User userModel, string newPassword)
+        public async Task<IActionResult> EditProfile([Bind("UserID,FullName,PhoneNumber")] User userModel, string newPassword)
         {
             var userId = HttpContext.Session.GetInt32("UserID");
-            if (id != userId)
+            if (userId == null)
+            {
+                return RedirectToAction("Login"); // Not logged in, redirect.
+            }
+
+            if (userModel.UserID != userId)
             {
                 return Unauthorized();
             }
 
-            var userToUpdate = await _context.Users.FindAsync(id);
-            if (userToUpdate == null) return NotFound();
+            // Find the user in the database to update.
+            var userToUpdate = await _context.Users.FindAsync(userModel.UserID);
+            if (userToUpdate == null)
+            {
+                return NotFound();
+            }
 
-
-            // Manually update properties to prevent overposting
+            
             userToUpdate.FullName = userModel.FullName;
             userToUpdate.PhoneNumber = userModel.PhoneNumber;
 
@@ -162,7 +170,7 @@ namespace CarRentalSystem.Controllers
                 if (newPassword.Length < 6)
                 {
                     ModelState.AddModelError("Password", "Password must be at least 6 characters long.");
-                    userModel.Password = ""; // Clear password field on error
+                    
                     return View(userModel);
                 }
                 userToUpdate.Password = Convert.ToBase64String(Encoding.UTF8.GetBytes(newPassword));
