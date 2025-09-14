@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRentalSystem.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20250906190657_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250914074222_Initialcreate")]
+    partial class Initialcreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,7 +119,6 @@ namespace CarRentalSystem.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -140,55 +139,42 @@ namespace CarRentalSystem.Migrations
                     b.HasKey("CarID");
 
                     b.ToTable("Cars");
+                });
+
+            modelBuilder.Entity("CarRentalSystem.Models.SiteSetting", b =>
+                {
+                    b.Property<int>("SettingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SettingID"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("ContactEmail")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ContactPhone")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("SettingID");
+
+                    b.ToTable("SiteSettings");
 
                     b.HasData(
                         new
                         {
-                            CarID = 1,
-                            CarModel = "2023",
-                            CarName = "Toyota Camry",
-                            CarType = "Sedan",
-                            DailyRate = 50.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A reliable and comfortable sedan for city and highway driving.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = true,
-                            Mileage = 15000.0,
-                            SeatingCapacity = 5,
-                            Transmission = "Automatic"
-                        },
-                        new
-                        {
-                            CarID = 2,
-                            CarModel = "2022",
-                            CarName = "Ford Explorer",
-                            CarType = "SUV",
-                            DailyRate = 85.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A spacious SUV perfect for family trips and adventures.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = true,
-                            Mileage = 25000.0,
-                            SeatingCapacity = 7,
-                            Transmission = "Automatic"
-                        },
-                        new
-                        {
-                            CarID = 3,
-                            CarModel = "2024",
-                            CarName = "Honda Civic",
-                            CarType = "Hatchback",
-                            DailyRate = 45.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A sporty and fuel-efficient hatchback, great for city driving.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = false,
-                            Mileage = 5000.0,
-                            SeatingCapacity = 5,
-                            Transmission = "Manual"
+                            SettingID = 1,
+                            Address = "mvc building jaffna",
+                            ContactEmail = "Vvenujan04@gmail.com",
+                            ContactPhone = "0741514769"
                         });
                 });
 

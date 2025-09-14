@@ -3,12 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
-
 namespace CarRentalSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initialcreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +19,7 @@ namespace CarRentalSystem.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CarName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     CarModel = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     DailyRate = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
                     CarType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -35,6 +33,21 @@ namespace CarRentalSystem.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cars", x => x.CarID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SiteSettings",
+                columns: table => new
+                {
+                    SettingID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ContactEmail = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    ContactPhone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SiteSettings", x => x.SettingID);
                 });
 
             migrationBuilder.CreateTable(
@@ -92,14 +105,9 @@ namespace CarRentalSystem.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Cars",
-                columns: new[] { "CarID", "CarModel", "CarName", "CarType", "DailyRate", "DateAdded", "Description", "FuelType", "ImageUrl", "IsAvailable", "Mileage", "SeatingCapacity", "Transmission" },
-                values: new object[,]
-                {
-                    { 1, "2023", "Toyota Camry", "Sedan", 50.00m, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A reliable and comfortable sedan for city and highway driving.", "Petrol", "/images/cars/placeholder.png", true, 15000.0, 5, "Automatic" },
-                    { 2, "2022", "Ford Explorer", "SUV", 85.00m, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A spacious SUV perfect for family trips and adventures.", "Petrol", "/images/cars/placeholder.png", true, 25000.0, 7, "Automatic" },
-                    { 3, "2024", "Honda Civic", "Hatchback", 45.00m, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "A sporty and fuel-efficient hatchback, great for city driving.", "Petrol", "/images/cars/placeholder.png", false, 5000.0, 5, "Manual" }
-                });
+                table: "SiteSettings",
+                columns: new[] { "SettingID", "Address", "ContactEmail", "ContactPhone" },
+                values: new object[] { 1, "mvc building jaffna", "Vvenujan04@gmail.com", "0741514769" });
 
             migrationBuilder.InsertData(
                 table: "Users",
@@ -122,6 +130,9 @@ namespace CarRentalSystem.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Bookings");
+
+            migrationBuilder.DropTable(
+                name: "SiteSettings");
 
             migrationBuilder.DropTable(
                 name: "Cars");

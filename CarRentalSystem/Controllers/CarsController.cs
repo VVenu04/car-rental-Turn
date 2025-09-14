@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using CarRentalSystem.Data;
+﻿using CarRentalSystem.Data;
 using CarRentalSystem.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarRentalSystem.Controllers
 {
@@ -61,9 +56,11 @@ namespace CarRentalSystem.Controllers
         // POST: Cars/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage")] Car car, IFormFile imageFile)
+        public async Task<IActionResult> Create([Bind("CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage")] Car car, IFormFile? imageFile)
         {
             if (!IsAdmin()) return Unauthorized();
+
+            // We make the imageFile parameter nullable with 'IFormFile?' to be explicit
 
             if (ModelState.IsValid)
             {
@@ -77,7 +74,8 @@ namespace CarRentalSystem.Controllers
                 }
                 else
                 {
-                    car.ImageUrl = "/images/cars/placeholder.png"; // Default image
+                    // If no image is uploaded, use a default placeholder.
+                    car.ImageUrl = "/images/cars/placeholder.png";
                 }
 
                 car.DateAdded = DateTime.Now;
@@ -103,25 +101,48 @@ namespace CarRentalSystem.Controllers
         // POST: Cars/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CarID,CarName,CarModel,ImageUrl,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage,DateAdded")] Car car, IFormFile imageFile)
+        public async Task<IActionResult> Edit(int id, [Bind("CarID,CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage,DateAdded")] Car car, IFormFile? imageFile)
         {
             if (!IsAdmin()) return Unauthorized();
             if (id != car.CarID) return NotFound();
 
+            // We handle the image manually, so remove any potential validation errors for it.
+            ModelState.Remove("ImageUrl");
+            ModelState.Remove("imageFile");
+
             if (ModelState.IsValid)
             {
+                var carToUpdate = await _context.Cars.FindAsync(id);
+                if (carToUpdate == null)
+                {
+                    return NotFound();
+                }
+
+                // Update properties from the form
+                carToUpdate.CarName = car.CarName;
+                carToUpdate.CarModel = car.CarModel;
+                carToUpdate.IsAvailable = car.IsAvailable;
+                carToUpdate.DailyRate = car.DailyRate;
+                carToUpdate.CarType = car.CarType;
+                carToUpdate.FuelType = car.FuelType;
+                carToUpdate.SeatingCapacity = car.SeatingCapacity;
+                carToUpdate.Transmission = car.Transmission;
+                carToUpdate.Description = car.Description;
+                carToUpdate.Mileage = car.Mileage;
+
+                // Only update the image if a new one was uploaded
                 if (imageFile != null && imageFile.Length > 0)
                 {
                     var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
                     var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
                     var filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     await imageFile.CopyToAsync(new FileStream(filePath, FileMode.Create));
-                    car.ImageUrl = "/images/cars/" + uniqueFileName;
+                    carToUpdate.ImageUrl = "/images/cars/" + uniqueFileName;
                 }
 
                 try
                 {
-                    _context.Update(car);
+                    _context.Update(carToUpdate);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -139,6 +160,7 @@ namespace CarRentalSystem.Controllers
             }
             return View(car);
         }
+
 
         // GET: Cars/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -162,6 +184,7 @@ namespace CarRentalSystem.Controllers
             var car = await _context.Cars.FindAsync(id);
             if (car != null)
             {
+                // You may want to delete the associated image file from wwwroot here as well
                 _context.Cars.Remove(car);
             }
 

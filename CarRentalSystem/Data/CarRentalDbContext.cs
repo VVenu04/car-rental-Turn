@@ -64,56 +64,56 @@ namespace CarRentalSystem.Data
             );
 
             // Seed Cars
-            modelBuilder.Entity<Car>().HasData(
-                new Car
-                {
-                    CarID = 1,
-                    CarName = "Toyota Camry",
-                    CarModel = "2023",
-                    ImageUrl = "/images/cars/placeholder.png",
-                    IsAvailable = true,
-                    DailyRate = 50.00m,
-                    CarType = "Sedan",
-                    FuelType = "Petrol",
-                    SeatingCapacity = 5,
-                    Transmission = "Automatic",
-                    Description = "A reliable and comfortable sedan for city and highway driving.",
-                    Mileage = 15000,
-                    DateAdded = seedDate // <-- CORRECTED
-                },
-                new Car
-                {
-                    CarID = 2,
-                    CarName = "Ford Explorer",
-                    CarModel = "2022",
-                    ImageUrl = "/images/cars/placeholder.png",
-                    IsAvailable = true,
-                    DailyRate = 85.00m,
-                    CarType = "SUV",
-                    FuelType = "Petrol",
-                    SeatingCapacity = 7,
-                    Transmission = "Automatic",
-                    Description = "A spacious SUV perfect for family trips and adventures.",
-                    Mileage = 25000,
-                    DateAdded = seedDate // <-- CORRECTED
-                },
-                new Car
-                {
-                    CarID = 3,
-                    CarName = "Honda Civic",
-                    CarModel = "2024",
-                    ImageUrl = "/images/cars/placeholder.png",
-                    IsAvailable = false,
-                    DailyRate = 45.00m,
-                    CarType = "Hatchback",
-                    FuelType = "Petrol",
-                    SeatingCapacity = 5,
-                    Transmission = "Manual",
-                    Description = "A sporty and fuel-efficient hatchback, great for city driving.",
-                    Mileage = 5000,
-                    DateAdded = seedDate // <-- CORRECTED
-                }
-            );
+            //modelBuilder.Entity<Car>().HasData(
+            //    new Car
+            //    {
+            //        CarID = 1,
+            //        CarName = "Toyota Camry",
+            //        CarModel = "2023",
+            //        ImageUrl = "/images/cars/placeholder.png",
+            //        IsAvailable = true,
+            //        DailyRate = 50.00m,
+            //        CarType = "Sedan",
+            //        FuelType = "Petrol",
+            //        SeatingCapacity = 5,
+            //        Transmission = "Automatic",
+            //        Description = "A reliable and comfortable sedan for city and highway driving.",
+            //        Mileage = 15000,
+            //        DateAdded = seedDate // <-- CORRECTED
+            //    },
+            //    new Car
+            //    {
+            //        CarID = 2,
+            //        CarName = "Ford Explorer",
+            //        CarModel = "2022",
+            //        ImageUrl = "/images/cars/placeholder.png",
+            //        IsAvailable = true,
+            //        DailyRate = 85.00m,
+            //        CarType = "SUV",
+            //        FuelType = "Petrol",
+            //        SeatingCapacity = 7,
+            //        Transmission = "Automatic",
+            //        Description = "A spacious SUV perfect for family trips and adventures.",
+            //        Mileage = 25000,
+            //        DateAdded = seedDate // <-- CORRECTED
+            //    },
+            //    new Car
+            //    {
+            //        CarID = 3,
+            //        CarName = "Honda Civic",
+            //        CarModel = "2024",
+            //        ImageUrl = "/images/cars/placeholder.png",
+            //        IsAvailable = false,
+            //        DailyRate = 45.00m,
+            //        CarType = "Hatchback",
+            //        FuelType = "Petrol",
+            //        SeatingCapacity = 5,
+            //        Transmission = "Manual",
+            //        Description = "A sporty and fuel-efficient hatchback, great for city driving.",
+            //        Mileage = 5000,
+            //        DateAdded = seedDate // <-- CORRECTED
+            //    }
+            //);
         }
     }
     }

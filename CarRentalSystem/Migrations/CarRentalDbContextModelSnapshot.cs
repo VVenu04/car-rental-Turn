@@ -136,56 +136,6 @@ namespace CarRentalSystem.Migrations
                     b.HasKey("CarID");
 
                     b.ToTable("Cars");
-
-                    b.HasData(
-                        new
-                        {
-                            CarID = 1,
-                            CarModel = "2023",
-                            CarName = "Toyota Camry",
-                            CarType = "Sedan",
-                            DailyRate = 50.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A reliable and comfortable sedan for city and highway driving.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = true,
-                            Mileage = 15000.0,
-                            SeatingCapacity = 5,
-                            Transmission = "Automatic"
-                        },
-                        new
-                        {
-                            CarID = 2,
-                            CarModel = "2022",
-                            CarName = "Ford Explorer",
-                            CarType = "SUV",
-                            DailyRate = 85.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A spacious SUV perfect for family trips and adventures.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = true,
-                            Mileage = 25000.0,
-                            SeatingCapacity = 7,
-                            Transmission = "Automatic"
-                        },
-                        new
-                        {
-                            CarID = 3,
-                            CarModel = "2024",
-                            CarName = "Honda Civic",
-                            CarType = "Hatchback",
-                            DailyRate = 45.00m,
-                            DateAdded = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "A sporty and fuel-efficient hatchback, great for city driving.",
-                            FuelType = "Petrol",
-                            ImageUrl = "/images/cars/placeholder.png",
-                            IsAvailable = false,
-                            Mileage = 5000.0,
-                            SeatingCapacity = 5,
-                            Transmission = "Manual"
-                        });
                 });
 
             modelBuilder.Entity("CarRentalSystem.Models.SiteSetting", b =>

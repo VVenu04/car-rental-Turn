@@ -1,5 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRentalSystem.Models
@@ -18,7 +17,7 @@ namespace CarRentalSystem.Models
         public string CarModel { get; set; }
 
         [StringLength(200)]
-        public string? ImageUrl { get; set; }
+        public string? ImageUrl { get; set; } // This is for the saved path, NOT the file itself
 
         public bool IsAvailable { get; set; } = true;
 
@@ -28,21 +27,21 @@ namespace CarRentalSystem.Models
         public decimal DailyRate { get; set; }
 
         [StringLength(50)]
-        public string CarType { get; set; } // e.g., Sedan, SUV, Hatchback
+        public string CarType { get; set; }
 
         [StringLength(20)]
-        public string FuelType { get; set; } // e.g., Petrol, Diesel, Electric
+        public string FuelType { get; set; }
 
         [Range(2, 12)]
         public int SeatingCapacity { get; set; }
 
         [StringLength(20)]
-        public string Transmission { get; set; } // e.g., Automatic, Manual
+        public string Transmission { get; set; }
 
         [StringLength(500)]
         public string Description { get; set; }
 
-        public double? Mileage { get; set; } // Optional
+        public double? Mileage { get; set; }
 
         public DateTime DateAdded { get; set; } = DateTime.Now;
 
