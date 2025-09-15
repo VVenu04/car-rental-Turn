@@ -4,56 +4,86 @@
     ViewData["Title"] = "Booking Summary";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Booking Summary</h1>
-    <p class="lead">Please review your details and select a payment method.</p>
-</div>
-<hr />
+<style>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
 
-<div class="row justify-content-center">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="@Url.Content(Model.Car.ImageUrl)" class="img-fluid rounded-start" alt="@Model.Car.CarName" style="height: 100%; object-fit: cover;">
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h3 class="card-title">@Model.Car.CarName</h3>
-                        <p class="card-text"><small class="text-muted">@Model.Car.CarType | @Model.Car.Transmission</small></p>
-                        <hr>
-                        <dl class="row">
-                            <dt class="col-sm-5">Pickup Date:</dt>
-                            <dd class="col-sm-7">@Model.PickupDate.ToShortDateString()</dd>
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
 
-                            <dt class="col-sm-5">Return Date:</dt>
-                            <dd class="col-sm-7">@Model.ReturnDate.ToShortDateString()</dd>
+    .btn-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        border: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
 
-                            <dt class="col-sm-5 h4">Total Cost:</dt>
-                            <dd class="col-sm-7 h4">$@Model.TotalCost.ToString("F2")</dd>
-                        </dl>
+        .btn-gradient:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
 
-                        <form asp-action="SubmitSummary" method="post">
-                            <div class="my-4">
-                                <h5 class="card-title">Select Payment Method</h5>
-                                <div class="form-check">
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">Booking Summary</h1>
+        <p class="lead text-muted">Review your details and select a payment method</p>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card luxury-card shadow-lg">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="@Url.Content(Model.Car.ImageUrl)" class="img-fluid rounded-start" alt="@Model.Car.CarName" style="height:100%; object-fit:cover;">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">@Model.Car.CarName</h3>
+                            <p class="text-muted"><small>@Model.Car.CarType | @Model.Car.Transmission</small></p>
+                            <hr>
+                            <dl class="row">
+                                <dt class="col-sm-5 fw-semibold">Pickup Date:</dt>
+                                <dd class="col-sm-7">@Model.PickupDate.ToShortDateString()</dd>
+
+                                <dt class="col-sm-5 fw-semibold">Return Date:</dt>
+                                <dd class="col-sm-7">@Model.ReturnDate.ToShortDateString()</dd>
+
+                                <dt class="col-sm-5 fw-semibold h5">Total Cost:</dt>
+                                <dd class="col-sm-7 h5">$@Model.TotalCost.ToString("F2")</dd>
+                            </dl>
+
+                            <form asp-action="SubmitSummary" method="post" class="mt-4">
+                                <h5 class="fw-semibold text-gradient mb-3">Select Payment Method</h5>
+                                <div class="form-check mb-2">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="payNow" value="PayNow" checked>
-                                    <label class="form-check-label" for="payNow">
-                                        Pay Now (Online)
-                                    </label>
+                                    <label class="form-check-label" for="payNow">Pay Now (Online)</label>
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check mb-3">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="payOnPickup" value="PayOnPickup">
-                                    <label class="form-check-label" for="payOnPickup">
-                                        Pay on Pickup
-                                    </label>
+                                    <label class="form-check-label" for="payOnPickup">Pay on Pickup</label>
                                 </div>
-                            </div>
 
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-success btn-lg">Confirm and Proceed</button>
-                            </div>
-                        </form>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-gradient btn-lg">Confirm and Proceed</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

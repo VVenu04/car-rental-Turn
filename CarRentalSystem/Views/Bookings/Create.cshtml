@@ -4,64 +4,109 @@
     ViewData["Title"] = "Book a Car";
 }
 
-<h1>Book: @Model.Car.CarName</h1>
-<p>Complete the form below to finalize your booking.</p>
-<hr />
-<div class="row">
-    <div class="col-md-7">
-        <form asp-action="Create">
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <input type="hidden" asp-for="CarID" />
+<style>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
 
-            <div class="row">
-                <div class="form-group col-md-6 mb-3">
-                    <label asp-for="PickupDate" class="control-label"></label>
-                    <input asp-for="PickupDate" class="form-control" type="date" />
-                    <span asp-validation-for="PickupDate" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-6 mb-3">
-                    <label asp-for="ReturnDate" class="control-label"></label>
-                    <input asp-for="ReturnDate" class="form-control" type="date" />
-                    <span asp-validation-for="ReturnDate" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-6 mb-3">
-                    <label asp-for="PickupLocation" class="control-label"></label>
-                    <input asp-for="PickupLocation" class="form-control" />
-                    <span asp-validation-for="PickupLocation" class="text-danger"></span>
-                </div>
-                <div class="form-group col-md-6 mb-3">
-                    <label asp-for="ReturnLocation" class="control-label"></label>
-                    <input asp-for="ReturnLocation" class="form-control" />
-                    <span asp-validation-for="ReturnLocation" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="SpecialRequirements" class="control-label"></label>
-                <textarea asp-for="SpecialRequirements" class="form-control" rows="3"></textarea>
-                <span asp-validation-for="SpecialRequirements" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Confirm Booking" class="btn btn-primary" />
-                <a asp-controller="Cars" asp-action="Index" class="btn btn-secondary">Cancel</a>
-            </div>
-        </form>
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        border: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .btn-gradient:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">Book: @Model.Car.CarName</h1>
+        <p class="lead text-muted">Complete the form below to finalize your booking</p>
+        <hr class="w-25 mx-auto opacity-50" />
     </div>
-    <div class="col-md-5">
-        <div class="card">
-            <img src="@Url.Content(Model.Car.ImageUrl)" class="card-img-top" alt="@Model.Car.CarName">
-            <div class="card-body">
-                <h5 class="card-title">@Model.Car.CarName</h5>
-                <p class="card-text">Daily Rate: <strong>$@Model.Car.DailyRate.ToString("F2")</strong></p>
-                <p class="card-text text-muted">A preliminary cost will be calculated upon submission.</p>
+
+    <div class="row g-4">
+        <div class="col-md-7">
+            <div class="card luxury-card shadow-lg p-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+                    <input type="hidden" asp-for="CarID" />
+
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                            <label asp-for="PickupDate" class="fw-semibold"></label>
+                            <input asp-for="PickupDate" class="form-control" type="date" />
+                            <span asp-validation-for="PickupDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                            <label asp-for="ReturnDate" class="fw-semibold"></label>
+                            <input asp-for="ReturnDate" class="form-control" type="date" />
+                            <span asp-validation-for="ReturnDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                            <label asp-for="PickupLocation" class="fw-semibold"></label>
+                            <input asp-for="PickupLocation" class="form-control" />
+                            <span asp-validation-for="PickupLocation" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                            <label asp-for="ReturnLocation" class="fw-semibold"></label>
+                            <input asp-for="ReturnLocation" class="form-control" />
+                            <span asp-validation-for="ReturnLocation" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="SpecialRequirements" class="fw-semibold"></label>
+                        <textarea asp-for="SpecialRequirements" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="SpecialRequirements" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-3">
+                        <input type="submit" value="Confirm Booking" class="btn btn-gradient btn-lg flex-fill" />
+                        <a asp-controller="Cars" asp-action="Index" class="btn btn-secondary btn-lg flex-fill">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card luxury-card shadow-lg">
+                <img src="@Url.Content(Model.Car.ImageUrl)" class="card-img-top rounded-top" alt="@Model.Car.CarName">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">@Model.Car.CarName</h5>
+                    <p class="card-text">Daily Rate: <strong>$@Model.Car.DailyRate.ToString("F2")</strong></p>
+                    <p class="card-text text-muted">A preliminary cost will be calculated upon submission.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    
 }
+
+

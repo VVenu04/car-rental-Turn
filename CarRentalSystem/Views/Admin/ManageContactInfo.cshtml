@@ -4,37 +4,99 @@
     ViewData["Title"] = "Manage Contact Information";
 }
 
-<h1>Manage Contact Information</h1>
-<p>Update the public contact details for the website.</p>
-<hr />
+<style>
+    /* ===== Luxury Design CSS ===== */
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="ManageContactInfo">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
 
-            <input type="hidden" asp-for="SettingID" />
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
 
-            <div class="form-group mb-3">
-                <label asp-for="ContactEmail" class="control-label"></label>
-                <input asp-for="ContactEmail" class="form-control" />
-                <span asp-validation-for="ContactEmail" class="text-danger"></span>
+    label {
+        font-weight: 500;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-radius: 0.75rem;
+        padding: 0.5rem 0.75rem;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-primary {
+        border-radius: 0.75rem;
+        padding: 0.5rem 1.25rem;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-secondary {
+        border-radius: 0.75rem;
+        padding: 0.5rem 1.25rem;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">Manage Contact Information</h1>
+        <p class="lead text-muted">Update the public contact details for the website</p>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card luxury-card shadow-lg">
+                <div class="card-body">
+                    <form asp-action="ManageContactInfo">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <input type="hidden" asp-for="SettingID" />
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ContactEmail" class="form-label"></label>
+                            <input asp-for="ContactEmail" class="form-control" placeholder="Enter contact email" />
+                            <span asp-validation-for="ContactEmail" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ContactPhone" class="form-label"></label>
+                            <input asp-for="ContactPhone" class="form-control" placeholder="Enter phone number" />
+                            <span asp-validation-for="ContactPhone" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Address" class="form-label"></label>
+                            <textarea asp-for="Address" class="form-control" rows="3" placeholder="Enter address"></textarea>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <input type="submit" value="Save Changes" class="btn btn-primary" />
+                            <a asp-action="Dashboard" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group mb-3">
-                <label asp-for="ContactPhone" class="control-label"></label>
-                <input asp-for="ContactPhone" class="form-control" />
-                <span asp-validation-for="ContactPhone" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-3">
-                <label asp-for="Address" class="control-label"></label>
-                <textarea asp-for="Address" class="form-control" rows="3"></textarea>
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save Changes" class="btn btn-primary" />
-                <a asp-action="Dashboard" class="btn btn-secondary">Cancel</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 

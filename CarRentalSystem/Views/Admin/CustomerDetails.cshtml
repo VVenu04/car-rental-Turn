@@ -4,68 +4,135 @@
     ViewData["Title"] = "Customer Details";
 }
 
-<h2>Customer Details</h2>
-<hr />
+<style>
+    /* ====== Luxury Design CSS ====== */
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h4>@Model.FullName</h4>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+    .badge-custom {
+        padding: 0.5em 0.75em;
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        vertical-align: middle !important;
+    }
+
+    table tbody tr:hover {
+        background: rgba(13, 110, 253, 0.05);
+    }
+
+    .card-header {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        color: white;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .card-footer a {
+        text-decoration: none;
+    }
+
+   
+
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">Customer Details</h1>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="row g-4">
+        <!-- Customer Info -->
+        <div class="col-md-4">
+            <div class="card luxury-card h-100">
+                <div class="card-header">
+                    @Model.FullName
+                </div>
+                <div class="card-body">
+                    <p><strong>Username:</strong> @Model.Username</p>
+                    <p><strong>Email:</strong> @Model.Email</p>
+                    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+                    <p><strong>Date Joined:</strong> @Model.DateJoined.ToShortDateString()</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="ViewCustomers" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left-circle"></i> Back to Customers
+                    </a>
+                </div>
             </div>
-            <div class="card-body">
-                <p><strong>Username:</strong> @Model.Username</p>
-                <p><strong>Email:</strong> @Model.Email</p>
-                <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
-                <p><strong>Date Joined:</strong> @Model.DateJoined.ToShortDateString()</p>
-            </div>
-            <div class="card-footer">
-                <a asp-action="ViewCustomers" class="btn btn-secondary">
-                    <i class="bi bi-arrow-left-circle"></i> Back to Customer List
-                </a>
+        </div>
+
+        <!-- Booking History -->
+        <div class="col-md-8">
+            <div class="card luxury-card h-100">
+                <div class="card-header text-center">
+                    <h4>Booking History</h4>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-bordered table-striped mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Car</th>
+                                <th>Pickup Date</th>
+                                <th>Return Date</th>
+                                <th>Total Cost</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Bookings.Any())
+                            {
+                                @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
+                                {
+                                    <tr>
+                                        <td>@booking.Car.CarName</td>
+                                        <td>@booking.PickupDate.ToShortDateString()</td>
+                                        <td>@booking.ReturnDate.ToShortDateString()</td>
+                                        <td>$@booking.TotalCost.ToString("F2")</td>
+                                        <td>
+                                            <span class="badge badge-custom
+                                                        @(booking.BookingStatus == "Confirmed" ? "bg-success" :
+                                                                                                    booking.BookingStatus == "Completed" ? "bg-info" : "bg-secondary")">
+                                        @booking.BookingStatus
+                                    </span>
+                                </td>
+                            </tr>
+                                                        }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center p-4">This customer has no booking history.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="col-md-8">
-        <h4>Booking History</h4>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>Car</th>
-                    <th>Pickup Date</th>
-                    <th>Return Date</th>
-                    <th>Total Cost</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Bookings.Any())
-                {
-                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
-                    {
-                        <tr>
-                            <td>@booking.Car.CarName</td>
-                            <td>@booking.PickupDate.ToShortDateString()</td>
-                            <td>@booking.ReturnDate.ToShortDateString()</td>
-                            <td>$@booking.TotalCost.ToString("F2")</td>
-                            <td>
-                                <span class="badge
-                                            @(booking.BookingStatus == "Confirmed" ? "bg-success" :
-                                                                            booking.BookingStatus == "Completed" ? "bg-info" : "bg-secondary")">
-                            @booking.BookingStatus
-                        </span>
-                    </td>
-                </tr>
-                                }
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="5" class="text-center">This customer has no booking history.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
 </div>
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

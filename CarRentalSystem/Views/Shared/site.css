@@ -1,0 +1,40 @@
+﻿:root {
+    --navy: #0B1220;
+    --gold: #D4AF37;
+    --ivory: #F7F5F2;
+}
+
+.luxe-navbar {
+    background: var(--navy) !important;
+    backdrop-filter: blur(8px);
+}
+
+.luxe-link {
+    color: var(--ivory) !important;
+    transition: color 0.3s ease;
+}
+
+    .luxe-link:hover {
+        color: var(--gold) !important;
+    }
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+
+    .btn-gold:hover {
+        background: #b9972e;
+        color: white;
+    }
+
+.luxe-footer {
+    border-top: 2px solid var(--gold);
+}
+
+.text-gold {
+    color: var(--gold);
+}

@@ -4,42 +4,81 @@
     ViewData["Title"] = "Booking Confirmed";
 }
 
-<div class="text-center">
-    <i class="bi bi-check2-circle text-success" style="font-size: 5rem;"></i>
-    <h1 class="display-4">Thank You!</h1>
-    <p class="lead">Your booking has been confirmed.</p>
-    <hr />
-</div>
+<style>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
 
-<div class="row justify-content-center">
-    <div class="col-md-8">
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
 
-        @if (Model.PaymentStatus == "Paid")
-        {
-            <div class="alert alert-success">
-                <strong>Booking ID:</strong> @Model.BookingID <br />
-                <strong>Payment:</strong> Paid Successfully <br />
-                <strong>Transaction ID:</strong> @Model.TransactionId
-            </div>
+    .btn-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        border: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .btn-gradient:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
         }
-        else if (Model.PaymentStatus == "Due at Pickup")
-        {
-            <div class="alert alert-info">
-                <strong>Booking ID:</strong> @Model.BookingID <br />
-                <strong>Payment:</strong> Due at Pickup <br />
-                Please be prepared to pay the total amount of <strong>$@Model.TotalCost.ToString("F2")</strong> upon pickup.
+
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <i class="bi bi-check2-circle text-success" style="font-size: 5rem;"></i>
+        <h1 class="display-4 fw-bold text-gradient">Thank You!</h1>
+        <p class="lead text-muted">Your booking has been successfully confirmed.</p>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card luxury-card shadow-lg p-4">
+                @if (Model.PaymentStatus == "Paid")
+                {
+                    <div class="alert alert-success fw-semibold">
+                        <strong>Booking ID:</strong> @Model.BookingID <br />
+                        <strong>Payment:</strong> Paid Successfully <br />
+                        <strong>Transaction ID:</strong> @Model.TransactionId
+                    </div>
+                }
+                else if (Model.PaymentStatus == "Due at Pickup")
+                {
+                    <div class="alert alert-info fw-semibold">
+                        <strong>Booking ID:</strong> @Model.BookingID <br />
+                        <strong>Payment:</strong> Due at Pickup <br />
+                        Please be prepared to pay <strong>$@Model.TotalCost.ToString("F2")</strong> upon pickup.
+                    </div>
+                }
+
+                <h4 class="fw-bold mt-4 mb-3 text-gradient">Booking Details</h4>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong>Car:</strong> @Model.Car.CarName</li>
+                    <li class="list-group-item"><strong>Pickup Date:</strong> @Model.PickupDate.ToShortDateString()</li>
+                    <li class="list-group-item"><strong>Return Date:</strong> @Model.ReturnDate.ToShortDateString()</li>
+                    <li class="list-group-item"><strong>Total Cost:</strong> $@Model.TotalCost.ToString("F2")</li>
+                </ul>
+
+                <div class="text-center">
+                    <a asp-controller="Account" asp-action="Profile" class="btn btn-gradient btn-lg me-2">View My Bookings</a>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary btn-lg">Back to Home</a>
+                </div>
             </div>
-        }
-        <h4>Booking Details:</h4>
-        <ul class="list-group">
-            <li class="list-group-item"><strong>Car:</strong> @Model.Car.CarName</li>
-            <li class="list-group-item"><strong>Pickup Date:</strong> @Model.PickupDate.ToShortDateString()</li>
-            <li class="list-group-item"><strong>Return Date:</strong> @Model.ReturnDate.ToShortDateString()</li>
-            <li class="list-group-item"><strong>Total Cost:</strong> $@Model.TotalCost.ToString("F2")</li>
-        </ul>
-        <div class="text-center mt-4">
-            <a asp-controller="Account" asp-action="Profile" class="btn btn-primary">View My Bookings</a>
-            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Home</a>
         </div>
     </div>
 </div>

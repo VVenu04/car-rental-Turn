@@ -4,33 +4,81 @@
     ViewData["Title"] = "Manage Customers";
 }
 
-<h1>Manage Customers</h1>
-<p>Here is a list of all registered customers in the system.</p>
+<style>
+    /* ===== Luxury Design CSS ===== */
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-<table class="table table-striped table-hover">
-    <thead class="table-dark">
-        <tr>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-            <th>Date Joined</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
-            <tr>
-                <td>@user.FullName</td>
-                <td>@user.Email</td>
-                <td>@user.PhoneNumber</td>
-                <td>@user.DateJoined.ToShortDateString()</td>
-                <td class="text-end">
-                    <a asp-action="CustomerDetails" asp-route-id="@user.UserID" class="btn btn-sm btn-info">
-                        <i class="bi bi-person-lines-fill"></i> View Details
-                    </a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .luxury-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .table thead {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .btn-info {
+        border-radius: 0.75rem;
+        padding: 0.35rem 0.75rem;
+        font-weight: 500;
+    }
+
+    .btn-info:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">Manage Customers</h1>
+        <p class="lead text-muted">Here is a list of all registered customers in the system</p>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="card luxury-card shadow-lg p-3">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                        <th>Date Joined</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.FullName</td>
+                            <td>@user.Email</td>
+                            <td>@user.PhoneNumber</td>
+                            <td>@user.DateJoined.ToShortDateString()</td>
+                            <td class="text-end">
+                                <a asp-action="CustomerDetails" asp-route-id="@user.UserID" class="btn btn-sm btn-info">
+                                    <i class="bi bi-person-lines-fill"></i> View Details
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

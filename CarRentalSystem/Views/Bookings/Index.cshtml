@@ -4,42 +4,95 @@
     ViewData["Title"] = "All Bookings";
 }
 
-<h1>All Bookings</h1>
+<style>
+    /* ===== Luxury Design CSS ===== */
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-<table class="table table-striped table-hover">
-    <thead class="table-dark">
-        <tr>
-            <th>Customer</th>
-            <th>Car</th>
-            <th>Pickup Date</th>
-            <th>Return Date</th>
-            <th>Total Cost</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Customer.FullName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Car.CarName)
-                </td>
-                <td>
-                    @item.PickupDate.ToShortDateString()
-                </td>
-                <td>
-                    @item.ReturnDate.ToShortDateString()
-                </td>
-                <td>
-                    $@item.TotalCost.ToString("F2")
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BookingStatus)
-                </td>
-            </tr>
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
-    </tbody>
-</table>
+
+    .table thead {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .badge-status {
+        padding: 0.5em 0.75em;
+        font-size: 0.9rem;
+        border-radius: 0.5rem;
+    }
+
+    .badge-confirmed {
+        background-color: #198754;
+        color: white;
+    }
+    /* green */
+    .badge-completed {
+        background-color: #0dcaf0;
+        color: white;
+    }
+    /* info */
+    .badge-pending {
+        background-color: #6c757d;
+        color: white;
+    }
+    /* gray */
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-gradient">All Bookings</h1>
+        <p class="lead text-muted">Overview of all customer bookings in the system</p>
+        <hr class="w-25 mx-auto opacity-50" />
+    </div>
+
+    <div class="card luxury-card shadow-lg p-3">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Customer</th>
+                        <th>Car</th>
+                        <th>Pickup Date</th>
+                        <th>Return Date</th>
+                        <th>Total Cost</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Customer.FullName</td>
+                            <td>@item.Car.CarName</td>
+                            <td>@item.PickupDate.ToShortDateString()</td>
+                            <td>@item.ReturnDate.ToShortDateString()</td>
+                            <td>$@item.TotalCost.ToString("F2")</td>
+                            <td>
+                                <span class="badge-status @(item.BookingStatus == "Confirmed" ? "badge-confirmed" :
+                                                                                                  item.BookingStatus == "Completed" ? "badge-completed" : "badge-pending")">
+                                @item.BookingStatus
+                            </span>
+                        </td>
+                    </tr>
+                                        }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
