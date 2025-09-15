@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CarRentalSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class Initialcreate : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace CarRentalSystem.Migrations
                     CarID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CarName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CarModel = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    CarModel = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     DailyRate = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
@@ -82,6 +82,9 @@ namespace CarRentalSystem.Migrations
                     ReturnDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     TotalCost = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     BookingStatus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    PaymentStatus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    TransactionId = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    PaymentMethod = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     BookingDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     SpecialRequirements = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     PickupLocation = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),

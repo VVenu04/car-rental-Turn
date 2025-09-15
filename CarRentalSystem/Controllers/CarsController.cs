@@ -10,11 +10,17 @@ namespace CarRentalSystem.Controllers
         private readonly CarRentalDbContext _context;
         private readonly IWebHostEnvironment _hostingEnvironment;
 
-
         public CarsController(CarRentalDbContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
             _hostingEnvironment = hostingEnvironment;
+        }
+
+        // A private helper method to avoid repeating code
+        private void PopulateDropdowns()
+        {
+            ViewBag.TransmissionOptions = new List<string> { "Automatic", "Manual" };
+            ViewBag.FuelTypeOptions = new List<string> { "Petrol", "Diesel", "Super Petrol", "Super Diesel" };
         }
 
         // GET: Cars (Customer Browse Page)
@@ -50,6 +56,11 @@ namespace CarRentalSystem.Controllers
         public IActionResult Create()
         {
             if (!IsAdmin()) return Unauthorized();
+
+            // --- FIX ---
+            // Populate dropdowns when the page first loads
+            PopulateDropdowns();
+
             return View();
         }
 
@@ -60,17 +71,13 @@ namespace CarRentalSystem.Controllers
         {
             if (!IsAdmin()) return Unauthorized();
 
-            
-            // If no image file is uploaded, add a model error.
             if (imageFile == null || imageFile.Length == 0)
             {
                 ModelState.AddModelError("imageFile", "Please select an image file to upload.");
             }
-            
 
             if (ModelState.IsValid)
             {
-                // This code now only runs if an image was provided and all other fields are valid.
                 var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
                 var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -83,6 +90,10 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction("Index", "Cars");
             }
 
+            // --- FIX ---
+            // If validation fails, repopulate dropdowns before returning to the view
+            PopulateDropdowns();
+
             return View(car);
         }
 
@@ -94,6 +105,10 @@ namespace CarRentalSystem.Controllers
 
             var car = await _context.Cars.FindAsync(id);
             if (car == null) return NotFound();
+
+            // --- FIX ---
+            // Populate dropdowns when the page first loads
+            PopulateDropdowns();
 
             return View(car);
         }
@@ -117,7 +132,6 @@ namespace CarRentalSystem.Controllers
                     return NotFound();
                 }
 
-                // Update properties from the form
                 carToUpdate.CarName = car.CarName;
                 carToUpdate.CarModel = car.CarModel;
                 carToUpdate.IsAvailable = car.IsAvailable;
@@ -129,7 +143,6 @@ namespace CarRentalSystem.Controllers
                 carToUpdate.Description = car.Description;
                 carToUpdate.Mileage = car.Mileage;
 
-                // Only update the image if a new one was uploaded
                 if (imageFile != null && imageFile.Length > 0)
                 {
                     var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
@@ -157,9 +170,13 @@ namespace CarRentalSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            // --- FIX ---
+            // If validation fails, repopulate dropdowns before returning to the view
+            PopulateDropdowns();
+
             return View(car);
         }
-
 
         // GET: Cars/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -183,7 +200,6 @@ namespace CarRentalSystem.Controllers
             var car = await _context.Cars.FindAsync(id);
             if (car != null)
             {
-                // You may want to delete the associated image file from wwwroot here as well
                 _context.Cars.Remove(car);
             }
 

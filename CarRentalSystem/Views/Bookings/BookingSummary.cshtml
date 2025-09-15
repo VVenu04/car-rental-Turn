@@ -1,0 +1,62 @@
+﻿@model CarRentalSystem.Models.Booking
+
+@{
+    ViewData["Title"] = "Booking Summary";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Booking Summary</h1>
+    <p class="lead">Please review your details and select a payment method.</p>
+</div>
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="@Url.Content(Model.Car.ImageUrl)" class="img-fluid rounded-start" alt="@Model.Car.CarName" style="height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">@Model.Car.CarName</h3>
+                        <p class="card-text"><small class="text-muted">@Model.Car.CarType | @Model.Car.Transmission</small></p>
+                        <hr>
+                        <dl class="row">
+                            <dt class="col-sm-5">Pickup Date:</dt>
+                            <dd class="col-sm-7">@Model.PickupDate.ToShortDateString()</dd>
+
+                            <dt class="col-sm-5">Return Date:</dt>
+                            <dd class="col-sm-7">@Model.ReturnDate.ToShortDateString()</dd>
+
+                            <dt class="col-sm-5 h4">Total Cost:</dt>
+                            <dd class="col-sm-7 h4">$@Model.TotalCost.ToString("F2")</dd>
+                        </dl>
+
+                        <form asp-action="SubmitSummary" method="post">
+                            <div class="my-4">
+                                <h5 class="card-title">Select Payment Method</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="payNow" value="PayNow" checked>
+                                    <label class="form-check-label" for="payNow">
+                                        Pay Now (Online)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="payOnPickup" value="PayOnPickup">
+                                    <label class="form-check-label" for="payOnPickup">
+                                        Pay on Pickup
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success btn-lg">Confirm and Proceed</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

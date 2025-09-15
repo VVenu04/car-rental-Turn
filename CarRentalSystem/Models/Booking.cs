@@ -27,7 +27,16 @@ namespace CarRentalSystem.Models
         public decimal TotalCost { get; set; }
 
         [StringLength(20)]
-        public string BookingStatus { get; set; } = "Confirmed";
+        public string BookingStatus { get; set; } = "Pending"; 
+
+        [StringLength(20)]
+        public string PaymentStatus { get; set; } = "Pending"; 
+
+        [StringLength(100)]
+        public string? TransactionId { get; set; }
+
+        [StringLength(20)]
+        public string? PaymentMethod { get; set; }
 
         public DateTime BookingDate { get; set; } = DateTime.Now;
 

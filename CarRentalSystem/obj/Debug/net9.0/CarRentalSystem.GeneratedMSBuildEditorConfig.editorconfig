@@ -17,105 +17,117 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarRentalSystem
 build_property.RootNamespace = CarRentalSystem
-build_property.ProjectDir = C:\UnicomTic\car rental\car-rental-Turn\CarRentalSystem\
+build_property.ProjectDir = Z:\New folder\car-rental-Turn\CarRentalSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\UnicomTic\car rental\car-rental-Turn\CarRentalSystem
+build_property.MSBuildProjectDirectory = Z:\New folder\car-rental-Turn\CarRentalSystem
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Account/EditProfile.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Account/EditProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0UHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Account/Login.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Account/Profile.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Account/Register.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Admin/CustomerDetails.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Admin/CustomerDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3VzdG9tZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Admin/Dashboard.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Admin/ManageContactInfo.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Admin/ManageContactInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlQ29udGFjdEluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Admin/ViewCustomers.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Admin/ViewCustomers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld0N1c3RvbWVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Bookings/Create.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Bookings/BookingConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQm9va2luZ0NvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Bookings/BookingSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQm9va2luZ1N1bW1hcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Bookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Bookings/Index.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Cars/Create.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Bookings/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Cars/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Cars/Delete.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Cars/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Cars/Details.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Cars/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Cars/Edit.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Cars/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Cars/Index.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Cars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Home/Contact.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Home/Index.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Home/Privacy.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Shared/Error.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/_ViewImports.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/_ViewStart.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UnicomTic/car rental/car-rental-Turn/CarRentalSystem/Views/Shared/_Layout.cshtml]
+[Z:/New folder/car-rental-Turn/CarRentalSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-p4s78863b4

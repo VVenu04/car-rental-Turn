@@ -2,6 +2,8 @@
 using CarRentalSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarRentalSystem.Controllers
 {
@@ -14,7 +16,6 @@ namespace CarRentalSystem.Controllers
             _context = context;
         }
 
-        // GET: Bookings (Admin view of all bookings)
         public async Task<IActionResult> Index()
         {
             if (HttpContext.Session.GetString("Role") != "Admin")
@@ -29,7 +30,6 @@ namespace CarRentalSystem.Controllers
             return View(await bookings.ToListAsync());
         }
 
-        // GET: Bookings/Create
         public async Task<IActionResult> Create(int carId)
         {
             var userId = HttpContext.Session.GetInt32("UserID");
@@ -57,68 +57,150 @@ namespace CarRentalSystem.Controllers
             return View(booking);
         }
 
-        // POST: Bookings/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CarID,PickupDate,ReturnDate,SpecialRequirements,PickupLocation,ReturnLocation")] Booking booking)
         {
             var userId = HttpContext.Session.GetInt32("UserID");
-            if (userId == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
+            if (userId == null) return RedirectToAction("Login", "Account");
 
-            // Manually set the IDs and fetch the related Car object
             booking.CustomerID = userId.Value;
             var car = await _context.Cars.FindAsync(booking.CarID);
             if (car == null) return NotFound();
-
             booking.Car = car;
 
-            // --- CORRECTION ---
-            // Remove the navigation property validation errors, as we are handling them manually via IDs.
             ModelState.Remove("Customer");
             ModelState.Remove("Car");
-            // --- END CORRECTION ---
 
-
-            // --- Server-side Validation ---
-            if (booking.PickupDate < DateTime.Today)
-            {
-                ModelState.AddModelError("PickupDate", "Pickup date cannot be in the past.");
-            }
             if (booking.ReturnDate <= booking.PickupDate)
             {
                 ModelState.AddModelError("ReturnDate", "Return date must be after the pickup date.");
             }
 
-            // Check for overlapping bookings
-            var isOverlapping = await _context.Bookings
-                .AnyAsync(b => b.CarID == booking.CarID &&
-                               b.BookingStatus != "Cancelled" &&
-                               ((booking.PickupDate >= b.PickupDate && booking.PickupDate <= b.ReturnDate) ||
-                                (booking.ReturnDate >= b.PickupDate && booking.ReturnDate <= b.ReturnDate)));
-
-            if (isOverlapping)
-            {
-                ModelState.AddModelError("", "This car is already booked for the selected dates. Please choose different dates.");
-            }
-
-
             if (ModelState.IsValid)
             {
                 booking.TotalCost = booking.TotalDays * car.DailyRate;
-                booking.BookingDate = DateTime.Now;
-                booking.BookingStatus = "Confirmed";
-
-                _context.Add(booking);
-                await _context.SaveChangesAsync();
-
-                TempData["SuccessMessage"] = "Your booking has been confirmed!";
-                return RedirectToAction("Profile", "Account");
+                var bookingJson = JsonSerializer.Serialize(booking);
+                HttpContext.Session.SetString("TemporaryBooking", bookingJson);
+                return RedirectToAction(nameof(BookingSummary));
             }
 
-            // If we get here, something failed, redisplay form with error messages
+            return View(booking);
+        }
+
+        public IActionResult BookingSummary()
+        {
+            var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
+            if (string.IsNullOrEmpty(bookingJson))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
+            booking.Car = _context.Cars.Find(booking.CarID);
+            return View(booking);
+        }
+
+        // NEW ACTION: Handles the choice from the summary page
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SubmitSummary(string paymentMethod)
+        {
+            var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
+            if (string.IsNullOrEmpty(bookingJson))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
+            booking.PaymentMethod = paymentMethod;
+
+            if (paymentMethod == "PayOnPickup")
+            {
+                // --- FIX ---
+                // Tell EF Core that the deserialized Car object already exists in the DB.
+                _context.Entry(booking.Car).State = EntityState.Unchanged;
+                // --- END FIX ---
+
+                booking.BookingStatus = "Confirmed";
+                booking.PaymentStatus = "Due at Pickup";
+                booking.BookingDate = DateTime.Now;
+
+                _context.Add(booking);
+                _context.SaveChanges();
+
+                HttpContext.Session.Remove("TemporaryBooking");
+                TempData["BookingId"] = booking.BookingID;
+                return RedirectToAction(nameof(BookingConfirmation));
+            }
+            else // Default to "PayNow"
+            {
+                var updatedBookingJson = JsonSerializer.Serialize(booking);
+                HttpContext.Session.SetString("TemporaryBooking", updatedBookingJson);
+                return RedirectToAction(nameof(Payment));
+            }
+        }
+
+        public IActionResult Payment()
+        {
+            var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
+            if (string.IsNullOrEmpty(bookingJson))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
+            ViewBag.TotalCost = booking.TotalCost;
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ProcessPayment()
+        {
+            var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
+            if (string.IsNullOrEmpty(bookingJson))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
+
+            // --- FIX ---
+            // We need the same fix here for the "Pay Now" path.
+            _context.Entry(booking.Car).State = EntityState.Unchanged;
+            // --- END FIX ---
+
+            booking.BookingStatus = "Confirmed";
+            booking.PaymentStatus = "Paid";
+            booking.TransactionId = "FAKE_TRAN_" + Guid.NewGuid().ToString();
+            booking.BookingDate = DateTime.Now;
+
+            _context.Add(booking);
+            await _context.SaveChangesAsync();
+
+            HttpContext.Session.Remove("TemporaryBooking");
+            TempData["BookingId"] = booking.BookingID;
+            return RedirectToAction(nameof(BookingConfirmation));
+        }
+
+        public async Task<IActionResult> BookingConfirmation()
+        {
+            if (TempData["BookingId"] == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var bookingId = (int)TempData["BookingId"];
+            var booking = await _context.Bookings
+                .Include(b => b.Car)
+                .Include(b => b.Customer)
+                .FirstOrDefaultAsync(b => b.BookingID == bookingId);
+
+            if (booking == null)
+            {
+                return NotFound();
+            }
+
             return View(booking);
         }
     }

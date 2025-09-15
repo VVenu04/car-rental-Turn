@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRentalSystem.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20250914074222_Initialcreate")]
-    partial class Initialcreate
+    [Migration("20250915054142_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,15 @@ namespace CarRentalSystem.Migrations
                     b.Property<int>("CustomerID")
                         .HasColumnType("int");
 
+                    b.Property<string>("PaymentMethod")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("PaymentStatus")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<DateTime>("PickupDate")
                         .HasColumnType("datetime2");
 
@@ -70,6 +79,10 @@ namespace CarRentalSystem.Migrations
                     b.Property<decimal>("TotalCost")
                         .HasColumnType("decimal(10, 2)");
 
+                    b.Property<string>("TransactionId")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.HasKey("BookingID");
 
                     b.HasIndex("CarID");
@@ -89,8 +102,7 @@ namespace CarRentalSystem.Migrations
 
                     b.Property<string>("CarModel")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CarName")
                         .IsRequired()

@@ -13,7 +13,8 @@ namespace CarRentalSystem.Models
         public string CarName { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [Display(Name = "Model Year")]
+        [RegularExpression(@"^\d{4}$", ErrorMessage = "Please enter a valid 4-digit year.")]
         public string CarModel { get; set; }
 
         [StringLength(200)]
