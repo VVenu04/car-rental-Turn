@@ -6,6 +6,7 @@ wwwroot\images\cars\b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
 wwwroot\images\cars\carousel2.png
 wwwroot\images\cars\carousel4.png
 wwwroot\images\cars\Thumbs.db
+wwwroot\images\cars\Velocity Car Rentals-logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -126,7 +127,7 @@ C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRen
 C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
 C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
+C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
+C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
 C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt

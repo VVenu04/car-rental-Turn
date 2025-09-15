@@ -39,10 +39,10 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.navbar .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-}
+    .navbar .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
 
 /* Footer Styling */
 footer a {
@@ -50,6 +50,25 @@ footer a {
     transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: #0d6efd !important;
+    footer a:hover {
+        color: #0d6efd !important;
+    }
+
+/* Custom Nav Link Styling (UPDATED) */
+.nav-link-custom {
+    font-size: 1.15rem; /* Makes the text bigger */
+    font-weight: 600; /* Makes the text bolder */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle text shadow */
+    transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+    .nav-link-custom:hover {
+        color: #007bff !important; /* Changes color to a bright blue on hover */
+    }
+
+/* Style the active link to stand out even more */
+.nav-link.active.nav-link-custom {
+    color: #007bff !important;
+    font-weight: 700;
+    border-bottom: 2px solid #007bff; /* Adds a line underneath */
 }
