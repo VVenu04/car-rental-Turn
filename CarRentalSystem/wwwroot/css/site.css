@@ -1,7 +1,7 @@
 /* General Body & Font Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 70px; /* Prevent content from hiding behind the fixed navbar */
+    padding-top: 00px; /* Prevent content from hiding behind the fixed navbar */  /*changed this to 0% cz of other pages bg  */
 }
 
 main {
