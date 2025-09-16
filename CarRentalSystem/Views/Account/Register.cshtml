@@ -4,54 +4,61 @@
     ViewData["Title"] = "Register";
 }
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="text-center">Create a New Account</h2>
-            </div>
-            <div class="card-body">
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg luxury-card p-4">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-gradient">Create a New Account</h2>
+                    <p class="text-muted">Join our premium car rental service</p>
+                </div>
+
                 <form asp-action="Register">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group mb-3">
-                        <label asp-for="FullName" class="control-label"></label>
-                        <input asp-for="FullName" class="form-control" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label fw-semibold"></label>
+                        <input asp-for="FullName" class="form-control shadow-sm" />
                         <span asp-validation-for="FullName" class="text-danger"></span>
                     </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Username" class="control-label"></label>
-                        <input asp-for="Username" class="form-control" />
+
+                    <div class="mb-3">
+                        <label asp-for="Username" class="form-label fw-semibold"></label>
+                        <input asp-for="Username" class="form-control shadow-sm" />
                         <span asp-validation-for="Username" class="text-danger"></span>
                     </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" />
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label fw-semibold"></label>
+                        <input asp-for="Email" class="form-control shadow-sm" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="PhoneNumber" class="control-label"></label>
-                        <input asp-for="PhoneNumber" class="form-control" />
+
+                    <div class="mb-3">
+                        <label asp-for="PhoneNumber" class="form-label fw-semibold"></label>
+                        <input asp-for="PhoneNumber" class="form-control shadow-sm" />
                         <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                     </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" type="password" class="form-control" />
+
+                    <div class="mb-4">
+                        <label asp-for="Password" class="form-label fw-semibold"></label>
+                        <input asp-for="Password" type="password" class="form-control shadow-sm" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
-                    <div class="form-group text-center">
-                        <input type="submit" value="Register" class="btn btn-primary w-100" />
+
+                    <div class="d-grid mb-3">
+                        <input type="submit" value="Register" class="btn btn-gold btn-lg shadow" />
+                    </div>
+
+                    <div class="text-center">
+                        <small class="text-muted">Already have an account? <a asp-action="Login" class="text-decoration-none">Login</a></small>
                     </div>
                 </form>
-            </div>
-            <div class="card-footer text-center">
-                <a asp-action="Login">Already have an account? Login</a>
             </div>
         </div>
     </div>
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+   
 }

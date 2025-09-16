@@ -2,38 +2,75 @@
     ViewData["Title"] = "Payment";
 }
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-header text-center">
-                <h3>Secure Payment</h3>
-                <h4>Total Amount: <span class="text-success">$@ViewBag.TotalCost.ToString("F2")</span></h4>
-            </div>
-            <div class="card-body">
-                <p class="text-muted text-center">This is a simulated payment page. No real transaction will occur.</p>
-                <form asp-action="ProcessPayment" method="post">
-                    <div class="mb-3">
-                        <label for="cardName" class="form-label">Cardholder Name</label>
-                        <input type="text" class="form-control" id="cardName" value="John Doe" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="cardNumber" class="form-label">Card Number</label>
-                        <input type="text" class="form-control" id="cardNumber" value="1234-5678-9012-3456" required>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-7 mb-3">
-                            <label for="expiryDate" class="form-label">Expiry Date (MM/YY)</label>
-                            <input type="text" class="form-control" id="expiryDate" value="12/28" required>
+<style>
+    /* ===== Luxury Payment Page CSS ===== */
+    .text-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .luxury-card {
+        border: none;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .luxury-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+    .btn-gradient {
+        background: linear-gradient(90deg, #0d6efd, #6610f2);
+        border: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .btn-gradient:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+</style>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card luxury-card shadow-lg">
+                <div class="card-header text-center bg-transparent border-0">
+                    <h3 class="fw-bold text-gradient">Secure Payment</h3>
+                    <h4>Total Amount: <span class="text-success fw-semibold">$@ViewBag.TotalCost.ToString("F2")</span></h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted text-center mb-4">This is a simulated payment page. No real transaction will occur.</p>
+                    <form asp-action="ProcessPayment" method="post">
+                        <div class="mb-3">
+                            <label for="cardName" class="form-label fw-semibold">Cardholder Name</label>
+                            <input type="text" class="form-control" id="cardName" value="John Doe" required>
                         </div>
-                        <div class="col-md-5 mb-3">
-                            <label for="cvv" class="form-label">CVV</label>
-                            <input type="text" class="form-control" id="cvv" value="123" required>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label fw-semibold">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" value="1234-5678-9012-3456" required>
                         </div>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-lg">Pay Now</button>
-                    </div>
-                </form>
+                        <div class="row">
+                            <div class="col-md-7 mb-3">
+                                <label for="expiryDate" class="form-label fw-semibold">Expiry Date (MM/YY)</label>
+                                <input type="text" class="form-control" id="expiryDate" value="12/28" required>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <label for="cvv" class="form-label fw-semibold">CVV</label>
+                                <input type="text" class="form-control" id="cvv" value="123" required>
+                            </div>
+                        </div>
+                        <div class="d-grid mt-3">
+                            <button type="submit" class="btn btn-gradient btn-lg fw-bold">Pay Now</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

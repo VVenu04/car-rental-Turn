@@ -1,0 +1,20 @@
+﻿.bg-gold {
+    background-color: var(--gold) !important;
+}
+
+.btn-outline-gold {
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+    .btn-outline-gold:hover {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+.luxe-cta {
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+}
