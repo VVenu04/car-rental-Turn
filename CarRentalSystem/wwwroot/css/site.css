@@ -72,3 +72,22 @@ footer a {
     font-weight: 700;
     border-bottom: 2px solid #007bff; /* Adds a line underneath */
 }
+
+.bg-custom-dark-blue {
+    background-color: #181E52 !important;
+}
+
+
+/* Add to your site.css file */
+
+/* 1. Zoom effect for the dashboard cards */
+.card:hover {
+    transform: scale(1.03); /* Zooms in to 103% of its size */
+    transition: transform 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+}
+
+/* 2. Zoom effect for the quick links buttons */
+.btn:hover {
+    transform: scale(1.05); /* Zooms in to 105% of its size */
+    transition: transform 0.2s ease-in-out; /* Smooth transition over 0.2 seconds */
+}
