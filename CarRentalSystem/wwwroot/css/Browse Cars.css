@@ -1,0 +1,49 @@
+﻿
+
+/* ...GLASS CARD STYLES (FROM HOME PAGE)  */
+
+
+/* Glassmorphism effect for panels */
+.card-glass {
+    background: rgba(0, 0, 0, 0.25); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* The blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+    .card-glass .card-body,
+    .card-glass .card-footer {
+        background: transparent;
+    }
+
+
+    /* ....NEW STYLES FOR FLEET PAGE CARDS   */
+
+
+    /* ..Updated general text colors inside the fleet page's glass card for readability */
+    .card-glass .card-title,
+    .card-glass .card-text,
+    .card-glass .spec-item,
+    .card-glass .per-day {
+        color: #e9ecef; /* This is for a light, soft white color */
+    }
+
+   
+    .card-glass .text-muted {
+        color: #adb5bd !important; /* A light gray */
+    }
+
+    /* Style for the main price text */
+    .card-glass .card-price {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #ffffff; /* Bright white for emphasis */
+    }
+
+    /* This hels to make spec icons stand out a bit more */
+    .card-glass .spec-item i {
+        color: #0d6efd; 
+        margin-right: 4px;
+    }
