@@ -16,7 +16,6 @@ namespace CarRentalSystem.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-        // A private helper method to avoid repeating code
         private void PopulateDropdowns()
         {
             ViewBag.TransmissionOptions = new List<string> { "Automatic", "Manual" };
@@ -56,11 +55,7 @@ namespace CarRentalSystem.Controllers
         public IActionResult Create()
         {
             if (!IsAdmin()) return Unauthorized();
-
-            // --- FIX ---
-            // Populate dropdowns when the page first loads
             PopulateDropdowns();
-
             return View();
         }
 
@@ -90,10 +85,7 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction("Index", "Cars");
             }
 
-            // --- FIX ---
-            // If validation fails, repopulate dropdowns before returning to the view
             PopulateDropdowns();
-
             return View(car);
         }
 
@@ -106,10 +98,7 @@ namespace CarRentalSystem.Controllers
             var car = await _context.Cars.FindAsync(id);
             if (car == null) return NotFound();
 
-            // --- FIX ---
-            // Populate dropdowns when the page first loads
             PopulateDropdowns();
-
             return View(car);
         }
 
@@ -127,10 +116,7 @@ namespace CarRentalSystem.Controllers
             if (ModelState.IsValid)
             {
                 var carToUpdate = await _context.Cars.FindAsync(id);
-                if (carToUpdate == null)
-                {
-                    return NotFound();
-                }
+                if (carToUpdate == null) return NotFound();
 
                 carToUpdate.CarName = car.CarName;
                 carToUpdate.CarModel = car.CarModel;
@@ -171,10 +157,7 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // --- FIX ---
-            // If validation fails, repopulate dropdowns before returning to the view
             PopulateDropdowns();
-
             return View(car);
         }
 
@@ -197,16 +180,35 @@ namespace CarRentalSystem.Controllers
         {
             if (!IsAdmin()) return Unauthorized();
 
+            var hasBookings = await _context.Bookings.AnyAsync(b => b.CarID == id);
+            if (hasBookings)
+            {
+                TempData["DeleteError"] = "This car cannot be deleted because it is associated with existing bookings. Consider marking it as 'Unavailable' instead.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var car = await _context.Cars.FindAsync(id);
             if (car != null)
             {
+                string oldImagePath = car.ImageUrl;
                 _context.Cars.Remove(car);
+                await _context.SaveChangesAsync();
+
+                if (!string.IsNullOrEmpty(oldImagePath) && oldImagePath != "/images/cars/placeholder.png")
+                {
+                    string webRootPath = _hostingEnvironment.WebRootPath;
+                    string fullPath = Path.Combine(webRootPath, oldImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(fullPath))
+                    {
+                        System.IO.File.Delete(fullPath);
+                    }
+                }
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
+        // THIS IS THE MISSING METHOD
         private bool CarExists(int id)
         {
             return _context.Cars.Any(e => e.CarID == id);
