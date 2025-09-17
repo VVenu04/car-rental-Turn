@@ -22,27 +22,25 @@ namespace CarRentalSystem.Controllers
             ViewBag.FuelTypeOptions = new List<string> { "Petrol", "Diesel", "Super Petrol", "Super Diesel" };
         }
 
-        // GET: Cars (Customer Browse Page)
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Cars.ToListAsync());
+            ViewData["CurrentFilter"] = searchString;
+            var cars = from c in _context.Cars
+                       select c;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cars = cars.Where(c => c.CarName.Contains(searchString)
+                                    || c.CarModel.Contains(searchString)
+                                    || c.CarType.Contains(searchString));
+            }
+            return View(await cars.ToListAsync());
         }
 
-        // GET: Cars/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var car = await _context.Cars
-                .FirstOrDefaultAsync(m => m.CarID == id);
-            if (car == null)
-            {
-                return NotFound();
-            }
-
+            if (id == null) return NotFound();
+            var car = await _context.Cars.FirstOrDefaultAsync(m => m.CarID == id);
+            if (car == null) return NotFound();
             return View(car);
         }
 
@@ -51,7 +49,6 @@ namespace CarRentalSystem.Controllers
             return HttpContext.Session.GetString("Role") == "Admin";
         }
 
-        // GET: Cars/Create
         public IActionResult Create()
         {
             if (!IsAdmin()) return Unauthorized();
@@ -59,10 +56,9 @@ namespace CarRentalSystem.Controllers
             return View();
         }
 
-        // POST: Cars/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage")] Car car, IFormFile? imageFile)
+        public async Task<IActionResult> Create([Bind("CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage,PickupLocationsString,DropoffLocationsString")] Car car, IFormFile? imageFile)
         {
             if (!IsAdmin()) return Unauthorized();
 
@@ -78,8 +74,27 @@ namespace CarRentalSystem.Controllers
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 await imageFile.CopyToAsync(new FileStream(filePath, FileMode.Create));
                 car.ImageUrl = "/images/cars/" + uniqueFileName;
-
                 car.DateAdded = DateTime.Now;
+
+                // Process pickup locations
+                if (!string.IsNullOrEmpty(car.PickupLocationsString))
+                {
+                    var locations = car.PickupLocationsString.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var loc in locations)
+                    {
+                        car.AvailableLocations.Add(new CarLocation { LocationName = loc.Trim(), LocationType = "Pickup" });
+                    }
+                }
+                // Process drop-off locations
+                if (!string.IsNullOrEmpty(car.DropoffLocationsString))
+                {
+                    var locations = car.DropoffLocationsString.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var loc in locations)
+                    {
+                        car.AvailableLocations.Add(new CarLocation { LocationName = loc.Trim(), LocationType = "Dropoff" });
+                    }
+                }
+
                 _context.Add(car);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Cars");
@@ -89,23 +104,25 @@ namespace CarRentalSystem.Controllers
             return View(car);
         }
 
-        // GET: Cars/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (!IsAdmin()) return Unauthorized();
             if (id == null) return NotFound();
 
-            var car = await _context.Cars.FindAsync(id);
+            var car = await _context.Cars.Include(c => c.AvailableLocations).FirstOrDefaultAsync(c => c.CarID == id);
             if (car == null) return NotFound();
+
+            // Populate the separate LocationsString properties from the database
+            car.PickupLocationsString = string.Join("\n", car.AvailableLocations.Where(l => l.LocationType == "Pickup").Select(l => l.LocationName));
+            car.DropoffLocationsString = string.Join("\n", car.AvailableLocations.Where(l => l.LocationType == "Dropoff").Select(l => l.LocationName));
 
             PopulateDropdowns();
             return View(car);
         }
 
-        // POST: Cars/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CarID,CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage,DateAdded")] Car car, IFormFile? imageFile)
+        public async Task<IActionResult> Edit(int id, [Bind("CarID,CarName,CarModel,IsAvailable,DailyRate,CarType,FuelType,SeatingCapacity,Transmission,Description,Mileage,DateAdded,PickupLocationsString,DropoffLocationsString")] Car car, IFormFile? imageFile)
         {
             if (!IsAdmin()) return Unauthorized();
             if (id != car.CarID) return NotFound();
@@ -115,9 +132,10 @@ namespace CarRentalSystem.Controllers
 
             if (ModelState.IsValid)
             {
-                var carToUpdate = await _context.Cars.FindAsync(id);
+                var carToUpdate = await _context.Cars.Include(c => c.AvailableLocations).FirstOrDefaultAsync(c => c.CarID == id);
                 if (carToUpdate == null) return NotFound();
 
+                // Update properties...
                 carToUpdate.CarName = car.CarName;
                 carToUpdate.CarModel = car.CarModel;
                 carToUpdate.IsAvailable = car.IsAvailable;
@@ -129,8 +147,28 @@ namespace CarRentalSystem.Controllers
                 carToUpdate.Description = car.Description;
                 carToUpdate.Mileage = car.Mileage;
 
+                // Process locations
+                carToUpdate.AvailableLocations.Clear();
+                if (!string.IsNullOrEmpty(car.PickupLocationsString))
+                {
+                    var locations = car.PickupLocationsString.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var loc in locations)
+                    {
+                        carToUpdate.AvailableLocations.Add(new CarLocation { LocationName = loc.Trim(), LocationType = "Pickup" });
+                    }
+                }
+                if (!string.IsNullOrEmpty(car.DropoffLocationsString))
+                {
+                    var locations = car.DropoffLocationsString.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var loc in locations)
+                    {
+                        carToUpdate.AvailableLocations.Add(new CarLocation { LocationName = loc.Trim(), LocationType = "Dropoff" });
+                    }
+                }
+
                 if (imageFile != null && imageFile.Length > 0)
                 {
+                    //... image saving logic
                     var uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images", "cars");
                     var uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
                     var filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -140,19 +178,11 @@ namespace CarRentalSystem.Controllers
 
                 try
                 {
-                    _context.Update(carToUpdate);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CarExists(car.CarID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!CarExists(car.CarID)) return NotFound(); else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -161,39 +191,33 @@ namespace CarRentalSystem.Controllers
             return View(car);
         }
 
-        // GET: Cars/Delete/5
+        // ... (DeleteConfirmed and CarExists methods remain the same) ...
         public async Task<IActionResult> Delete(int? id)
         {
             if (!IsAdmin()) return Unauthorized();
             if (id == null) return NotFound();
-
             var car = await _context.Cars.FirstOrDefaultAsync(m => m.CarID == id);
             if (car == null) return NotFound();
-
             return View(car);
         }
 
-        // POST: Cars/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (!IsAdmin()) return Unauthorized();
-
             var hasBookings = await _context.Bookings.AnyAsync(b => b.CarID == id);
             if (hasBookings)
             {
                 TempData["DeleteError"] = "This car cannot be deleted because it is associated with existing bookings. Consider marking it as 'Unavailable' instead.";
                 return RedirectToAction(nameof(Index));
             }
-
             var car = await _context.Cars.FindAsync(id);
             if (car != null)
             {
                 string oldImagePath = car.ImageUrl;
                 _context.Cars.Remove(car);
                 await _context.SaveChangesAsync();
-
                 if (!string.IsNullOrEmpty(oldImagePath) && oldImagePath != "/images/cars/placeholder.png")
                 {
                     string webRootPath = _hostingEnvironment.WebRootPath;
@@ -204,11 +228,9 @@ namespace CarRentalSystem.Controllers
                     }
                 }
             }
-
             return RedirectToAction(nameof(Index));
         }
 
-        // THIS IS THE MISSING METHOD
         private bool CarExists(int id)
         {
             return _context.Cars.Any(e => e.CarID == id);

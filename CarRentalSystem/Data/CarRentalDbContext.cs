@@ -15,6 +15,8 @@ namespace CarRentalSystem.Data
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<SiteSetting> SiteSettings { get; set; }
 
+        public DbSet<CarLocation> CarLocations { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

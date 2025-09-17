@@ -8,12 +8,23 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="~/images/cars/carousel4.png" class="d-block w-100" alt="Reliable Cars">
-            <div class="carousel-caption d-none d-md-block">
-                <h1 class="display-4">Welcome to Our Car Rental System</h1>
-                <p class="lead">Find your perfect ride with ease</p>
-                <a class="btn btn-primary btn-lg mt-3" asp-controller="Cars" asp-action="Index" role="button">Browse All Cars</a>
+            <div class="text-center bg-light p-5 rounded-3 mb-4">
+                <h1 class="display-4">Welcome to DriveEase</h1>
+                <p class="lead">The best place to find your next rental car. Reliable, affordable, and easy.</p>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-md-8">
+                        <form asp-controller="Cars" asp-action="Index" method="get">
+                            <div class="input-group input-group-lg">
+                                <input type="text" name="searchString" class="form-control" placeholder="Search for a car (e.g., 'Toyota', 'SUV', '2023')...">
+                                <button class="btn btn-primary" type="submit">Find a Car</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <a class="btn btn-outline-primary btn-lg" asp-controller="Cars" asp-action="Index" role="button">Browse All Cars</a>
             </div>
-        </div>
         <div class="carousel-item">
             <img src="~/images/cars/carousel2.png" class="d-block w-100" alt="Affordable Rates">
             <div class="carousel-caption d-none d-md-block">

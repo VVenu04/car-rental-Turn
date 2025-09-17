@@ -35,7 +35,7 @@
                     <span asp-validation-for="CarName" class="text-danger"></span>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label asp-for="CarModel" class="control-label">Model Year</label>
+                    <label asp-for="CarModel" class="control-label"></label>
                     <input asp-for="CarModel" class="form-control" type="number" />
                     <span asp-validation-for="CarModel" class="text-danger"></span>
                 </div>
@@ -53,39 +53,59 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                     <label asp-for="Transmission" class="control-label"></label>
-                    <input asp-for="Transmission" class="form-control" />
+                    <select asp-for="Transmission" class="form-select" asp-items="@(new SelectList(ViewBag.TransmissionOptions))">
+                        <option value="">-- Select Transmission --</option>
+                    </select>
                     <span asp-validation-for="Transmission" class="text-danger"></span>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                     <label asp-for="FuelType" class="control-label"></label>
-                    <input asp-for="FuelType" class="form-control" />
+                    <select asp-for="FuelType" class="form-select" asp-items="@(new SelectList(ViewBag.FuelTypeOptions))">
+                        <option value="">-- Select Fuel Type --</option>
+                    </select>
                     <span asp-validation-for="FuelType" class="text-danger"></span>
                 </div>
-                <div class="col-md-4 mb-3">
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
                     <label asp-for="SeatingCapacity" class="control-label"></label>
                     <input asp-for="SeatingCapacity" class="form-control" />
                     <span asp-validation-for="SeatingCapacity" class="text-danger"></span>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label asp-for="Mileage" class="control-label"></label>
-                <input asp-for="Mileage" class="form-control" />
-                <span asp-validation-for="Mileage" class="text-danger"></span>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Mileage" class="control-label"></label>
+                    <input asp-for="Mileage" class="form-control" />
+                    <span asp-validation-for="Mileage" class="text-danger"></span>
+                </div>
             </div>
             <div class="mb-3">
                 <label asp-for="Description" class="control-label"></label>
                 <textarea asp-for="Description" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="PickupLocationsString" class="control-label"></label>
+                    <textarea asp-for="PickupLocationsString" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="PickupLocationsString" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="DropoffLocationsString" class="control-label"></label>
+                    <textarea asp-for="DropoffLocationsString" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="DropoffLocationsString" class="text-danger"></span>
+                </div>
+            </div>
+
             <div class="form-group form-check mb-3">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="IsAvailable" /> @Html.DisplayNameFor(model => model.IsAvailable)
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save Changes" class="btn btn-primary" />
                 <a asp-action="Index" class="btn btn-secondary">Back to List</a>
             </div>
         </form>

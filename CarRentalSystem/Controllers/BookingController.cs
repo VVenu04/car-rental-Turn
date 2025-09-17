@@ -1,9 +1,10 @@
 ﻿using CarRentalSystem.Data;
 using CarRentalSystem.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
 
 namespace CarRentalSystem.Controllers
 {
@@ -44,6 +45,22 @@ namespace CarRentalSystem.Controllers
                 TempData["ErrorMessage"] = "This car is not available for booking.";
                 return RedirectToAction("Index", "Cars");
             }
+
+            // --- NEW ---
+            // Fetch the separate, predefined locations for this car
+            var pickupLocations = await _context.CarLocations
+                .Where(l => l.CarId == carId && l.LocationType == "Pickup")
+                .Select(l => l.LocationName)
+                .ToListAsync();
+
+            var dropoffLocations = await _context.CarLocations
+                .Where(l => l.CarId == carId && l.LocationType == "Dropoff")
+                .Select(l => l.LocationName)
+                .ToListAsync();
+
+            ViewBag.PickupLocations = new SelectList(pickupLocations);
+            ViewBag.DropoffLocations = new SelectList(dropoffLocations);
+            // --- END NEW ---
 
             var booking = new Booking
             {

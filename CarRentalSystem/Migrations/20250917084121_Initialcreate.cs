@@ -71,6 +71,27 @@ namespace CarRentalSystem.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CarLocations",
+                columns: table => new
+                {
+                    CarLocationId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LocationName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    LocationType = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    CarId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CarLocations", x => x.CarLocationId);
+                    table.ForeignKey(
+                        name: "FK_CarLocations_Cars_CarId",
+                        column: x => x.CarId,
+                        principalTable: "Cars",
+                        principalColumn: "CarID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Bookings",
                 columns: table => new
                 {
@@ -126,6 +147,11 @@ namespace CarRentalSystem.Migrations
                 name: "IX_Bookings_CustomerID",
                 table: "Bookings",
                 column: "CustomerID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CarLocations_CarId",
+                table: "CarLocations",
+                column: "CarId");
         }
 
         /// <inheritdoc />
@@ -135,13 +161,16 @@ namespace CarRentalSystem.Migrations
                 name: "Bookings");
 
             migrationBuilder.DropTable(
+                name: "CarLocations");
+
+            migrationBuilder.DropTable(
                 name: "SiteSettings");
 
             migrationBuilder.DropTable(
-                name: "Cars");
+                name: "Users");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "Cars");
         }
     }
 }

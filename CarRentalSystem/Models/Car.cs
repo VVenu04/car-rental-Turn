@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace CarRentalSystem.Models
 {
@@ -46,6 +47,16 @@ namespace CarRentalSystem.Models
 
         public DateTime DateAdded { get; set; } = DateTime.Now;
 
+        // ADD THESE TWO NEW PROPERTIES
+        [NotMapped]
+        [Display(Name = "Available Pickup Locations (one per line)")]
+        public string PickupLocationsString { get; set; }
+
+        [NotMapped]
+        [Display(Name = "Available Drop-off Locations (one per line)")]
+        public string DropoffLocationsString { get; set; }
+
         public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+        public virtual ICollection<CarLocation> AvailableLocations { get; set; } = new List<CarLocation>();
     }
 }

@@ -28,12 +28,16 @@
             <div class="row">
                 <div class="form-group col-md-6 mb-3">
                     <label asp-for="PickupLocation" class="control-label"></label>
-                    <input asp-for="PickupLocation" class="form-control" />
+                    <select asp-for="PickupLocation" class="form-select" asp-items="@ViewBag.PickupLocations">
+                        <option value="">-- Select a pickup location --</option>
+                    </select>
                     <span asp-validation-for="PickupLocation" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6 mb-3">
-                    <label asp-for="ReturnLocation" class="control-label"></label>
-                    <input asp-for="ReturnLocation" class="form-control" />
+                    <label asp-for="ReturnLocation" class="control-label">Drop-off Location</label>
+                    <select asp-for="ReturnLocation" class="form-select" asp-items="@ViewBag.DropoffLocations">
+                        <option value="">-- Select a drop-off location --</option>
+                    </select>
                     <span asp-validation-for="ReturnLocation" class="text-danger"></span>
                 </div>
             </div>

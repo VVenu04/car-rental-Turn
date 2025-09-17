@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRentalSystem.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20250916072121_Initialcreate")]
+    [Migration("20250917084121_Initialcreate")]
     partial class Initialcreate
     {
         /// <inheritdoc />
@@ -153,6 +153,34 @@ namespace CarRentalSystem.Migrations
                     b.ToTable("Cars");
                 });
 
+            modelBuilder.Entity("CarRentalSystem.Models.CarLocation", b =>
+                {
+                    b.Property<int>("CarLocationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CarLocationId"));
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LocationName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("LocationType")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("CarLocationId");
+
+                    b.HasIndex("CarId");
+
+                    b.ToTable("CarLocations");
+                });
+
             modelBuilder.Entity("CarRentalSystem.Models.SiteSetting", b =>
                 {
                     b.Property<int>("SettingID")
@@ -270,8 +298,21 @@ namespace CarRentalSystem.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("CarRentalSystem.Models.CarLocation", b =>
+                {
+                    b.HasOne("CarRentalSystem.Models.Car", "Car")
+                        .WithMany("AvailableLocations")
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+                });
+
             modelBuilder.Entity("CarRentalSystem.Models.Car", b =>
                 {
+                    b.Navigation("AvailableLocations");
+
                     b.Navigation("Bookings");
                 });
 
