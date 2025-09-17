@@ -2,35 +2,127 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="row justify-content-center">
-    <div class="col-md-5">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="text-center">Login</h2>
-            </div>
-            <div class="card-body">
-                @if (ViewBag.Error != null)
-                {
-                    <div class="alert alert-danger" role="alert">
-                        @ViewBag.Error
-                    </div>
+<style>
+    /* Style for the page background */
+    body {
+        background-image: url('/images/cars/Bgimage for login.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Main container to center the login card */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85vh;
+
+    }
+
+    /* 1. NEW - The outer frame for padding */
+    .glass-frame {
+        background: rgba(10, 25, 47, 0.25); /* Dark blue semi-transparent background */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 20px; /* Slightly larger radius than the inner card */
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        padding: 30px; /* This creates the padded border effect */
+    }
+
+    /* The inner "Glass View" Card */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        box-shadow: none; /* Shadow is now on the outer frame */
+    }
+
+        /* Custom styles for elements inside the card */
+        .glass-card .card-header {
+            background: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .glass-card .form-label {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* 2. UPDATED - White input fields */
+        .glass-card .form-control {
+            background-color: white; /* Solid white background */
+            border: 1px solid #ced4da;
+            color: #212529; /* Dark text for readability */
+        }
+
+            .glass-card .form-control::placeholder {
+                color: #6c757d; /* Standard placeholder color */
+            }
+
+            .glass-card .form-control:focus {
+                background-color: white;
+                color: #212529;
+                border-color: #86b7fe; /* Bootstrap's default focus blue */
+                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+            }
+
+        .glass-card .card-footer {
+            background: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+            .glass-card .card-footer a {
+                color: #8be9fd;
+                text-decoration: none;
+            }
+
+                .glass-card .card-footer a:hover {
+                    text-decoration: underline;
                 }
-                <form asp-action="Login" method="post">
-                    <div class="form-group mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary w-100">Login</button>
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer text-center">
-                <a asp-action="Register">Don't have an account? Register</a>
+
+        .glass-card .alert-danger {
+            background-color: rgba(220, 53, 69, 0.2);
+            border-color: rgba(220, 53, 69, 0.3);
+            color: #ffcccc;
+        }
+</style>
+
+<div class="login-container">
+    <div class="col-md-5">
+        <div class="glass-frame">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <h2 class="text-center">Login</h2>
+                </div>
+                <div class="card-body p-4">
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.Error
+                        </div>
+                    }
+                    <form asp-action="Login" method="post">
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Register">Don't have an account? Register</a>
+                </div>
             </div>
         </div>
     </div>

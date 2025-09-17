@@ -4,47 +4,136 @@
     ViewData["Title"] = "Register";
 }
 
-<div class="row justify-content-center">
+<style>
+    /* Style for the page background */
+    body {
+        /* Make sure this path is correct for your project */
+        background-image: url('/images/cars/carousel4.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Main container to center the card */
+    .register-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85vh;
+        padding: 2rem 0; /* Add some padding for smaller screens */
+    }
+
+    /* The outer frame for padding */
+    .glass-frame {
+        background: rgba(10, 25, 47, 0.25); /* Dark blue semi-transparent background */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        padding: 10px;
+    }
+
+    /* The inner "Glass View" Card */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        box-shadow: none;
+    }
+
+        /* Custom styles for elements inside the card */
+        .glass-card .card-header {
+            background: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .glass-card .control-label { /* Target asp-for labels */
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* White input fields */
+        .glass-card .form-control {
+            background-color: white;
+            border: 1px solid #ced4da;
+            color: #212529; /* Dark text for readability */
+        }
+
+            .glass-card .form-control:focus {
+                background-color: white;
+                color: #212529;
+                border-color: #86b7fe;
+                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+            }
+
+        .glass-card .card-footer {
+            background: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+            .glass-card .card-footer a {
+                color: #8be9fd;
+                text-decoration: none;
+            }
+
+                .glass-card .card-footer a:hover {
+                    text-decoration: underline;
+                }
+
+    /* Style for validation messages */
+    .text-danger {
+        color: #ffadad !important; /* Lighter red for better visibility */
+        font-size: 0.875em;
+    }
+</style>
+
+<div class="register-container">
     <div class="col-md-6">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="text-center">Create a New Account</h2>
-            </div>
-            <div class="card-body">
-                <form asp-action="Register">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group mb-3">
-                        <label asp-for="FullName" class="control-label"></label>
-                        <input asp-for="FullName" class="form-control" />
-                        <span asp-validation-for="FullName" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Username" class="control-label"></label>
-                        <input asp-for="Username" class="form-control" />
-                        <span asp-validation-for="Username" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="PhoneNumber" class="control-label"></label>
-                        <input asp-for="PhoneNumber" class="form-control" />
-                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" type="password" class="form-control" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-                    <div class="form-group text-center">
-                        <input type="submit" value="Register" class="btn btn-primary w-100" />
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer text-center">
-                <a asp-action="Login">Already have an account? Login</a>
+        <div class="glass-frame">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <h2 class="text-center">Create a New Account</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Register">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <div class="form-group mb-3">
+                            <label asp-for="FullName" class="control-label"></label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Username" class="control-label"></label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="PhoneNumber" class="control-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="control-label"></label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <input type="submit" value="Register" class="btn btn-primary w-100 py-2" />
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Login">Already have an account? Login</a>
+                </div>
             </div>
         </div>
     </div>

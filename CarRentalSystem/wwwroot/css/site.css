@@ -1,7 +1,7 @@
 /* General Body & Font Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 70px; /* Prevent content from hiding behind the fixed navbar */
+    padding-top: 00px; /* Prevent content from hiding behind the fixed navbar */  /*changed this to 0% cz of other pages bg  */
 }
 
 main {
@@ -39,10 +39,10 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.navbar .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-}
+    .navbar .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
 
 /* Footer Styling */
 footer a {
@@ -50,6 +50,44 @@ footer a {
     transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: #0d6efd !important;
+    footer a:hover {
+        color: #0d6efd !important;
+    }
+
+/* Custom Nav Link Styling (UPDATED) */
+.nav-link-custom {
+    font-size: 1.15rem; /* Makes the text bigger */
+    font-weight: 600; /* Makes the text bolder */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle text shadow */
+    transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+    .nav-link-custom:hover {
+        color: #007bff !important; /* Changes color to a bright blue on hover */
+    }
+
+/* Style the active link to stand out even more */
+.nav-link.active.nav-link-custom {
+    color: #007bff !important;
+    font-weight: 700;
+    border-bottom: 2px solid #007bff; /* Adds a line underneath */
+}
+
+.bg-custom-dark-blue {
+    background-color: #181E52 !important;
+}
+
+
+/* Add to your site.css file */
+
+/* 1. Zoom effect for the dashboard cards */
+.card:hover {
+    transform: scale(1.03); /* Zooms in to 103% of its size */
+    transition: transform 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+}
+
+/* 2. Zoom effect for the quick links buttons */
+.btn:hover {
+    transform: scale(1.05); /* Zooms in to 105% of its size */
+    transition: transform 0.2s ease-in-out; /* Smooth transition over 0.2 seconds */
 }
