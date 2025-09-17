@@ -2,143 +2,103 @@
     ViewData["Title"] = "Admin Dashboard";
 }
 
-<h1 class="display-4 fw-bold">Admin Dashboard</h1>
-<p class="lead text-muted">Welcome to the management portal.</p>
-<hr />
+<div class="admin-dashboard-background">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Admin Dashboard</h1>
+        <p class="lead text-muted">Welcome to the management portal.</p>
+        <hr />
 
-<div class="row">
-    <div class="col-md-4 mb-4">
-        <div class="card bg-custom-dark-blue text-white shadow-lg h-100">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h5 class="card-title fw-bold">Total Cars</h5>
-                        <h2 class="display-4 fw-bold">@ViewBag.TotalCars</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card glass-effect shadow-lg h-100">
+                    @* Added glass-effect class and removed bg-custom-dark-blue *@
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="card-title fw-bold">Total Cars</h5>
+                                <h2 class="display-4 fw-bold">@ViewBag.TotalCars</h2>
+                            </div>
+                            <i class="bi bi-car-front-fill text-warning" style="font-size: 4rem;"></i>
+                        </div>
                     </div>
-                    <i class="bi bi-car-front-fill text-warning" style="font-size: 4rem;"></i>
+                    <div class="card-footer bg-transparent border-0 text-center">
+                        <a href="@Url.Action("Index", "Cars")" class="text-white stretched-link text-decoration-none">
+                            View All Cars <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-                <a href="@Url.Action("Index", "Cars")" class="text-white stretched-link text-decoration-none">
-                    View All Cars <i class="bi bi-arrow-right"></i>
-                </a>
+
+            <div class="col-md-4 mb-4">
+                <div class="card glass-effect shadow-lg h-100">
+                    @* Added glass-effect class and removed bg-success *@
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="card-title fw-bold">Available Cars</h5>
+                                <h2 class="display-4 fw-bold">@ViewBag.AvailableCars</h2>
+                            </div>
+                            <i class="bi bi-check2-circle text-white" style="font-size: 4rem;"></i>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-center">
+                        <a href="@Url.Action("Index", "Cars")" class="text-white stretched-link text-decoration-none">
+                            View Available Cars <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card glass-effect shadow-lg h-100">
+                    @* Added glass-effect class and removed bg-info *@
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="card-title fw-bold">Total Bookings</h5>
+                                <h2 class="display-4 fw-bold">@ViewBag.TotalBookings</h2>
+                            </div>
+                            <i class="bi bi-journal-text text-white" style="font-size: 4rem;"></i>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-center">
+                        <a href="@Url.Action("Index", "Bookings")" class="text-white stretched-link text-decoration-none">
+                            View All Bookings <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-md-4 mb-4">
-        <div class="card bg-success text-white shadow-lg h-100">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h5 class="card-title fw-bold">Available Cars</h5>
-                        <h2 class="display-4 fw-bold">@ViewBag.AvailableCars</h2>
-                    </div>
-                    <i class="bi bi-check2-circle text-white" style="font-size: 4rem;"></i>
+        <div class="mt-5">
+            <h3 class="fw-bold">Action Center</h3>
+            <p class="lead text-muted">Manage your system with these quick links.</p>
+            <div class="row g-3">
+                <div class="col-sm-6 col-md-3">
+                    <a href="@Url.Action("Index", "Cars")" class="btn glass-effect btn-lg w-100 shadow-sm rounded-3">
+                        @* Added glass-effect *@
+                        <i class="bi bi-car-front-fill me-2"></i> Manage Cars
+                    </a>
                 </div>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-                <a href="@Url.Action("Index", "Cars")" class="text-white stretched-link text-decoration-none">
-                    View Available Cars <i class="bi bi-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-        <div class="card bg-info text-white shadow-lg h-100">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h5 class="card-title fw-bold">Total Bookings</h5>
-                        <h2 class="display-4 fw-bold">@ViewBag.TotalBookings</h2>
-                    </div>
-                    <i class="bi bi-journal-text text-white" style="font-size: 4rem;"></i>
+                <div class="col-sm-6 col-md-3">
+                    <a href="@Url.Action("Index", "Bookings")" class="btn glass-effect btn-lg w-100 shadow-sm rounded-3">
+                        @* Added glass-effect *@
+                        <i class="bi bi-journal-text me-2"></i> View All Bookings
+                    </a>
                 </div>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-                <a href="@Url.Action("Index", "Bookings")" class="text-white stretched-link text-decoration-none">
-                    View All Bookings <i class="bi bi-arrow-right"></i>
-                </a>
+                <div class="col-sm-6 col-md-3">
+                    <a href="@Url.Action("ViewCustomers", "Admin")" class="btn glass-effect btn-lg w-100 shadow-sm rounded-3">
+                        @* Added glass-effect *@
+                        <i class="bi bi-people-fill me-2"></i> View Customers
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="@Url.Action("ManageContactInfo", "Admin")" class="btn glass-effect btn-lg w-100 shadow-sm rounded-3">
+                        @* Added glass-effect *@
+                        <i class="bi bi-info-circle-fill me-2"></i> Manage Site Info
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="mt-5">
-    <h3 class="fw-bold">Action Center</h3>
-    <p class="lead text-muted">Manage your system with these quick links.</p>
-    <div class="row g-3">
-        <div class="col-sm-6 col-md-3">
-            <a href="@Url.Action("Index", "Cars")" class="btn btn-primary btn-lg w-100 shadow-sm rounded-3">
-                <i class="bi bi-car-front-fill me-2"></i> Manage Cars
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <a href="@Url.Action("Index", "Bookings")" class="btn btn-info btn-lg w-100 shadow-sm rounded-3">
-                <i class="bi bi-journal-text me-2"></i> View All Bookings
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <a href="@Url.Action("ViewCustomers", "Admin")" class="btn btn-success btn-lg w-100 shadow-sm rounded-3">
-                <i class="bi bi-people-fill me-2"></i> View Customers
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <a href="@Url.Action("ManageContactInfo", "Admin")" class="btn btn-secondary btn-lg w-100 shadow-sm rounded-3">
-                <i class="bi bi-info-circle-fill me-2"></i> Manage Site Info
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="mt-5">
-    <h3 class="fw-bold">Bookings Overview</h3>
-    <p class="lead text-muted">A visual summary of your total bookings.</p>
-    <div class="card shadow-lg p-3">
-        <canvas id="bookingsChart"></canvas>
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var ctx = document.getElementById('bookingsChart').getContext('2d');
-            var bookingsChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // Replace with real data
-                    datasets: [{
-                        label: 'Total Bookings',
-                        data: [12, 19, 3, 5, 2, 3], // Replace with ViewBag.BookingData
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.5)',
-                            'rgba(54, 162, 235, 0.5)',
-                            'rgba(255, 206, 86, 0.5)',
-                            'rgba(75, 192, 192, 0.5)',
-                            'rgba(153, 102, 255, 0.5)',
-                            'rgba(255, 159, 64, 0.5)'
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-        });
-    </script>
-}

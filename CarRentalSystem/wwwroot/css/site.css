@@ -1,7 +1,9 @@
 /* General Body & Font Styling */
+
+
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 00px; /* Prevent content from hiding behind the fixed navbar */  /*changed this to 0% cz of other pages bg  */
+    padding-top: 0; /* Prevent content from hiding behind the fixed navbar */ /*changed this to 0% cz of other pages bg  */
 }
 
 main {
@@ -54,6 +56,31 @@ footer a {
         color: #0d6efd !important;
     }
 
+/* --- NEW STYLES ADDED BELOW FOR ZOOM EFFECT --- */
+
+/* 1. Target the quick links in the footer */
+.quick-links a {
+    display: inline-block; /* Ensures transform works correctly on anchor tags */
+    transition: transform 0.2s ease-in-out, color 0.3s ease; /* Combine transitions */
+}
+
+    .quick-links a:hover {
+        transform: scale(1.1); /* Zoom effect */
+    }
+
+/* 2. Target the social media icons using the new class */
+.social-icon {
+    display: inline-block; /* Ensures transform works correctly */
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+}
+
+    .social-icon:hover {
+        transform: scale(1.15); /* A slightly larger zoom for icons */
+    }
+
+/* --- END OF NEW STYLES --- */
+
+
 /* Custom Nav Link Styling (UPDATED) */
 .nav-link-custom {
     font-size: 1.15rem; /* Makes the text bigger */
@@ -90,4 +117,107 @@ footer a {
 .btn:hover {
     transform: scale(1.05); /* Zooms in to 105% of its size */
     transition: transform 0.2s ease-in-out; /* Smooth transition over 0.2 seconds */
+}
+
+
+
+/* Styling for the Browse Cars page background */
+.browse-cars-background {
+    background-image: url('/images/cars/Browse Car page BG.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed; /* Keeps the background static while scrolling */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Glassmorphism effect for the car cards */
+.card.glass-effect {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* The blur effect! */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* A subtle border */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* A modern shadow */
+    color: #fff; /* Make text white for better contrast */
+}
+
+    /* Adjusting card body elements for the new style */
+    .card.glass-effect .card-title,
+    .card.glass-effect .card-text {
+        color: #fff; /* Ensure title and text are white */
+    }
+
+    .card.glass-effect .list-group-item {
+        background-color: transparent; /* Make list items transparent */
+        border-color: rgba(255, 255, 255, 0.2); /* A lighter border for list items */
+        color: #fff; /* White text for list items */
+    }
+
+    /* Making the card footer transparent as well */
+    .card.glass-effect .card-footer {
+        background-color: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+
+    /* Styling for the Contact Us page background */
+    .browse-contact-background {
+        background-image: url('/images/cars/Contact-Us-page-background.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        min-height: 100vh;
+    }
+
+    /* Style for making title text pop against a background */
+    .text-shadow-pop {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    /* For the glass card stand out */
+    .card.glass-effect .list-unstyled i {
+        color: #ffc107; /* A nice gold color */
+        margin-right: 10px; /* Adds space between icon and text */
+    }
+
+
+
+
+/* Styling for the Admin Dashboard background */
+.admin-dashboard-background {
+    background-image: url('/images/cars/admin-dashboard-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background static while scrolling */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+
+/* Glassmorphism effect for buttons/action links */
+.btn.glass-effect {
+    background: rgba(255, 255, 255, 0.15); /* Slightly less transparent for visibility */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff !important; /* Ensure text is white */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+    .btn.glass-effect:hover {
+        background: rgba(255, 255, 255, 0.25); /* Increase transparency on hover */
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.03); /* Slight zoom on hover */
+    }
+
+/* Ensure headings/text directly on the background are white and have shadow for readability */
+.admin-dashboard-background h1,
+.admin-dashboard-background h3,
+.admin-dashboard-background .lead {
+    color: #fff !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
