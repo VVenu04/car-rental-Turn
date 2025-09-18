@@ -1,9 +1,14 @@
 /* General Body & Font Styling */
-
-
 body {
+    /* --- SITE-WIDE BACKGROUND STYLES for all pages--- */
+    background-image: url('../images/cars/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* --- OTHER BODY STYLES --- */
     font-family: 'Roboto', sans-serif;
-    padding-top: 0; /* Prevent content from hiding behind the fixed navbar */ /*changed this to 0% cz of other pages bg  */
+    padding-top: 0;
 }
 
 main {
@@ -221,5 +226,9 @@ footer a {
     color: #fff !important;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
+
+
+
+
 
 

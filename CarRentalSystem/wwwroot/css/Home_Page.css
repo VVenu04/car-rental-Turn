@@ -1,0 +1,30 @@
+﻿/* Style for the "Featured Cars" title */
+.featured-cars-title {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: inline-block; /* Ensures border only spans the text width */
+}
+
+/* Glassmorphism effect for the car panels */
+.card-glass {
+    background: rgba(0, 0, 0, 0.25); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* The blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+    /* Ensure card body and footer are also transparent */
+    .card-glass .card-body,
+    .card-glass .card-footer {
+        background: transparent;
+    }
+
+    /* Update text colors inside the glass card for readability */
+    .card-glass .card-title,
+    .card-glass .card-text small {
+        color: #f8f9fa !important; /* Light color for text */
+    }
