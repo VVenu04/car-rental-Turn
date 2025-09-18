@@ -194,5 +194,38 @@ namespace CarRentalSystem.Controllers
             }
             return RedirectToAction(nameof(Profile));
         }
+
+        // GET: /Account/Notifications
+        public async Task<IActionResult> Notifications()
+        {
+            var userId = HttpContext.Session.GetInt32("UserID");
+            if (userId == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var notifications = await _context.Notifications
+                .Where(n => n.UserID == userId)
+                .OrderByDescending(n => n.DateSent)
+                .ToListAsync();
+
+            // Mark all fetched notifications as read
+            foreach (var notification in notifications.Where(n => !n.IsRead))
+            {
+                notification.IsRead = true;
+            }
+            await _context.SaveChangesAsync();
+
+            return View(notifications);
+        }
+
+
+
     }
+
+
+
+
+
+
 }

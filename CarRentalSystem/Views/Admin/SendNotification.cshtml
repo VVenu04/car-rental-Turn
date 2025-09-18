@@ -1,0 +1,34 @@
+﻿@model CarRentalSystem.Models.Notification
+
+@{
+    ViewData["Title"] = "Send Notification";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h2">Send Notification to @ViewBag.UserName</h1>
+    <a asp-action="ViewCustomers" class="btn btn-secondary">Back to Customers</a>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form asp-action="SendNotification">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input type="hidden" asp-for="UserID" />
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Message" class="control-label fw-bold"></label>
+                        <textarea asp-for="Message" class="form-control" rows="5" placeholder="Enter your message here..."></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Send Notification" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

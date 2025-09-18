@@ -27,45 +27,47 @@
         </div>
     </div>
 
-    <div class="col-md-8">
-        <h4>Booking History</h4>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>Car</th>
-                    <th>Pickup Date</th>
-                    <th>Return Date</th>
-                    <th>Total Cost</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Bookings.Any())
-                {
-                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
-                    {
-                        <tr>
-                            <td>@booking.Car.CarName</td>
-                            <td>@booking.PickupDate.ToShortDateString()</td>
-                            <td>@booking.ReturnDate.ToShortDateString()</td>
-                            <td>$@booking.TotalCost.ToString("F2")</td>
-                            <td>
-                                <span class="badge
-                                            @(booking.BookingStatus == "Confirmed" ? "bg-success" :
-                                                                            booking.BookingStatus == "Completed" ? "bg-info" : "bg-secondary")">
-                            @booking.BookingStatus
-                        </span>
-                    </td>
-                </tr>
-                                }
-                }
-                else
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Car</th>
+                <th>Pickup Date</th>
+                <th>Return Date</th>
+                <th>Pickup Location</th>
+                <th>Return Location</th>
+                <th>Total Cost</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Bookings.Any())
+            {
+                @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
                 {
                     <tr>
-                        <td colspan="5" class="text-center">This customer has no booking history.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+                        <td>@booking.Car.CarName</td>
+                        <td>@booking.PickupDate.ToShortDateString()</td>
+                        <td>@booking.ReturnDate.ToShortDateString()</td>
+                        <td>@booking.PickupLocation</td>
+                        <td>@booking.ReturnLocation</td>
+                        <td>$@booking.TotalCost.ToString("F2")</td>
+                        <td>
+                            <span class="badge
+                                    @(booking.BookingStatus == "Confirmed" ? "bg-success" :
+                                                                booking.BookingStatus == "Completed" ? "bg-info" :
+                                                                booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
+                        @booking.BookingStatus
+                    </span>
+                </td>
+            </tr>
+                        }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center">You have no booking history.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<CarRentalSystem.Models.Notification>
+
+@{
+    ViewData["Title"] = "My Notifications";
+}
+
+<h1>My Notifications</h1>
+<p>Here are the latest updates and messages regarding your account and bookings.</p>
+<hr />
+
+<div class="list-group">
+    @if (Model.Any())
+    {
+        @foreach (var notification in Model)
+        {
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-1">@notification.Message</p>
+                    <small class="text-muted">@notification.DateSent.ToString("g")</small>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center p-5">
+            <p class="lead">You have no notifications.</p>
+        </div>
+    }
+</div>

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using CarRentalSystem.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,6 +22,7 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddScoped<SiteSettingsService>();
+builder.Services.AddScoped<NotificationService>();
 
 // For accessing HttpContext from other services
 builder.Services.AddHttpContextAccessor();

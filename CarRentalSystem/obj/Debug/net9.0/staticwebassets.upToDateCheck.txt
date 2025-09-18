@@ -1,5 +1,7 @@
+wwwroot\css\Adminlayout.css
 wwwroot\css\Browse Cars.css
 wwwroot\css\Home_Page.css
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\cars\13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg
 wwwroot\images\cars\333.jpeg
@@ -18,6 +20,7 @@ wwwroot\images\cars\carousel2.png
 wwwroot\images\cars\carousel4.png
 wwwroot\images\cars\Contact-Us-page-background.png
 wwwroot\images\cars\f3afdb34-59b9-43d1-ad62-66e0803b5974_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg
+wwwroot\images\cars\fae19414-a508-4662-a5a1-34ed0c508260_3939244.jpg
 wwwroot\images\cars\Thumbs.db
 wwwroot\images\cars\Velocity Car Rentals-logo.png
 wwwroot\js\site.js
@@ -82,68 +85,68 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\Thumbs.db
-wwwroot\css\site.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\css\Browse Cars.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\css\Home_Page.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\LICENSE.md
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\Danuharan\Desktop\Car11-09-2025\car-rental-Turn6\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\css\Adminlayout.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\css\Browse Cars.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\css\Home_Page.css
+C:\Users\SHATHULAX\Desktop\New folder (3)\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt

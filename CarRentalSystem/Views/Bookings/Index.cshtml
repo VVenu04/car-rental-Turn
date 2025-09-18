@@ -6,38 +6,61 @@
 
 <h1>All Bookings</h1>
 
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
 <table class="table table-striped table-hover">
     <thead class="table-dark">
         <tr>
             <th>Customer</th>
             <th>Car</th>
             <th>Pickup Date</th>
+            <th>Pickup Location</th>
             <th>Return Date</th>
+            <th>Drop-off Location</th>
             <th>Total Cost</th>
             <th>Status</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
+                <td>@Html.DisplayFor(modelItem => item.Customer.FullName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Car.CarName)</td>
+                <td>@item.PickupDate.ToShortDateString()</td>
+                <td>@item.PickupLocation</td>
+                <td>@item.ReturnDate.ToShortDateString()</td>
+                <td>@item.ReturnLocation</td>
+                <td>@item.TotalCost.ToString("C")</td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Customer.FullName)
+                    <span class="badge @(item.BookingStatus == "Confirmed" ? "bg-success" : item.BookingStatus == "Completed" ? "bg-info" : item.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
+                        @item.BookingStatus
+                    </span>
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Car.CarName)
-                </td>
-                <td>
-                    @item.PickupDate.ToShortDateString()
-                </td>
-                <td>
-                    @item.ReturnDate.ToShortDateString()
-                </td>
-                <td>
-                    $@item.TotalCost.ToString("F2")
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BookingStatus)
+                    @if (item.BookingStatus == "Confirmed" && item.PickupDate > DateTime.Today)
+                    {
+                        <form asp-controller="Bookings" asp-action="Cancel" asp-route-id="@item.BookingID" method="post" onsubmit="return confirm('Are you sure you want to cancel this booking?');">
+                            <button type="submit" class="btn btn-sm btn-danger">Cancel</button>
+                        </form>
+                    }
                 </td>
             </tr>
         }

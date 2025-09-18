@@ -220,5 +220,56 @@ namespace CarRentalSystem.Controllers
 
             return View(booking);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Cancel(int id)
+        {
+            var userId = HttpContext.Session.GetInt32("UserID");
+            var userRole = HttpContext.Session.GetString("Role");
+
+            if (userId == null)
+            {
+                return RedirectToAction("Login", "Account"); // Not logged in
+            }
+
+            var booking = await _context.Bookings.FindAsync(id);
+
+            if (booking == null)
+            {
+                return NotFound();
+            }
+
+            // Security Check: Ensure the user is an admin OR owns the booking
+            if (userRole != "Admin" && booking.CustomerID != userId)
+            {
+                return Unauthorized();
+            }
+
+            // Business Rule: Can only cancel if the pickup date is in the future
+            if (booking.PickupDate <= DateTime.Today)
+            {
+                TempData["Error"] = "This booking cannot be cancelled as the pickup date is today or in the past.";
+            }
+            else if (booking.BookingStatus != "Confirmed")
+            {
+                TempData["Error"] = "Only 'Confirmed' bookings can be cancelled.";
+            }
+            else
+            {
+                booking.BookingStatus = "Cancelled";
+                _context.Update(booking);
+                await _context.SaveChangesAsync();
+                TempData["Success"] = "Booking has been successfully cancelled.";
+            }
+
+            // Redirect back to the appropriate page
+            if (userRole == "Admin")
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            return RedirectToAction("Profile", "Account");
+        }
     }
 }

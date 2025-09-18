@@ -16,6 +16,7 @@ namespace CarRentalSystem.Data
         public DbSet<SiteSetting> SiteSettings { get; set; }
 
         public DbSet<CarLocation> CarLocations { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

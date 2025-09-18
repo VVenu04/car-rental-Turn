@@ -1,21 +1,13 @@
 ﻿@model IEnumerable<CarRentalSystem.Models.User>
-
 @{
-    ViewData["Title"] = "Manage Customers";
+    ViewData["Title"] = "View Customers";
+    Layout = "_AdminLayout";
 }
-
-<h1>Manage Customers</h1>
-<p>Here is a list of all registered customers in the system.</p>
-
-<table class="table table-striped table-hover">
-    <thead class="table-dark">
-        <tr>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-            <th>Date Joined</th>
-            <th></th>
-        </tr>
+<h1>View Customers</h1>
+<p>Manage all registered customers.</p>
+<table class="table table-striped table-hover bg-white shadow-sm">
+    <thead class="table-light">
+        <tr><th>Full Name</th><th>Email</th><th>Status</th><th>Actions</th></tr>
     </thead>
     <tbody>
         @foreach (var user in Model)
@@ -23,12 +15,27 @@
             <tr>
                 <td>@user.FullName</td>
                 <td>@user.Email</td>
-                <td>@user.PhoneNumber</td>
-                <td>@user.DateJoined.ToShortDateString()</td>
-                <td class="text-end">
-                    <a asp-action="CustomerDetails" asp-route-id="@user.UserID" class="btn btn-sm btn-info">
-                        <i class="bi bi-person-lines-fill"></i> View Details
-                    </a>
+                <td>
+                    @if (user.IsActive)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+
+                        <span class="badge bg-danger">Inactive</span>
+                    }
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-sm btn-outline-secondary" asp-action="CustomerDetails" asp-route-id="@user.UserID">Details</a>
+                        <a class="btn btn-sm btn-outline-primary" asp-action="SendNotification" asp-route-id="@user.UserID">Notify</a>
+                        <form asp-action="ToggleUserStatus" asp-route-id="@user.UserID" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-sm @(user.IsActive ? "btn-outline-warning" : "btn-outline-success")">
+                                @(user.IsActive ? "Deactivate" : "Activate")
+                            </button>
+                        </form>
+                    </div>
                 </td>
             </tr>
         }
