@@ -4,18 +4,25 @@
     ViewData["Title"] = Model.CarName + " Details";
 }
 
-<div>
-    <h1>@Model.CarName (@Model.CarModel)</h1>
-    <hr />
-    <div class="row">
-        <div class="col-md-6">
+<div class="text-center text-light mb-4">
+    <h1 class="display-4 fw-bold">@Model.CarName (@Model.CarModel)</h1>
+    <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="glass-effect p-3 rounded-3">
             <img src="@Url.Content(Model.ImageUrl)" alt="@Model.CarName" class="img-fluid rounded" />
         </div>
-        <div class="col-md-6">
-            <p>@Model.Description</p>
-            <ul class="list-group">
+    </div>
+    <div class="col-md-6">
+        <div class="glass-effect p-4 rounded-3 text-light h-100 d-flex flex-column">
+            <h3 class="fw-bold">Details & Specifications</h3>
+            <p class="text-white-50">@Model.Description</p>
+
+            <ul class="list-group list-group-flush my-3">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Daily Rate
+                    <strong>Daily Rate</strong>
                     <span class="badge bg-primary rounded-pill">$@Model.DailyRate.ToString("F2")</span>
                 </li>
                 <li class="list-group-item"><strong>Type:</strong> @Model.CarType</li>
@@ -23,25 +30,24 @@
                 <li class="list-group-item"><strong>Fuel:</strong> @Model.FuelType</li>
                 <li class="list-group-item"><strong>Seats:</strong> @Model.SeatingCapacity</li>
                 <li class="list-group-item"><strong>Mileage:</strong> @Model.Mileage?.ToString("N0") km</li>
-
                 <li class="list-group-item">
                     <strong>Availability:</strong>
                     @if (Model.IsAvailable)
                     {
-                        <span class="text-success">Available</span>
+                        <span class="text-success fw-bold">Available</span>
                     }
                     else
                     {
-                        <span class="text-danger">Not Available</span>
+                        <span class="text-danger fw-bold">Not Available</span>
                     }
                 </li>
             </ul>
-            <div class="mt-4">
+            <div class="mt-auto">
                 @if (Model.IsAvailable)
                 {
-                    <a asp-controller="Bookings" asp-action="Create" asp-route-carId="@Model.CarID" class="btn btn-success btn-lg">Book This Car</a>
+                    <a asp-controller="Bookings" asp-action="Create" asp-route-carId="@Model.CarID" class="btn btn-success btn-lg w-100 mb-2">Book This Car</a>
                 }
-                <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+                <a asp-action="Index" class="btn btn-secondary btn-lg w-100">Back to List</a>
             </div>
         </div>
     </div>

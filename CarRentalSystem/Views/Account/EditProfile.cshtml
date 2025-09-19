@@ -5,9 +5,11 @@
 }
 
 <div class="row justify-content-center">
-    <div class="col-md-6">
-        <h2>Edit Profile</h2>
-        <hr />
+    <div class="col-md-6 glass-effect p-4 rounded-3 text-light">
+
+        <h2 class="text-center">Edit Profile</h2>
+        <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+
         <form asp-action="EditProfile">
             <div asp-validation-summary="All" class="text-danger"></div>
             <input type="hidden" asp-for="UserID" />
@@ -25,7 +27,7 @@
             <div class="form-group mb-3">
                 <label for="newPassword" class="control-label">New Password (optional)</label>
                 <input name="newPassword" type="password" class="form-control" />
-                <small class="form-text text-muted">Leave blank to keep your current password.</small>
+                <small class="form-text text-white-50">Leave blank to keep your current password.</small>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save Changes" class="btn btn-primary" />

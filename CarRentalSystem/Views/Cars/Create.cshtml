@@ -4,10 +4,13 @@
     ViewData["Title"] = "Create Car";
 }
 
-<h1>Add New Car</h1>
-<hr />
-<div class="row">
-    <div class="col-md-8">
+<div class= "text-center text-light mb-4">
+    <h1>Add New Car</h1>
+    <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8 glass-effect p-4 rounded-3 text-light">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="row">
@@ -67,7 +70,6 @@
                 <textarea asp-for="Description" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label asp-for="PickupLocationsString" class="control-label"></label>
@@ -80,7 +82,6 @@
                     <span asp-validation-for="DropoffLocationsString" class="text-danger"></span>
                 </div>
             </div>
-
             <div class="mb-3">
                 <label for="imageFile" class="control-label">Car Image</label>
                 <input name="imageFile" type="file" class="form-control" />

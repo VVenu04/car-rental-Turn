@@ -1,6 +1,6 @@
 /* General Body & Font Styling */
 body {
-    /* --- SITE-WIDE BACKGROUND STYLES for all pages--- */
+    /* This is the Background image initialy set to all pages */
     background-image: url('../images/cars/BG.jpg');
     background-size: cover;
     background-position: center;
@@ -38,18 +38,6 @@ main {
 .nav-link {
     font-weight: 500;
 }
-
-/* Custom button styling for navbar */
-.navbar .btn-primary {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    transition: background-color 0.3s ease;
-}
-
-    .navbar .btn-primary:hover {
-        background-color: #0b5ed7;
-        border-color: #0a58ca;
-    }
 
 /* Footer Styling */
 footer a {
@@ -188,46 +176,10 @@ footer a {
     }
 
 
-
-
-/* Styling for the Admin Dashboard background */
-.admin-dashboard-background {
-    background-image: url('/images/cars/admin-dashboard-bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background static while scrolling */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    min-height: 100vh; /* Ensure it covers the full viewport height */
+/* Fix for the date picker icon color in a dark theme (this css for ........Booking//Create.cshtml) */
+.glass-effect .form-control::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
-
-
-/* Glassmorphism effect for buttons/action links */
-.btn.glass-effect {
-    background: rgba(255, 255, 255, 0.15); /* Slightly less transparent for visibility */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #fff !important; /* Ensure text is white */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out; /* Smooth transitions */
-}
-
-    .btn.glass-effect:hover {
-        background: rgba(255, 255, 255, 0.25); /* Increase transparency on hover */
-        border-color: rgba(255, 255, 255, 0.5);
-        transform: scale(1.03); /* Slight zoom on hover */
-    }
-
-/* Ensure headings/text directly on the background are white and have shadow for readability */
-.admin-dashboard-background h1,
-.admin-dashboard-background h3,
-.admin-dashboard-background .lead {
-    color: #fff !important;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
-
-
 
 
 

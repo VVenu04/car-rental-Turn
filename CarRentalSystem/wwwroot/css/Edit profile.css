@@ -1,0 +1,19 @@
+﻿/* Styling for form inputs in the Edit profile inside any .glass-effect container */
+.glass-effect .form-control {
+    background-color: rgba(0, 0, 0, 0.2); /* For the dark transparent background */
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff; /* For the White text */
+}
+
+    /* This style for when a user clicks into the text box */
+    .glass-effect .form-control:focus {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-color: #0d6efd; /* Highlight with primary color */
+        color: #ffffff;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    /* It's help to make the placeholder text light gray */
+    .glass-effect .form-control::placeholder {
+        color: #adb5bd;
+    }
