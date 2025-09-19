@@ -73,7 +73,6 @@ namespace CarRentalSystem.Controllers
 
             return View(booking);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CarID,PickupDate,ReturnDate,SpecialRequirements,PickupLocation,ReturnLocation")] Booking booking)
@@ -89,9 +88,22 @@ namespace CarRentalSystem.Controllers
             ModelState.Remove("Customer");
             ModelState.Remove("Car");
 
-            if (booking.ReturnDate <= booking.PickupDate)
+            // --- FIX: ADDING THE OVERLAP CHECK BACK FOR IMMEDIATE FEEDBACK ---
+            var isOverlapping = await _context.Bookings
+                .AnyAsync(b => b.CarID == booking.CarID &&
+                               b.BookingStatus != "Cancelled" &&
+                               booking.PickupDate <= b.ReturnDate &&
+                               booking.ReturnDate >= b.PickupDate);
+
+            if (isOverlapping)
             {
-                ModelState.AddModelError("ReturnDate", "Return date must be after the pickup date.");
+                ModelState.AddModelError("", "This car is not available for the selected dates. Please choose a different date range.");
+            }
+            // --- END OF FIX ---
+
+            if (booking.ReturnDate < booking.PickupDate)
+            {
+                ModelState.AddModelError("ReturnDate", "Return date cannot be before the pickup date.");
             }
 
             if (ModelState.IsValid)
@@ -101,6 +113,18 @@ namespace CarRentalSystem.Controllers
                 HttpContext.Session.SetString("TemporaryBooking", bookingJson);
                 return RedirectToAction(nameof(BookingSummary));
             }
+
+            // If validation fails, we need to repopulate the dropdowns before returning the view
+            var pickupLocations = await _context.CarLocations
+                .Where(l => l.CarId == car.CarID && l.LocationType == "Pickup")
+                .Select(l => l.LocationName)
+                .ToListAsync();
+            var dropoffLocations = await _context.CarLocations
+                .Where(l => l.CarId == car.CarID && l.LocationType == "Dropoff")
+                .Select(l => l.LocationName)
+                .ToListAsync();
+            ViewBag.PickupLocations = new SelectList(pickupLocations);
+            ViewBag.DropoffLocations = new SelectList(dropoffLocations);
 
             return View(booking);
         }
@@ -118,10 +142,9 @@ namespace CarRentalSystem.Controllers
             return View(booking);
         }
 
-        // NEW ACTION: Handles the choice from the summary page
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult SubmitSummary(string paymentMethod)
+        public async Task<IActionResult> SubmitSummary(string paymentMethod)
         {
             var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
             if (string.IsNullOrEmpty(bookingJson))
@@ -132,19 +155,29 @@ namespace CarRentalSystem.Controllers
             var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
             booking.PaymentMethod = paymentMethod;
 
+            // --- CRITICAL FIX: Perform the overlap check right before saving ---
+            var isOverlapping = await _context.Bookings
+                .AnyAsync(b => b.CarID == booking.CarID &&
+                               b.BookingStatus != "Cancelled" &&
+                               booking.PickupDate <= b.ReturnDate && // Correct logic: New start is before or same as existing end
+                               booking.ReturnDate >= b.PickupDate); // Correct logic: New end is after or same as existing start
+
+            if (isOverlapping)
+            {
+                TempData["ErrorMessage"] = "Sorry, this car has just been booked for the selected dates by another user. Please try different dates.";
+                return RedirectToAction("Index", "Cars");
+            }
+            // --- END OF FIX ---
+
             if (paymentMethod == "PayOnPickup")
             {
-                // --- FIX ---
-                // Tell EF Core that the deserialized Car object already exists in the DB.
                 _context.Entry(booking.Car).State = EntityState.Unchanged;
-                // --- END FIX ---
-
                 booking.BookingStatus = "Confirmed";
                 booking.PaymentStatus = "Due at Pickup";
                 booking.BookingDate = DateTime.Now;
 
                 _context.Add(booking);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync(); // Changed to async
 
                 HttpContext.Session.Remove("TemporaryBooking");
                 TempData["BookingId"] = booking.BookingID;
@@ -157,7 +190,6 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction(nameof(Payment));
             }
         }
-
         public IActionResult Payment()
         {
             var bookingJson = HttpContext.Session.GetString("TemporaryBooking");
@@ -182,11 +214,21 @@ namespace CarRentalSystem.Controllers
 
             var booking = JsonSerializer.Deserialize<Booking>(bookingJson);
 
-            // --- FIX ---
-            // We need the same fix here for the "Pay Now" path.
-            _context.Entry(booking.Car).State = EntityState.Unchanged;
-            // --- END FIX ---
+            // --- CRITICAL FIX: Perform the overlap check right before saving ---
+            var isOverlapping = await _context.Bookings
+                .AnyAsync(b => b.CarID == booking.CarID &&
+                               b.BookingStatus != "Cancelled" &&
+                               booking.PickupDate <= b.ReturnDate &&
+                               booking.ReturnDate >= b.PickupDate);
 
+            if (isOverlapping)
+            {
+                TempData["ErrorMessage"] = "Sorry, this car has just been booked for the selected dates by another user. Please try different dates.";
+                return RedirectToAction("Index", "Cars");
+            }
+            // --- END OF FIX ---
+
+            _context.Entry(booking.Car).State = EntityState.Unchanged;
             booking.BookingStatus = "Confirmed";
             booking.PaymentStatus = "Paid";
             booking.TransactionId = "FAKE_TRAN_" + Guid.NewGuid().ToString();

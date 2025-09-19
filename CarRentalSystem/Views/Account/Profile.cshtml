@@ -41,51 +41,52 @@
             <div class="alert alert-danger">@TempData["Error"]</div>
         }
 
-        <h4 class="text-light mt-4 mt-md-0">Booking History</h4>
-        <div class="table-responsive glass-effect p-3 rounded-3">
-             <table class="table table-striped table-hover text-light" style="--bs-table-striped-bg: rgba(255, 255, 255, 0.05); --bs-table-hover-bg: rgba(255, 255, 255, 0.1);">
-                <thead class="table-dark" style="--bs-table-bg: transparent;">
-                    <tr>
-                        <th>Car</th>
-                        <th>Pickup Date</th>
-                        <th>Pickup Location</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @if (Model.Bookings != null && Model.Bookings.Any())
-                    {
-                        @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
-                        {
-                            <tr>
-                                <td>@booking.Car.CarName</td>
-                                <td>@booking.PickupDate.ToShortDateString()</td>
-                                <td>@booking.PickupLocation</td>
-                                <td>
-                                    <span class="badge @(booking.BookingStatus == "Confirmed" ? "bg-success" : booking.BookingStatus == "Completed" ? "bg-info" : booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
-                                        @booking.BookingStatus
-                                    </span>
-                                </td>
-                                <td>
-                                    @if (booking.BookingStatus == "Confirmed" && booking.PickupDate > DateTime.Today)
-                                    {
-                                        <form asp-controller="Bookings" asp-action="Cancel" asp-route-id="@booking.BookingID" method="post" onsubmit="return confirm('Are you sure you want to cancel this booking?');">
-                                            <button type="submit" class="btn btn-sm btn-danger">Cancel</button>
-                                        </form>
-                                    }
-                                </td>
-                            </tr>
-                        }
-                    }
-                    else
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Car</th>
+                    <th>Pickup Date</th>
+                    <th>Pickup Location</th>
+                    <th>Return Date</th>
+                    <th>Drop-off Location</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Bookings.Any())
+                {
+                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
                     {
                         <tr>
-                            <td colspan="5" class="text-center">You have no booking history.</td>
+                            <td>@booking.Car.CarName</td>
+                            <td>@booking.PickupDate.ToShortDateString()</td>
+                            <td>@booking.PickupLocation</td>
+                            <td>@booking.ReturnDate.ToShortDateString()</td>
+                            <td>@booking.ReturnLocation</td>
+                            <td>
+                                <span class="badge @(booking.BookingStatus == "Confirmed" ? "bg-success" : booking.BookingStatus == "Completed" ? "bg-info" : booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
+                                    @booking.BookingStatus
+                                </span>
+                            </td>
+                            <td>
+                                @if (booking.BookingStatus == "Confirmed" && booking.PickupDate > DateTime.Today)
+                                {
+                                    <form asp-controller="Bookings" asp-action="Cancel" asp-route-id="@booking.BookingID" method="post" onsubmit="return confirm('Are you sure you want to cancel this booking?');">
+                                        <button type="submit" class="btn btn-sm btn-danger">Cancel</button>
+                                    </form>
+                                }
+                            </td>
                         </tr>
                     }
-                </tbody>
-            </table>
-        </div>
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center">You have no booking history.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

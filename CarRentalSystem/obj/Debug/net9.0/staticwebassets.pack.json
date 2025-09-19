@@ -1,271 +1,391 @@
 {
   "Files": [
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CarRentalSystem.bundle.scp.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\CarRentalSystem.bundle.scp.css",
       "PackagePath": "staticwebassets\\CarRentalSystem.mypspy9wb9.bundle.scp.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\Thumbs.db",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\Thumbs.db",
       "PackagePath": "staticwebassets\\Thumbs.db"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\site.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Admin Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Admin Dashboard.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Adminlayout.css",
+      "PackagePath": "staticwebassets\\css\\Adminlayout.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Browse Cars.css",
+      "PackagePath": "staticwebassets\\css\\Browse Cars.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Car Details.css",
+      "PackagePath": "staticwebassets\\css\\Car Details.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Edit profile.css",
+      "PackagePath": "staticwebassets\\css\\Edit profile.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Home_Page.css",
+      "PackagePath": "staticwebassets\\css\\Home_Page.css"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\favicon.ico",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\2f108f83-1d1f-469c-b4b5-913e7ae28b2c_1589785b-9d8e-4807-b39c-9afd63f9eb17_download (11).jpeg",
-      "PackagePath": "staticwebassets\\images\\cars\\2f108f83-1d1f-469c-b4b5-913e7ae28b2c_1589785b-9d8e-4807-b39c-9afd63f9eb17_download (11).jpeg"
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Thumbs.db",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\24ece24a-72b1-4d6a-a750-a9eb639cf241_download.webp",
+      "PackagePath": "staticwebassets\\images\\cars\\24ece24a-72b1-4d6a-a750-a9eb639cf241_download.webp"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png",
+      "PackagePath": "staticwebassets\\images\\cars\\2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp",
+      "PackagePath": "staticwebassets\\images\\cars\\2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\333.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\333.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\4444.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\4444.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\4f608eeb-b081-48a5-ab7b-5a8edc6a25e0_D-8WJU7I-scaled.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\4f608eeb-b081-48a5-ab7b-5a8edc6a25e0_D-8WJU7I-scaled.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\55.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\55.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\5695f348-e15d-464e-a347-4e5d4f73b575_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\5695f348-e15d-464e-a347-4e5d4f73b575_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\663d73a1-d12a-42fd-bb38-95727f2081a2_D-8WJU7I-scaled.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\663d73a1-d12a-42fd-bb38-95727f2081a2_D-8WJU7I-scaled.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\77234ca0-3416-4395-a1af-8e9ab74b81a7_Gemini_Generated_Image_5eu9az5eu9az5eu9.png",
+      "PackagePath": "staticwebassets\\images\\cars\\77234ca0-3416-4395-a1af-8e9ab74b81a7_Gemini_Generated_Image_5eu9az5eu9az5eu9.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\BG.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\BG.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Bgimage for login.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\Bgimage for login.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Browse Car page BG.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\Browse Car page BG.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Contact-Us-page-background.png",
+      "PackagePath": "staticwebassets\\images\\cars\\Contact-Us-page-background.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Thumbs.db",
       "PackagePath": "staticwebassets\\images\\cars\\Thumbs.db"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\js\\site.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\Velocity Car Rentals-logo.png",
+      "PackagePath": "staticwebassets\\images\\cars\\Velocity Car Rentals-logo.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\admin-dashboard-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\admin-dashboard-bg.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\b7216b9a-3002-4d0d-85f5-361375659f28_download.webp",
+      "PackagePath": "staticwebassets\\images\\cars\\b7216b9a-3002-4d0d-85f5-361375659f28_download.webp"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\c1d048ab-d93e-4e2b-8242-4035223bf4e0_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\c1d048ab-d93e-4e2b-8242-4035223bf4e0_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\carousel2.png",
+      "PackagePath": "staticwebassets\\images\\cars\\carousel2.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\carousel4.png",
+      "PackagePath": "staticwebassets\\images\\cars\\carousel4.png"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\f3afdb34-59b9-43d1-ad62-66e0803b5974_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\f3afdb34-59b9-43d1-ad62-66e0803b5974_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\fae19414-a508-4662-a5a1-34ed0c508260_3939244.jpg",
+      "PackagePath": "staticwebassets\\images\\cars\\fae19414-a508-4662-a5a1-34ed0c508260_3939244.jpg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\fbb0bfdb-c0a3-48a9-b878-87ee45ee8e7f_D-8WJU7I-scaled.jpeg",
+      "PackagePath": "staticwebassets\\images\\cars\\fbb0bfdb-c0a3-48a9-b878-87ee45ee8e7f_D-8WJU7I-scaled.jpeg"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\images\\cars\\fd9b2eb1-aa2a-42ad-b91c-f83efa734c78_download.webp",
+      "PackagePath": "staticwebassets\\images\\cars\\fd9b2eb1-aa2a-42ad-b91c-f83efa734c78_download.webp"
+    },
+    {
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "Z:\\New folder\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "Z:\\4\\car-rental-Turn\\CarRentalSystem\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
