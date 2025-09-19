@@ -3,31 +3,39 @@
 @{
     ViewData["Title"] = "Delete Car";
 }
+<div class="text-center text-light mb-3">
+    <h1>Delete Confirmation</h1>
+    <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+</div>
 
-<h1>Delete Confirmation</h1>
+<div class="row justify-content-center">
+    <div class="col-md-8 glass-effect p-4 p-md-5 rounded-3 text-light">
 
-<h3 class="text-danger">Are you sure you want to delete this car?</h3>
-<div>
-    <h4>@Model.CarName</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CarModel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CarModel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DailyRate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DailyRate)
-        </dd>
-    </dl>
+        <div class="alert alert-danger fw-bold" role="alert">
+            Are you sure you want to delete this car? This action cannot be undone.
+        </div>
 
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="CarID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+        <h4 class="display-6 fw-bold">@Model.CarName</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.CarModel)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.CarModel)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.DailyRate)
+            </dt>
+            <dd class="col-sm-9">
+                @Model.DailyRate.ToString("C")
+            </dd>
+        </dl>
+
+        <form asp-action="Delete" class="mt-4">
+            <input type="hidden" asp-for="CarID" />
+            <input type="submit" value="Delete Forever" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </form>
+    </div>
 </div>

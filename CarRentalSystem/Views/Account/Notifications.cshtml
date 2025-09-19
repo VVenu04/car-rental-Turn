@@ -3,10 +3,13 @@
 @{
     ViewData["Title"] = "My Notifications";
 }
+<div class="text-center text-light mb-4">
+    <h2 class="display-4">My Notifications</h2>
+    <p>Here are the latest updates and messages regarding your account and bookings</p>
+    <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+</div>
 
-<h1>My Notifications</h1>
-<p>Here are the latest updates and messages regarding your account and bookings.</p>
-<hr />
+
 
 <div class="list-group">
     @if (Model.Any())
@@ -23,8 +26,12 @@
     }
     else
     {
-        <div class="text-center p-5">
-            <p class="lead">You have no notifications.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="glass-effect rounded-3 text-center p-5 text-light mb-4">
+                    <p class="lead mb-0">You have no notifications</p>
+                </div>
+            </div>
         </div>
     }
 </div>

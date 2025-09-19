@@ -4,11 +4,14 @@
     ViewData["Title"] = "Book a Car";
 }
 
-<h1>Book: @Model.Car.CarName</h1>
-<p>Complete the form below to finalize your booking.</p>
-<hr />
+<div class="text-center text-light mb-4">
+    <h1>Book: @Model.Car.CarName</h1>
+    <p>Complete the form below to finalize your booking</p>
+</div>
+
+<hr style="border-color: rgba(255, 255, 255, 0.2);" />
 <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-7 text-light glass-effect p-4 rounded-3">
         <form asp-action="Create">
             <div asp-validation-summary="All" class="text-danger"></div>
             <input type="hidden" asp-for="CarID" />
@@ -53,12 +56,12 @@
         </form>
     </div>
     <div class="col-md-5">
-        <div class="card">
+        <div class="card glass-effect">
             <img src="@Url.Content(Model.Car.ImageUrl)" class="card-img-top" alt="@Model.Car.CarName">
             <div class="card-body">
                 <h5 class="card-title">@Model.Car.CarName</h5>
                 <p class="card-text">Daily Rate: <strong>$@Model.Car.DailyRate.ToString("F2")</strong></p>
-                <p class="card-text text-muted">A preliminary cost will be calculated upon submission.</p>
+                <p class="card-text text-white-50">A preliminary cost will be calculated upon submission.</p>
             </div>
         </div>
     </div>

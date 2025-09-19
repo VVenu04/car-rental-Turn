@@ -1,0 +1,11 @@
+﻿/* Styling for list groups inside a glass-effect panel */
+.glass-effect .list-group-item {
+    background-color: transparent; /* This help to makes each item transparent */
+    color: #f8f9fa; /* Sets the text color to light */
+    border-color: rgba(255, 255, 255, 0.2); /* A subtle border between items */
+}
+
+    /* hel to ensure badges inside the list have good contrast */
+    .glass-effect .list-group-item .badge {
+        font-size: 1rem;
+    }
