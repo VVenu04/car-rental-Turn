@@ -17,11 +17,18 @@ namespace CarRentalSystem.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // Fetch a few available cars to feature on the homepage
+            // Fetch distinct options for the filter dropdowns on the home page
+            ViewBag.CarTypes = await _context.Cars.Select(c => c.CarType).Distinct().OrderBy(t => t).ToListAsync();
+            ViewBag.Transmissions = await _context.Cars.Select(c => c.Transmission).Distinct().OrderBy(t => t).ToListAsync();
+            ViewBag.FuelTypes = await _context.Cars.Select(c => c.FuelType).Distinct().OrderBy(t => t).ToListAsync();
+
+            // Fetch featured cars to display
             var featuredCars = await _context.Cars
                 .Where(c => c.IsAvailable)
+                .OrderByDescending(c => c.DateAdded)
                 .Take(3)
                 .ToListAsync();
+
             return View(featuredCars);
         }
 

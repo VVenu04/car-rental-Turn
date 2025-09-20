@@ -22,17 +22,44 @@ namespace CarRentalSystem.Controllers
             ViewBag.FuelTypeOptions = new List<string> { "Petrol", "Diesel", "Super Petrol", "Super Diesel" };
         }
 
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string searchString, string carType, string transmission, string fuelType, int? seatingCapacity)
         {
-            ViewData["CurrentFilter"] = searchString;
-            var cars = from c in _context.Cars
-                       select c;
+            // --- Pass filter options to the view for the dropdowns ---
+            ViewBag.CarTypes = await _context.Cars.Select(c => c.CarType).Distinct().OrderBy(t => t).ToListAsync();
+            ViewBag.Transmissions = await _context.Cars.Select(c => c.Transmission).Distinct().OrderBy(t => t).ToListAsync();
+            ViewBag.FuelTypes = await _context.Cars.Select(c => c.FuelType).Distinct().OrderBy(t => t).ToListAsync();
+
+            // --- Pass current filter values back to the view to keep them selected ---
+            ViewData["CurrentSearch"] = searchString;
+            ViewData["CurrentCarType"] = carType;
+            ViewData["CurrentTransmission"] = transmission;
+            ViewData["CurrentFuelType"] = fuelType;
+            ViewData["CurrentSeatingCapacity"] = seatingCapacity;
+
+            // --- Build the database query ---
+            var cars = _context.Cars.AsQueryable();
+
             if (!String.IsNullOrEmpty(searchString))
             {
-                cars = cars.Where(c => c.CarName.Contains(searchString)
-                                    || c.CarModel.Contains(searchString)
-                                    || c.CarType.Contains(searchString));
+                cars = cars.Where(c => c.CarName.Contains(searchString) || c.CarModel.Contains(searchString));
             }
+            if (!String.IsNullOrEmpty(carType))
+            {
+                cars = cars.Where(c => c.CarType == carType);
+            }
+            if (!String.IsNullOrEmpty(transmission))
+            {
+                cars = cars.Where(c => c.Transmission == transmission);
+            }
+            if (!String.IsNullOrEmpty(fuelType))
+            {
+                cars = cars.Where(c => c.FuelType == fuelType);
+            }
+            if (seatingCapacity.HasValue)
+            {
+                cars = cars.Where(c => c.SeatingCapacity >= seatingCapacity.Value);
+            }
+
             return View(await cars.ToListAsync());
         }
 
