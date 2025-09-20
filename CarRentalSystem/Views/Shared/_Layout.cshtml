@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="~/css/Admin Dashboard.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Edit profile.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Car Details.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Manage Contact Info.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -40,6 +41,11 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 
+                    @* fs-5: This is a Bootstrap class that makes the font size bigger 
+                       nav-link-custom: This is a custom CSS class in our stylesheet that adds our unique styles (like bolding, text-shadow)
+                       Active State Logic (@( ... ? "active" : "")): The active class is what highlights the current page in our menu by changing blue letters with underline.
+                    *@
+
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["Action"]?.ToString() == "Index" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -50,6 +56,7 @@
                         <li class="nav-item">
                             <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Action"]?.ToString() == "Contact" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
+                        <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Action"]?.ToString() == "WhyChooseUs" ? "active" : "")" asp-controller="Home" asp-action="WhyChooseUs">Why Choose Us</a>
                     </ul>
                     <ul class="navbar-nav">
                         @{
@@ -190,6 +197,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Manage Contact Info.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+
+
 </body>
 </html>

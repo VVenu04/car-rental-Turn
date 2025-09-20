@@ -4,9 +4,48 @@
     ViewData["Title"] = "All Bookings";
 }
 
+@* Below for the side bar in the Admin side page ( not include in the separate admin side _Admin layout.cshtml file (that was removed ) ) *@
+
+<div class="page-content-wrapper">
+    <button class="btn glass-effect sidebar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminSidebar" aria-controls="adminSidebar">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="adminSidebar" aria-labelledby="adminSidebarLabel" style="width: 280px;">
+        <div class="offcanvas-header border-bottom border-secondary justify-content-center">
+            <h4 class="offcanvas-title" id="adminSidebarLabel">Action Center</h4>
+            <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-white-50">Manage your system with these quick links.</p>
+            <div class="nav flex-column offcanvas-nav">
+                <a href="@Url.Action("Index", "Cars")" class="nav-link">
+                    <i class="bi bi-car-front-fill"></i> Manage Cars
+                </a>
+                <a href="@Url.Action("Index", "Bookings")" class="nav-link">
+                    <i class="bi bi-journal-text"></i> View All Bookings
+                </a>
+                <a href="@Url.Action("ViewCustomers", "Admin")" class="nav-link">
+                    <i class="bi bi-people-fill"></i> View Customers
+                </a>
+                <a href="@Url.Action("ManageContactInfo", "Admin")" class="nav-link">
+                    <i class="bi bi-info-circle-fill"></i> Manage Site Info
+                </a>
+                <a href="@Url.Action("Dashboard", "Admin")" class="nav-link">
+                    <i class="bi bi-speedometer2"></i> Back To DashBoard
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div class="text-center text-light mb-4">
     <h2 class="display-4 fw-bold">All Bookings</h2>
 </div>
+
+
 
 @if (TempData["Success"] != null)
 {

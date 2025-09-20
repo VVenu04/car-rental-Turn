@@ -1,0 +1,14 @@
+﻿b /* A new class to add a sky-blue tint to any glass panel */
+.glass-sky-blue {
+    background: rgba(135, 206, 235, 0.15); /* A semi-transparent sky blue */
+    border-color: rgba(135, 206, 235, 0.3);
+}
+
+/* A new, class for a smooth zoom-on-hover effect */
+.zoom-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .zoom-on-hover:hover {
+        transform: scale(1.03); /* this can hel to zooms the element to 103% */
+    }

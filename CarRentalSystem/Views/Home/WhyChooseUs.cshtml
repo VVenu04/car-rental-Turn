@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Why Choose Us?";
+}
+
+<div class="container py-5">
+
+    <div class="text-center text-light mb-5">
+        <h1 class="display-4 fw-bold dashboard-title-text">Why Choose DriveEase?</h1>
+        <p class="lead text-white-50">
+            We are dedicated to providing you with a seamless, affordable, and superior car rental experience.
+        </p>
+        <hr class="w-50 mx-auto" style="border-color: rgba(255,255,255,0.2);" />
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card glass-effect zoom-on-hover text-light text-center h-100 p-4">
+                <div class="card-body">
+                    <i class="bi bi-car-front-fill text-primary display-3 mb-3"></i>
+                    <h3 class="card-title fw-bold">Wide Vehicle Selection</h3>
+                    <p class="card-text text-white-50">
+                        From compact cars for city driving to spacious SUVs for family trips, we have a diverse fleet to meet your every need.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card glass-effect zoom-on-hover text-light text-center h-100 p-4">
+                <div class="card-body">
+                    <i class="bi bi-tags-fill text-success display-3 mb-3"></i>
+                    <h3 class="card-title fw-bold">Transparent Pricing</h3>
+                    <p class="card-text text-white-50">
+                        No hidden fees. Our pricing is straightforward and competitive, ensuring you get the best value for your money every time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card glass-effect zoom-on-hover text-light text-center h-100 p-4">
+                <div class="card-body">
+                    <i class="bi bi-calendar2-check-fill text-warning display-3 mb-3"></i>
+                    <h3 class="card-title fw-bold">Simple & Flexible Booking</h3>
+                    <p class="card-text text-white-50">
+                        Our user-friendly online booking system makes renting a car faster and easier than ever. Book, modify, or cancel with ease.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 glass-effect glass-sky-blue p-5 rounded-3 text-center">
+        <h2 class="fw-bold">Ready to Start Your Journey?</h2>
+        <p class="lead text-white-50 mb-4">
+            Explore our fleet and find the perfect car for your next adventure.
+        </p>
+        <a asp-controller="Cars" asp-action="Index" class="btn btn-primary btn-lg">
+            Browse All Cars <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
+
+</div>
