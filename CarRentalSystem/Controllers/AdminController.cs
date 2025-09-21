@@ -24,9 +24,13 @@ namespace CarRentalSystem.Controllers
             base.OnActionExecuting(filterContext);
         }
 
+        // === DASHBOARD ACTION (MODIFIED) ===
+        // This action now fetches all the required counts for the dashboard cards.
         public async Task<IActionResult> Dashboard()
         {
-            // ... (Your dashboard logic) ...
+            ViewBag.TotalCars = await _context.Cars.CountAsync();
+            ViewBag.TotalBookings = await _context.Bookings.CountAsync();
+            ViewBag.TotalCustomers = await _context.Users.CountAsync(u => u.Role == "Customer");
             return View();
         }
 
@@ -35,7 +39,6 @@ namespace CarRentalSystem.Controllers
         // GET: /Admin/ViewCustomers
         public async Task<IActionResult> ViewCustomers()
         {
-            // This now only fetches Customers, as requested
             var customers = await _context.Users.Where(u => u.Role == "Customer").ToListAsync();
             return View(customers);
         }
@@ -44,7 +47,7 @@ namespace CarRentalSystem.Controllers
         public async Task<IActionResult> ToggleUserStatus(int id)
         {
             var user = await _context.Users.FindAsync(id);
-            if (user != null && user.Role == "Customer") // Extra check to only affect customers
+            if (user != null && user.Role == "Customer")
             {
                 user.IsActive = !user.IsActive;
                 await _context.SaveChangesAsync();
@@ -66,10 +69,7 @@ namespace CarRentalSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendNotification(Notification notification)
         {
-            // --- FIX ---
-            // Remove the User object from model validation, as we only need the UserID.
             ModelState.Remove("User");
-            // --- END FIX ---
 
             if (ModelState.IsValid)
             {
@@ -78,16 +78,14 @@ namespace CarRentalSystem.Controllers
                 _context.Add(notification);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Notification sent successfully.";
-                return RedirectToAction(nameof(ViewCustomers)); // Changed to redirect to the customer list
+                return RedirectToAction(nameof(ViewCustomers));
             }
 
-            // If model is invalid, find the username again to display in the view title
             var user = await _context.Users.FindAsync(notification.UserID);
             ViewBag.UserName = user?.Username ?? "User";
             return View(notification);
         }
 
-        // ... (Other actions like CustomerDetails remain) ...
         public async Task<IActionResult> CustomerDetails(int? id)
         {
             if (id == null) return NotFound();
@@ -99,39 +97,28 @@ namespace CarRentalSystem.Controllers
             return View(customer);
         }
 
+        // === SITE SETTINGS MANAGEMENT ===
 
-
-
-        
         [HttpGet]
         public async Task<IActionResult> ManageContactInfo()
         {
-            // Find the first (or only) site setting in your database.
             var settings = await _context.SiteSettings.FirstOrDefaultAsync();
-
-            // If no settings exist yet, create a new empty one.
             if (settings == null)
             {
                 settings = new SiteSetting();
             }
-
-            // Pass the settings object to the view.
             return View(settings);
         }
 
-       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ManageContactInfo(SiteSetting model)
         {
             if (ModelState.IsValid)
             {
-                // here Checking if the setting already exists in the database
                 var settingInDb = await _context.SiteSettings.FindAsync(model.SettingID);
-
                 if (settingInDb != null)
                 {
-                    // If it exists, update its properties
                     settingInDb.ContactEmail = model.ContactEmail;
                     settingInDb.ContactPhone = model.ContactPhone;
                     settingInDb.Address = model.Address;
@@ -139,17 +126,12 @@ namespace CarRentalSystem.Controllers
                 }
                 else
                 {
-                    // If it's a new setting, add it
                     _context.Add(model);
                 }
-
-                await _context.SaveChangesAsync(); // Save the changes to the database
-
+                await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Site information updated successfully!";
-                return RedirectToAction("Dashboard"); // Redirect to the dashboard after saving
+                return RedirectToAction("Dashboard");
             }
-
-            // If the model is not valid, return to the view with the entered data
             return View(model);
         }
     }

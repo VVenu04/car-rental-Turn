@@ -37,7 +37,8 @@
         <p class="lead text-white-50 fs-4 dashboard-title-text">Welcome to the management portal.</p>
         <hr class="w-50 mx-auto" />
 
-        <div class="row mt-4">
+        <div class="row mt-4 justify-content-center">
+
             <div class="col-md-4 mb-4">
                 <div class="card glass-effect shadow-lg h-100">
                     <div class="card-body">
@@ -62,15 +63,15 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <h5 class="card-title fw-bold">Available Cars</h5>
-                                <h2 class="display-4 fw-bold">@ViewBag.AvailableCars</h2>
+                                <h5 class="card-title fw-bold">Total Customers</h5>
+                                <h2 class="display-4 fw-bold">@ViewBag.TotalCustomers</h2>
                             </div>
-                            <i class="bi bi-check2-circle text-white" style="font-size: 4rem;"></i>
+                            <i class="bi bi-people-fill text-white" style="font-size: 4rem;"></i>
                         </div>
                     </div>
                     <div class="card-footer bg-transparent border-0 text-center">
-                        <a href="@Url.Action("Index", "Cars")" class="text-white stretched-link text-decoration-none">
-                            View Available Cars <i class="bi bi-arrow-right"></i>
+                        <a href="@Url.Action("ViewCustomers", "Admin")" class="text-white stretched-link text-decoration-none">
+                            View All Customers <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -94,6 +95,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

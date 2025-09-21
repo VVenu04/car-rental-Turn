@@ -4,70 +4,113 @@
     ViewData["Title"] = "Customer Details";
 }
 
-<h2>Customer Details</h2>
-<hr />
+<div class="container-fluid px-4 my-4">
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h4>@Model.FullName</h4>
+    <!-- Page Title -->
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark">
+            <i class="bi bi-person-lines-fill text-primary me-2"></i> Customer Details
+        </h2>
+        <p class="text-muted fs-6">Full profile with booking history overview</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Customer Info Card -->
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100 bg-white">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-4 text-primary border-bottom pb-2">
+                        <i class="bi bi-person-circle me-2"></i> Profile Information
+                    </h5>
+
+                    <dl class="row mb-0">
+                        <dt class="col-sm-5 text-muted small">Full Name</dt>
+                        <dd class="col-sm-7 fw-semibold">@Model.FullName</dd>
+
+                        <dt class="col-sm-5 text-muted small">Username</dt>
+                        <dd class="col-sm-7 fw-semibold">@Model.Username</dd>
+
+                        <dt class="col-sm-5 text-muted small">Email</dt>
+                        <dd class="col-sm-7 fw-semibold">@Model.Email</dd>
+
+                        <dt class="col-sm-5 text-muted small">Phone</dt>
+                        <dd class="col-sm-7 fw-semibold">@Model.PhoneNumber</dd>
+
+                        <dt class="col-sm-5 text-muted small">Date Joined</dt>
+                        <dd class="col-sm-7 fw-semibold">@Model.DateJoined.ToString("MMMM dd, yyyy")</dd>
+                    </dl>
+                </div>
+                <div class="card-footer bg-white border-0 text-center">
+                    <a asp-action="ViewCustomers" class="btn btn-outline-primary rounded-pill px-4">
+                        <i class="bi bi-arrow-left-circle"></i> Back to Customers
+                    </a>
+                </div>
             </div>
-            <div class="card-body">
-                <p><strong>Username:</strong> @Model.Username</p>
-                <p><strong>Email:</strong> @Model.Email</p>
-                <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
-                <p><strong>Date Joined:</strong> @Model.DateJoined.ToShortDateString()</p>
-            </div>
-            <div class="card-footer">
-                <a asp-action="ViewCustomers" class="btn btn-secondary">
-                    <i class="bi bi-arrow-left-circle"></i> Back to Customer List
-                </a>
+        </div>
+
+        <!-- Booking History -->
+        <div class="col-lg-8">
+            <div class="card border-0 rounded-4 shadow-sm bg-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="fw-bold text-dark mb-0">
+                            <i class="bi bi-clock-history me-2"></i> Booking History
+                        </h5>
+                        <span class="badge bg-dark text-white px-3 py-2">
+                            @Model.Bookings.Count() Records
+                        </span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light text-center">
+                                <tr>
+                                    <th>Car</th>
+                                    <th>Pickup</th>
+                                    <th>Return</th>
+                                    <th>Pickup Location</th>
+                                    <th>Return Location</th>
+                                    <th>Total Cost</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                @if (Model.Bookings.Any())
+                                {
+                                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
+                                    {
+                                        <tr class="align-middle">
+                                            <td class="fw-semibold text-primary">@booking.Car.CarName</td>
+                                            <td>@booking.PickupDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@booking.ReturnDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@booking.PickupLocation</td>
+                                            <td>@booking.ReturnLocation</td>
+                                            <td class="fw-bold text-success">$@booking.TotalCost.ToString("F2")</td>
+                                            <td>
+                                                <span class="badge rounded-pill px-3 py-2
+                                                            @(booking.BookingStatus == "Confirmed" ? "bg-success text-white" :
+                                                                                                            booking.BookingStatus == "Completed" ? "bg-info text-dark" :
+                                                                                                            booking.BookingStatus == "Cancelled" ? "bg-danger text-white" : "bg-secondary")">
+                                            @booking.BookingStatus
+                                        </span>
+                                    </td>
+                                </tr>
+                                                                }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="7" class="text-muted py-5">
+                                            <i class="bi bi-journal-x fs-3 d-block mb-2"></i>
+                                            No booking history available.
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <table class="table table-striped table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <th>Car</th>
-                <th>Pickup Date</th>
-                <th>Return Date</th>
-                <th>Pickup Location</th>
-                <th>Return Location</th>
-                <th>Total Cost</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model.Bookings.Any())
-            {
-                @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
-                {
-                    <tr>
-                        <td>@booking.Car.CarName</td>
-                        <td>@booking.PickupDate.ToShortDateString()</td>
-                        <td>@booking.ReturnDate.ToShortDateString()</td>
-                        <td>@booking.PickupLocation</td>
-                        <td>@booking.ReturnLocation</td>
-                        <td>$@booking.TotalCost.ToString("F2")</td>
-                        <td>
-                            <span class="badge
-                                    @(booking.BookingStatus == "Confirmed" ? "bg-success" :
-                                                                booking.BookingStatus == "Completed" ? "bg-info" :
-                                                                booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
-                        @booking.BookingStatus
-                    </span>
-                </td>
-            </tr>
-                        }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="7" class="text-center">You have no booking history.</td>
-                </tr>
-            }
-        </tbody>
-    </table>
 </div>

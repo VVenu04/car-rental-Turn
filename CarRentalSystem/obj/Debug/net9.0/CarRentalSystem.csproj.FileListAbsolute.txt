@@ -3410,10 +3410,12 @@ C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\scopedcss\Views
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\scopedcss\bundle\CarRentalSystem.styles.css
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\scopedcss\projectbundle\CarRentalSystem.bundle.scp.css
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\1uvqmznfas-ws27h8mxh1.gz
+C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\t1haxzjod5-1oifuo6yij.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\r1op5mnpx0-ej2cjflg59.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\zb6tuerp7t-debd3soxfs.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\y0x12t0ozc-xq0q1km6tk.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\hdxd26n4gf-b5upo47z7e.gz
+C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\hus8xpaqeu-hlkumlr3ba.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\dxj0ex1l7c-wc90rbnvpc.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\6q082cuf8e-fe23kr60l2.gz
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\mqgjagt0ql-61n19gt1b8.gz
@@ -3491,5 +3493,3 @@ C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\refint\CarRenta
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\CarRentalSystem.pdb
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\CarRentalSystem.genruntimeconfig.cache
 C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\ref\CarRentalSystem.dll
-C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\t1haxzjod5-1oifuo6yij.gz
-C:\New folder\6\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\hus8xpaqeu-hlkumlr3ba.gz
