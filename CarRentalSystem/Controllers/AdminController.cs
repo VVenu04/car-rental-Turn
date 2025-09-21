@@ -98,5 +98,59 @@ namespace CarRentalSystem.Controllers
             if (customer == null || customer.Role != "Customer") return NotFound();
             return View(customer);
         }
+
+
+
+
+        
+        [HttpGet]
+        public async Task<IActionResult> ManageContactInfo()
+        {
+            // Find the first (or only) site setting in your database.
+            var settings = await _context.SiteSettings.FirstOrDefaultAsync();
+
+            // If no settings exist yet, create a new empty one.
+            if (settings == null)
+            {
+                settings = new SiteSetting();
+            }
+
+            // Pass the settings object to the view.
+            return View(settings);
+        }
+
+       
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ManageContactInfo(SiteSetting model)
+        {
+            if (ModelState.IsValid)
+            {
+                // here Checking if the setting already exists in the database
+                var settingInDb = await _context.SiteSettings.FindAsync(model.SettingID);
+
+                if (settingInDb != null)
+                {
+                    // If it exists, update its properties
+                    settingInDb.ContactEmail = model.ContactEmail;
+                    settingInDb.ContactPhone = model.ContactPhone;
+                    settingInDb.Address = model.Address;
+                    _context.Update(settingInDb);
+                }
+                else
+                {
+                    // If it's a new setting, add it
+                    _context.Add(model);
+                }
+
+                await _context.SaveChangesAsync(); // Save the changes to the database
+
+                TempData["SuccessMessage"] = "Site information updated successfully!";
+                return RedirectToAction("Dashboard"); // Redirect to the dashboard after saving
+            }
+
+            // If the model is not valid, return to the view with the entered data
+            return View(model);
+        }
     }
 }
