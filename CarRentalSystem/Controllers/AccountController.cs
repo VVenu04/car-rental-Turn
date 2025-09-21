@@ -53,24 +53,38 @@ namespace CarRentalSystem.Controllers
             return View();
         }
 
-        // POST: Login
+        // POST: Login (Handles both Customer and Admin login attempts)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login(string email, string password, string loginType)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 ViewBag.Error = "Email and password are required.";
-                return View();
+                return loginType == "Admin" ? View("AdminLogin") : View();
             }
 
-            // Encode the provided password to match the stored one
             var encodedPassword = Convert.ToBase64String(Encoding.UTF8.GetBytes(password));
-
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && u.Password == encodedPassword);
 
             if (user != null && user.IsActive)
             {
+                // --- NEW SECURITY CHECK ---
+                // Block admin from using the customer login form.
+                if (user.Role == "Admin" && loginType != "Admin")
+                {
+                    ViewBag.Error = "Administrators must use the dedicated admin login page.";
+                    return View(); // Return to customer login page with an error
+                }
+
+                // Block customer from using the admin login form.
+                if (user.Role == "Customer" && loginType == "Admin")
+                {
+                    ViewBag.Error = "This login page is for administrators only.";
+                    return View("AdminLogin"); // Return to admin login page with an error
+                }
+                // --- END OF SECURITY CHECK ---
+
                 // Set session variables
                 HttpContext.Session.SetInt32("UserID", user.UserID);
                 HttpContext.Session.SetString("Username", user.Username);
@@ -79,11 +93,25 @@ namespace CarRentalSystem.Controllers
                 if (user.Role == "Admin")
                 {
                     return RedirectToAction("Dashboard", "Admin");
+
                 }
-                return RedirectToAction("Profile");
+                return RedirectToAction("Index", "Cars");
             }
 
+            // --- LOGIN FAILED LOGIC (IMPROVED) ---
             ViewBag.Error = "Invalid login attempt.";
+
+            // Return the correct view based on which form was submitted
+            if (loginType == "Admin")
+            {
+                return View("AdminLogin");
+            }
+            return View();
+        }
+        // GET: /Account/admin/Login
+        [HttpGet("Account/admin/Login")]
+        public IActionResult AdminLogin()
+        {
             return View();
         }
 

@@ -1,0 +1,61 @@
+﻿<style >
+/* Style for the page background */
+body {
+    background-image: url('/images/cars/Bgimage for login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main container to center the login card */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+/* The outer frame for padding */
+.glass-frame {
+    background: rgba(10, 25, 47, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+/* The inner "Glass View" Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: none;
+}
+
+    .glass-card .card-header, .glass-card .card-footer {
+        background: none;
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .glass-card .form-label {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .glass-card .form-control {
+        background-color: white;
+        border: 1px solid #ced4da;
+        color: #212529;
+    }
+
+    .glass-card .card-footer a {
+        color: #8be9fd;
+        text-decoration: none;
+    }
+
+</style >
