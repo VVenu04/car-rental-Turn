@@ -56,15 +56,22 @@ namespace CarRentalSystem.Controllers
             return RedirectToAction(nameof(ViewCustomers));
         }
 
+        // GET: /Admin/SendNotification/5
         public async Task<IActionResult> SendNotification(int id)
         {
             var user = await _context.Users.FindAsync(id);
-            if (user == null || user.Role != "Customer") return NotFound();
+            if (user == null || user.Role != "Customer")
+            {
+                return NotFound();
+            }
 
-            ViewBag.UserName = user.Username;
+            // Pass the entire user object to the view for the details panel
+            ViewBag.Recipient = user;
+
             return View(new Notification { UserID = id });
         }
 
+        // POST: /Admin/SendNotification
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendNotification(Notification notification)
@@ -81,8 +88,10 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction(nameof(ViewCustomers));
             }
 
+            // If validation fails, repopulate the Recipient details before returning the view
             var user = await _context.Users.FindAsync(notification.UserID);
-            ViewBag.UserName = user?.Username ?? "User";
+            ViewBag.Recipient = user;
+
             return View(notification);
         }
 

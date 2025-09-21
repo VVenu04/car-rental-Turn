@@ -1,33 +1,68 @@
 ﻿@model CarRentalSystem.Models.Notification
-
 @{
     ViewData["Title"] = "Send Notification";
-    Layout = "_AdminLayout";
+    
+    var recipient = ViewBag.Recipient as CarRentalSystem.Models.User;
 }
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h1 class="h2">Send Notification to @ViewBag.UserName</h1>
-    <a asp-action="ViewCustomers" class="btn btn-secondary">Back to Customers</a>
-</div>
-
 <div class="row">
-    <div class="col-md-6">
-        <div class="card shadow-sm">
+    <div class="col-lg-8">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white fw-bold border-bottom-0">
+                <i class="bi bi-chat-left-text-fill me-2 text-primary"></i>
+                Compose Message
+            </div>
             <div class="card-body">
-                <form asp-action="SendNotification">
-                    <div asp-validation-summary="All" class="text-danger"></div>
+                <form asp-action="SendNotification" method="post">
+                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
                     <input type="hidden" asp-for="UserID" />
 
                     <div class="form-group mb-3">
-                        <label asp-for="Message" class="control-label fw-bold"></label>
-                        <textarea asp-for="Message" class="form-control" rows="5" placeholder="Enter your message here..."></textarea>
+                        <label asp-for="Message" class="control-label"></label>
+                        <textarea asp-for="Message" class="form-control" rows="8" placeholder="Enter your message here..."></textarea>
                         <span asp-validation-for="Message" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" value="Send Notification" class="btn btn-primary" />
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-send-fill"></i> Send Notification
+                        </button>
+                        <a asp-action="ViewCustomers" class="btn btn-outline-secondary">Cancel</a>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white fw-bold border-bottom-0">
+                <i class="bi bi-person-fill me-2 text-secondary"></i>
+                Recipient Details
+            </div>
+            <div class="card-body">
+                @if (recipient != null)
+                {
+                    <h5 class="card-title">@recipient.FullName</h5>
+                    <p class="card-text text-muted mb-1">@recipient.Email</p>
+                    <p class="card-text text-muted">@recipient.PhoneNumber</p>
+                    <hr>
+                    <div>
+                        <strong>Status:</strong>
+                        @if (recipient.IsActive)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Inactive</span>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p class="text-danger">Recipient details could not be loaded.</p>
+                }
             </div>
         </div>
     </div>

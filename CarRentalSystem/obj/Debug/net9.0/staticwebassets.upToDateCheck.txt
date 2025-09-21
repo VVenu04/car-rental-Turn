@@ -10,6 +10,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\cars\10ef7e24-c00c-4aeb-b19f-905381074f9b_13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg
 wwwroot\images\cars\13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg
+wwwroot\images\cars\22.jpg
 wwwroot\images\cars\24ece24a-72b1-4d6a-a750-a9eb639cf241_download.webp
 wwwroot\images\cars\2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png
 wwwroot\images\cars\2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
@@ -19,15 +20,16 @@ wwwroot\images\cars\4f608eeb-b081-48a5-ab7b-5a8edc6a25e0_D-8WJU7I-scaled.jpeg
 wwwroot\images\cars\55.jpeg
 wwwroot\images\cars\5695f348-e15d-464e-a347-4e5d4f73b575_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg
 wwwroot\images\cars\663d73a1-d12a-42fd-bb38-95727f2081a2_D-8WJU7I-scaled.jpeg
-wwwroot\images\cars\6ab84b72-5a0f-4e16-833a-3fdefbf561ae_WhatsApp Image 2025-09-13 at 18.00.35_50cf47f8.jpg
 wwwroot\images\cars\77234ca0-3416-4395-a1af-8e9ab74b81a7_Gemini_Generated_Image_5eu9az5eu9az5eu9.png
+wwwroot\images\cars\87f70097-6fb7-4e9e-ba21-4ef63b8b9f34_asus-windows-theme-94-hd.jpg
 wwwroot\images\cars\92e6d958-a380-4666-b821-fef17b721a99_3714976.jpg
 wwwroot\images\cars\9368033d-4f8c-425b-b9b3-2458768b664b_2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png
+wwwroot\images\cars\9ade5b00-ffd2-4e1f-9454-cd1a369e8bb3_Gemini_Generated_Image_9fgv8t9fgv8t9fgv.png
 wwwroot\images\cars\a0a7bd9e-cf22-400e-bd46-b25e78f27c33_2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
 wwwroot\images\cars\admin-dashboard-bg.jpg
 wwwroot\images\cars\b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
-wwwroot\images\cars\BG.jpg
 wwwroot\images\cars\Bgimage for login.jpg
+wwwroot\images\cars\bglogin.jpg
 wwwroot\images\cars\Browse Car page BG.jpeg
 wwwroot\images\cars\c1d048ab-d93e-4e2b-8242-4035223bf4e0_porsche-911-gt2rs-991-avant-garde-wheels-srx02-matte-black-centerlock-12.jpg
 wwwroot\images\cars\carousel2.png
@@ -104,74 +106,74 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\Thumbs.db
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\js\Manage Contact Info.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Manage Contact Info.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\login.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Admin Dashboard.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Browse Cars.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Home_Page.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Edit profile.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Car Details.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\LICENSE.md
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\css\Adminlogin.css
-C:\New folder\6\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Edit profile.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\login.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\js\Manage Contact Info.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\LICENSE.md
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Manage Contact Info.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Admin Dashboard.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Home_Page.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Adminlogin.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Car Details.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
+C:\UnicomTic\4\car-rental-Turn\CarRentalSystem\wwwroot\css\Browse Cars.css
