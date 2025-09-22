@@ -31,7 +31,7 @@
                             <dd class="col-sm-7">@Model.ReturnDate.ToShortDateString()</dd>
 
                             <dt class="col-sm-5 h4">Total Cost:</dt>
-                            <dd class="col-sm-7 h4">$@Model.TotalCost.ToString("F2")</dd>
+                            <dd class="col-sm-7 h4">$@Model.TotalCost.ToString("C")</dd>
                         </dl>
 
                         <form asp-action="SubmitSummary" method="post">

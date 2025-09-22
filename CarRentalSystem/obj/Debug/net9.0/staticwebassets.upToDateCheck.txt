@@ -13,6 +13,7 @@ wwwroot\images\cars\13d93fc1-0813-48b6-a244-e70af5b7585b_D-8WJU7I-scaled.jpeg
 wwwroot\images\cars\22.jpg
 wwwroot\images\cars\24ece24a-72b1-4d6a-a750-a9eb639cf241_download.webp
 wwwroot\images\cars\29bd7057-ec8b-4d8d-ad13-73e18fced330_roomy.webp
+wwwroot\images\cars\2a1297d7-8d3e-49a1-bf8e-02df03c9af6a_a0a7bd9e-cf22-400e-bd46-b25e78f27c33_2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
 wwwroot\images\cars\2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png
 wwwroot\images\cars\2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
 wwwroot\images\cars\333.jpeg
@@ -32,6 +33,7 @@ wwwroot\images\cars\92e6d958-a380-4666-b821-fef17b721a99_3714976.jpg
 wwwroot\images\cars\9368033d-4f8c-425b-b9b3-2458768b664b_2a712a1c-b4a8-4dda-b4ff-38caf78998cd_Gemini_Generated_Image_5eu9az5eu9az5eu9.png
 wwwroot\images\cars\9ade5b00-ffd2-4e1f-9454-cd1a369e8bb3_Gemini_Generated_Image_9fgv8t9fgv8t9fgv.png
 wwwroot\images\cars\a0a7bd9e-cf22-400e-bd46-b25e78f27c33_2ea421f1-74c7-4bc3-b211-c3b814b3dc34_b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
+wwwroot\images\cars\a222bb5e-3e82-432b-84b2-30edd3af1729_92e6d958-a380-4666-b821-fef17b721a99_3714976.jpg
 wwwroot\images\cars\admin-dashboard-bg.jpg
 wwwroot\images\cars\b7216b9a-3002-4d0d-85f5-361375659f28_download.webp
 wwwroot\images\cars\Bgimage for login.jpg
@@ -112,9 +114,8 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\Thumbs.db
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Browse Cars.css
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\additional-methods.js
@@ -167,19 +168,20 @@ C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroo
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\js\site.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\js\Manage Contact Info.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\favicon.ico
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\site.css
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Manage Contact Info.css
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Admin Dashboard.css
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Car Details.css
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\login.css
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Home_Page.css
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.map
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Edit profile.css
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\css\Adminlogin.css
-C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\Users\Venujan\Desktop\final car rental\car-rental-Turn\CarRentalSystem\wwwroot\lib\jquery\dist\jquery.slim.min.js

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\admin\\customerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,12 +27,28 @@
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\bookings\\bookingsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\bookings\\bookingsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,16 +71,8 @@
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\migrations\\20250918062019_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922061335_AddRegistrationNumberToCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CarRentalSystem\\Migrations\\20250922061335_AddRegistrationNumberToCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -85,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\services\\sitesettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\wwwroot\\css\\manage contact info.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\css\\manage contact info.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -173,14 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\cars\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\views\\bookings\\bookingsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\bookings\\bookingsummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\wwwroot\\css\\car details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -229,6 +225,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\users\\venujan\\desktop\\final car rental\\car-rental-turn\\carrentalsystem\\migrations\\20250922061335_addregistrationnumbertocar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\migrations\\20250922061335_addregistrationnumbertocar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -247,84 +247,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T08:14:38.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAiwO4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T06:44:19.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T08:15:14.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Index.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAiwHwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-16T16:27:30.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Details.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Details.cshtml",
               "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Details.cshtml",
               "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Details.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBkAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-18T20:34:50.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
               "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
               "RelativeToolTip": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAiwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-06T18:51:24.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Models\\Car.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Car.cs",
@@ -332,38 +280,37 @@
               "RelativeToolTip": "CarRentalSystem\\Models\\Car.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowC8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:10:11.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T08:10:11.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\Index.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\Index.cshtml",
               "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\Index.cshtml",
               "RelativeToolTip": "CarRentalSystem\\Views\\Bookings\\Index.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFgAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-06T18:58:26.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CustomerDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\CustomerDetails.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\CustomerDetails.cshtml",
               "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\CustomerDetails.cshtml",
               "RelativeToolTip": "CarRentalSystem\\Views\\Admin\\CustomerDetails.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowFQAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAswGQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-07T16:25:17.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "AdminLogin.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
@@ -371,12 +318,11 @@
               "RelativeToolTip": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwCwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T02:52:22.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T02:52:22.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AccountController.cs",
@@ -388,12 +334,126 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-06T18:56:03.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T13:13:44.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T13:18:39.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Program.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Program.cs",
+              "RelativeToolTip": "CarRentalSystem\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:09:42.168Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-16T16:27:30.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T08:15:14.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingSummary.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T17:07:31.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAiwO4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T06:44:19.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T08:14:38.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "20250918062019_Initialcreate.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918062019_Initialcreate.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Migrations\\20250918062019_Initialcreate.cs",
@@ -401,12 +461,11 @@
               "RelativeToolTip": "CarRentalSystem\\Migrations\\20250918062019_Initialcreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T06:20:20.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T06:20:20.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Register.cshtml",
@@ -418,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Login.cshtml",
@@ -430,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Manage Contact Info.js",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\js\\Manage Contact Info.js",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\js\\Manage Contact Info.js",
@@ -442,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\js\\site.js",
@@ -450,12 +509,11 @@
               "RelativeToolTip": "CarRentalSystem\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-06T18:47:29.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T18:47:29.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 57,
               "Title": "20250922061335_AddRegistrationNumberToCar.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922061335_AddRegistrationNumberToCar.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Migrations\\20250922061335_AddRegistrationNumberToCar.cs",
@@ -463,12 +521,11 @@
               "RelativeToolTip": "CarRentalSystem\\Migrations\\20250922061335_AddRegistrationNumberToCar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T06:13:35.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T06:13:35.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Contact.cshtml",
@@ -480,20 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-15T13:13:44.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "SiteSettingsService.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Services\\SiteSettingsService.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Services\\SiteSettingsService.cs",
@@ -505,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "EditProfile.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
@@ -517,19 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Program.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Program.cs",
-              "RelativeToolTip": "CarRentalSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T06:09:42.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\_ViewImports.cshtml",
@@ -541,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "BookingConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingConfirmation.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\BookingConfirmation.cshtml",
@@ -553,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\appsettings.json",
               "RelativeDocumentMoniker": "CarRentalSystem\\appsettings.json",
@@ -565,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "SendNotification.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\SendNotification.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\SendNotification.cshtml",
@@ -577,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ViewCustomers.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\ViewCustomers.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\ViewCustomers.cshtml",
@@ -589,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Services\\NotificationService.cs",
@@ -601,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "login.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\login.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\login.css",
@@ -613,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Manage Contact Info.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Manage Contact Info.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Manage Contact Info.css",
@@ -625,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AdminController.cs",
@@ -637,19 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-15T13:18:39.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\site.css",
@@ -661,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\Dashboard.cshtml",
@@ -673,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Adminlogin.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Adminlogin.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Adminlogin.css",
@@ -685,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "WhyChooseUs.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
@@ -697,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Home_Page.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Home_Page.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Home_Page.css",
@@ -709,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\HomeController.cs",
@@ -721,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Privacy.cshtml",
@@ -733,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ManageContactInfo.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\ManageContactInfo.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\ManageContactInfo.cshtml",
@@ -745,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Admin Dashboard.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Admin Dashboard.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Admin Dashboard.css",
@@ -757,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\Error.cshtml",
@@ -770,30 +790,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T18:56:03.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "BookingSummary.cshtml",
-              "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
-              "ToolTip": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Bookings\\BookingSummary.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-18T17:07:31.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\BookingController.cs",
@@ -805,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "Car Details.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Car Details.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Car Details.css",
@@ -817,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\Create.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\Create.cshtml",
@@ -829,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "Notifications.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Notifications.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Notifications.cshtml",
@@ -841,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "Browse Cars.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Browse Cars.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Browse Cars.css",
@@ -853,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "Edit profile.css",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Edit profile.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Edit profile.css",
@@ -865,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "20250918061957_AddNotificationSystem.cs",
               "DocumentMoniker": "C:\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918061957_AddNotificationSystem.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918061957_AddNotificationSystem.cs",
@@ -877,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "CarRentalDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Data\\CarRentalDbContext.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Data\\CarRentalDbContext.cs",
@@ -889,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "20250918054954_AddNotificationSystem.cs",
               "DocumentMoniker": "C:\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918054954_AddNotificationSystem.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918054954_AddNotificationSystem.cs",
@@ -901,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Notification.cs",
@@ -913,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\_ViewStart.cshtml",
@@ -925,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "CarLocation.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Models\\CarLocation.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Models\\CarLocation.cs",
@@ -937,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "20250917081317_AddCarLocations.cs",
               "DocumentMoniker": "C:\\UnicomTic\\New folder (2)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250917081317_AddCarLocations.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\UnicomTic\\New folder (2)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250917081317_AddCarLocations.cs",
@@ -949,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "20250906190302_InitialCreate.cs",
               "DocumentMoniker": "C:\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs",
