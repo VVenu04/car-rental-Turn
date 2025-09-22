@@ -24,6 +24,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddScoped<SiteSettingsService>();
 builder.Services.AddScoped<NotificationService>();
 
+
 // For accessing HttpContext from other services
 builder.Services.AddHttpContextAccessor();
 

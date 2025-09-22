@@ -69,11 +69,10 @@ namespace CarRentalSystem.Controllers
 
             if (user != null && user.IsActive)
             {
-                // --- NEW SECURITY CHECK ---
                 // Block admin from using the customer login form.
                 if (user.Role == "Admin" && loginType != "Admin")
                 {
-                    ViewBag.Error = "Administrators must use the dedicated admin login page.";
+                    ViewBag.Error = "ID OR PASSWORD IS INCORRECT";
                     return View(); // Return to customer login page with an error
                 }
 
@@ -83,7 +82,7 @@ namespace CarRentalSystem.Controllers
                     ViewBag.Error = "This login page is for administrators only.";
                     return View("AdminLogin"); // Return to admin login page with an error
                 }
-                // --- END OF SECURITY CHECK ---
+                
 
                 // Set session variables
                 HttpContext.Session.SetInt32("UserID", user.UserID);
@@ -98,8 +97,8 @@ namespace CarRentalSystem.Controllers
                 return RedirectToAction("Index", "Cars");
             }
 
-            // --- LOGIN FAILED LOGIC (IMPROVED) ---
-            ViewBag.Error = "Invalid login attempt.";
+            //  LOGIN FAILED LOGIC 
+            ViewBag.Error = "Userid or password is incorrect";
 
             // Return the correct view based on which form was submitted
             if (loginType == "Admin")
