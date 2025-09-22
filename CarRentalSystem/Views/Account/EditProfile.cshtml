@@ -26,8 +26,13 @@
             </div>
             <div class="form-group mb-3">
                 <label for="newPassword" class="control-label">New Password (optional)</label>
-                <input name="newPassword" type="password" class="form-control" />
-                <small class="form-text text-white-50">Leave blank to keep your current password.</small>
+                <div class="input-group">
+                    <input name="newPassword" type="password" class="form-control" />
+                    <button class="btn btn-outline-secondary toggle-password-button" type="button">
+                        <i class="bi bi-eye-fill"></i>
+                    </button>
+                </div>
+                <small class="form-text text-muted">Leave blank to keep your current password.</small>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save Changes" class="btn btn-primary" />
