@@ -66,6 +66,7 @@
                             <thead class="table-light text-center">
                                 <tr>
                                     <th>Car</th>
+                                     <th>Registration No.</th>
                                     <th>Pickup</th>
                                     <th>Return</th>
                                     <th>Pickup Location</th>
@@ -81,6 +82,7 @@
                                     {
                                         <tr class="align-middle">
                                             <td class="fw-semibold text-primary">@booking.Car.CarName</td>
+                                            <td>@booking.Car.RegistrationNumber</td>
                                             <td>@booking.PickupDate.ToString("MMM dd, yyyy")</td>
                                             <td>@booking.ReturnDate.ToString("MMM dd, yyyy")</td>
                                             <td>@booking.PickupLocation</td>

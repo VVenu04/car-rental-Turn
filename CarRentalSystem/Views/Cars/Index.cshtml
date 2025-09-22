@@ -83,6 +83,7 @@
                     <tr>
                         <th>Image</th>
                         <th>Car Name & Model</th>
+                        <th>Registration No</th>
                         <th>Daily Rate</th>
                         <th>Availability</th>
                         <th>Actions</th>
@@ -98,7 +99,10 @@
                             <td>
                                 <strong>@item.CarName</strong><br />
                                 <small class="text-muted">@item.CarModel</small>
+
                             </td>
+
+                            <td>@item.RegistrationNumber</td>
                             <td>@item.DailyRate.ToString("C")</td>
                             <td>
                                 @if (item.IsAvailable)
@@ -111,8 +115,8 @@
                                 }
                             </td>
                             <td>
-                                <a asp-action="Edit" asp-route-id="@item.CarID" class="btn btn-sm btn-outline-primary">Edit</a>
-                                <a asp-action="Details" asp-route-id="@item.CarID" class="btn btn-sm btn-outline-info">Details</a>
+                                <a asp-action="Details" asp-route-id="@item.CarID" class="btn btn-smn-outline-info">Details</a>
+                                <a asp-action="Edit" asp-route-id="@item.CarID" class="btn btn-sm btn-o btutline-primary">Edit</a>
                                 <a asp-action="Delete" asp-route-id="@item.CarID" class="btn btn-sm btn-outline-danger">Delete</a>
                             </td>
                         </tr>

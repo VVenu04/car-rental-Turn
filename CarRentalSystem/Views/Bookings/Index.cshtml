@@ -70,6 +70,7 @@
         <tr>
             <th>Customer</th>
             <th>Car</th>
+            <th>Registration No.</th>
             <th>Pickup Date</th>
             <th>Pickup Location</th>
             <th>Return Date</th>
@@ -85,6 +86,7 @@
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Customer.FullName)</td>
                 <td>@Html.DisplayFor(modelItem => item.Car.CarName)</td>
+                <td>@item.Car.RegistrationNumber</td>
                 <td>@item.PickupDate.ToShortDateString()</td>
                 <td>@item.PickupLocation</td>
                 <td>@item.ReturnDate.ToShortDateString()</td>

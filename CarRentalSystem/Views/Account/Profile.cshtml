@@ -45,6 +45,8 @@
             <thead class="table-dark">
                 <tr>
                     <th>Car</th>
+                    <th>Registration No.</th>
+
                     <th>Pickup Date</th>
                     <th>Pickup Location</th>
                     <th>Return Date</th>
@@ -60,6 +62,7 @@
                     {
                         <tr>
                             <td>@booking.Car.CarName</td>
+                            <td>@booking.Car.RegistrationNumber</td>
                             <td>@booking.PickupDate.ToShortDateString()</td>
                             <td>@booking.PickupLocation</td>
                             <td>@booking.ReturnDate.ToShortDateString()</td>

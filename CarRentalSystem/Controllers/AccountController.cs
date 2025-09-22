@@ -82,18 +82,19 @@ namespace CarRentalSystem.Controllers
                     ViewBag.Error = "This login page is for administrators only.";
                     return View("AdminLogin"); // Return to admin login page with an error
                 }
-                
 
                 // Set session variables
                 HttpContext.Session.SetInt32("UserID", user.UserID);
                 HttpContext.Session.SetString("Username", user.Username);
                 HttpContext.Session.SetString("Role", user.Role);
 
-                if (user.Role == "Admin")
+                // --- THIS IS THE CORRECTED LINE ---
+                // This check is now case-insensitive to prevent errors.
+                if (user.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
                 {
                     return RedirectToAction("Dashboard", "Admin");
-
                 }
+
                 return RedirectToAction("Index", "Cars");
             }
 
