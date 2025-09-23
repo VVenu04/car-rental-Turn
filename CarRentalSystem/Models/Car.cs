@@ -32,7 +32,7 @@ namespace CarRentalSystem.Models
         public string CarType { get; set; }
 
         [Required]
-        [StringLength(15)]
+        [StringLength(10)]
         [Display(Name = "Registration Number")]
         public string RegistrationNumber { get; set; }
 

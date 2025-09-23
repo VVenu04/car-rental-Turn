@@ -19,7 +19,6 @@ namespace CarRentalSystem.Services
             // Simple caching: fetch from DB only once per request.
             if (_cachedSettings == null)
             {
-                // We know there's only one row with ID 1
                 _cachedSettings = await _context.SiteSettings.FirstOrDefaultAsync(s => s.SettingID == 1);
             }
             return _cachedSettings;

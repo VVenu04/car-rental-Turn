@@ -33,8 +33,8 @@
         public string PhoneNumber { get; set; }
 
         [Required]
-        [StringLength(20)]
-        [Display(Name = "NIC or Driving License No.")]
+        [StringLength(10,MinimumLength = 10)]
+        [Display(Name = "NIC ")]
         public string IdentificationNumber { get; set; }
 
         public bool IsEmailVerified { get; set; } = false;

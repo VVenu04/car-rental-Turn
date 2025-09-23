@@ -69,7 +69,7 @@ namespace CarRentalSystem.Controllers
         {
             return HttpContext.Session.GetString("Role") == "Admin";
         }
-
+        
         public IActionResult Create()
         {
             if (!IsAdmin()) return Unauthorized();
