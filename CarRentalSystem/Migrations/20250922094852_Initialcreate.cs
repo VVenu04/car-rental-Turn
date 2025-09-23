@@ -23,6 +23,7 @@ namespace CarRentalSystem.Migrations
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     DailyRate = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
                     CarType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    RegistrationNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     FuelType = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     SeatingCapacity = table.Column<int>(type: "int", nullable: false),
                     Transmission = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
@@ -62,6 +63,12 @@ namespace CarRentalSystem.Migrations
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IdentificationNumber = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    IsEmailVerified = table.Column<bool>(type: "bit", nullable: false),
+                    VerificationOtp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    VerificationOtpExpires = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    PasswordResetOtp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PasswordResetOtpExpires = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DateJoined = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -157,8 +164,8 @@ namespace CarRentalSystem.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "UserID", "DateJoined", "Email", "FullName", "IsActive", "Password", "PhoneNumber", "Role", "Username" },
-                values: new object[] { 1, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@example.com", "Administrator", true, "QWRtaW5AMTIz", "1234567890", "Admin", "admin" });
+                columns: new[] { "UserID", "DateJoined", "Email", "FullName", "IdentificationNumber", "IsActive", "IsEmailVerified", "Password", "PasswordResetOtp", "PasswordResetOtpExpires", "PhoneNumber", "Role", "Username", "VerificationOtp", "VerificationOtpExpires" },
+                values: new object[] { 1, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@example.com", "Administrator", "ADMIN001", true, true, "QWRtaW5AMTIz", null, null, "1234567890", "Admin", "admin", null, null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_CarID",

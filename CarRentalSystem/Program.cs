@@ -24,6 +24,7 @@ builder.Services.AddSession(options =>
 
 // Register services
 builder.Services.AddMemoryCache(); // For caching
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<SiteSettingsService>();
 builder.Services.AddScoped<NotificationService>();
 

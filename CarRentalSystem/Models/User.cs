@@ -32,6 +32,19 @@
         [RegularExpression(@"^\d{9,10}$", ErrorMessage = "Phone number must be a valid number between 9 and 10 digits.")]
         public string PhoneNumber { get; set; }
 
+        [Required]
+        [StringLength(20)]
+        [Display(Name = "NIC or Driving License No.")]
+        public string IdentificationNumber { get; set; }
+
+        public bool IsEmailVerified { get; set; } = false;
+
+        public string? VerificationOtp { get; set; }
+        public DateTime? VerificationOtpExpires { get; set; }
+        public string? PasswordResetOtp { get; set; }
+
+        public DateTime? PasswordResetOtpExpires { get; set; }
+
         public DateTime DateJoined { get; set; } = DateTime.Now;
 
             public bool IsActive { get; set; } = true;

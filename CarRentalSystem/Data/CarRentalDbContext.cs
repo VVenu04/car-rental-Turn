@@ -62,8 +62,12 @@ namespace CarRentalSystem.Data
                     FullName = "Administrator",
                     PhoneNumber = "1234567890",
                     DateJoined = seedDate, // <-- CORRECTED
-                    IsActive = true
+                    IsActive = true,
+
+                    IdentificationNumber = "ADMIN001", // 1. Add a placeholder ID
+                    IsEmailVerified = true,           // 2. Mark the admin as verified
                 }
+
             );
 
             // Seed Cars

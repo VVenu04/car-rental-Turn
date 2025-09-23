@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Verify OTP";
+}
+
+<div class="text-center text-light mb-4">
+    <h2 class="display-4">Verify OTP</h2>
+    <p class="lead">An OTP has been sent to <strong>@ViewBag.Email</strong>. Please enter it below.</p>
+    <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card card-glass text-light">
+            <div class="card-body">
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.Error</div>
+                }
+                <form asp-action="VerifyOtp" method="post">
+                    <input type="hidden" name="email" value="@ViewBag.Email" />
+                    <div class="form-group mb-3">
+                        <label for="otp" class="form-label">6-Digit OTP</label>
+                        <input name="otp" class="form-control" required maxlength="6" />
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Verify</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center bg-transparent">
+                <a asp-action="ForgotPassword">Didn't get an OTP? Resend</a>
+            </div>
+        </div>
+    </div>
+</div>

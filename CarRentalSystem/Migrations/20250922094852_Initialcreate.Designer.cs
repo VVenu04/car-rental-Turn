@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRentalSystem.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    [Migration("20250922061335_AddRegistrationNumberToCar")]
-    partial class AddRegistrationNumberToCar
+    [Migration("20250922094852_Initialcreate")]
+    partial class Initialcreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -272,13 +272,27 @@ namespace CarRentalSystem.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("IdentificationNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEmailVerified")
                         .HasColumnType("bit");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PasswordResetOtp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("PasswordResetOtpExpires")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -293,6 +307,12 @@ namespace CarRentalSystem.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("VerificationOtp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("VerificationOtpExpires")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
@@ -304,7 +324,9 @@ namespace CarRentalSystem.Migrations
                             DateJoined = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@example.com",
                             FullName = "Administrator",
+                            IdentificationNumber = "ADMIN001",
                             IsActive = true,
+                            IsEmailVerified = true,
                             Password = "QWRtaW5AMTIz",
                             PhoneNumber = "1234567890",
                             Role = "Admin",
