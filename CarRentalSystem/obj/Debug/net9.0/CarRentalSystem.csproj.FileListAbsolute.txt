@@ -4200,9 +4200,6 @@ C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\com
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\p28z73tex7-9vr69e8ynj.gz
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\zrx7bl44a5-87fc7y1x7t.gz
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\s1s4bug1y9-mlv21k5csn.gz
-C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\qzbty00fi4-fnlft5a81y.gz
-C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\or438shcp6-j7mo6kh8x2.gz
-C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\etzzdpnynm-rzn5qdfao4.gz
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\zi1xsbh6wj-mypspy9wb9.gz
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\compressed\zx9t99ion0-mypspy9wb9.gz
 C:\UnicomTic\gmail verified\car-rental-Turn\CarRentalSystem\obj\Debug\net9.0\staticwebassets.build.json

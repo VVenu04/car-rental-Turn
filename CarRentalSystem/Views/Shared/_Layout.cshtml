@@ -20,7 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
+    
     <style>
         .navbar-nav .nav-link, .navbar-nav .btn {
             transition: transform 0.2s ease-in-out;
@@ -33,35 +35,45 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark box-shadow ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/cars/Velocity Car Rentals-logo.png" alt="CarRentalSystem Logo" height="65" width="148" class="d-inline-block align-middle">
+                <!-- Brand Logo -->
+                <a class="navbar-brand d-flex align-items-center"
+                   asp-area="" asp-controller="Home" asp-action="Index"
+                   style="font-family: 'Poppins', sans-serif; font-weight:700; font-size:1.6rem; letter-spacing:1px;">
+                    <span style="color:#0d6efd;">Velo</span><span style="color:#ffffff;">City</span>
+                    <span class="ms-2" style="font-size:1rem; font-weight:500; color:#adb5bd;">Rentals        </span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 
-                    @* fs-5: This is a Bootstrap class that makes the font size bigger 
-                       nav-link-custom: This is a custom CSS class in our stylesheet that adds our unique styles (like bolding, text-shadow)
-                       Active State Logic (@( ... ? "active" : "")): The active class is what highlights the current page in our menu by changing blue letters with underline.
-                    *@
-
-                    <ul class="navbar-nav flex-grow-1">
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["Action"]?.ToString() == "Index" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link px-3 @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["Action"]?.ToString() == "Index" ? "active fw-bold border-bottom border-primary" : "")"
+                               asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Cars" ? "active" : "")" asp-area="" asp-controller="Cars" asp-action="Index">Browse Cars</a>
+                            <a class="nav-link px-3 @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Cars" ? "active fw-bold border-bottom border-primary" : "")"
+                               asp-controller="Cars" asp-action="Index">Browse Cars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Action"]?.ToString() == "Contact" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                            <a class="nav-link px-3 @(ViewContext.RouteData.Values["Action"]?.ToString() == "Contact" ? "active fw-bold border-bottom border-primary" : "")"
+                               asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
-                        <a class="nav-link fs-5 nav-link-custom @(ViewContext.RouteData.Values["Action"]?.ToString() == "WhyChooseUs" ? "active" : "")" asp-controller="Home" asp-action="WhyChooseUs">Why Choose Us</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 @(ViewContext.RouteData.Values["Action"]?.ToString() == "WhyChooseUs" ? "active fw-bold border-bottom border-primary" : "")"
+                               asp-controller="Home" asp-action="WhyChooseUs">Why Choose Us</a>
+                        </li>
                     </ul>
-                    <ul class="navbar-nav">
+
+                    <!-- Right Side (User / Login/Register) -->
+                    <ul class="navbar-nav ms-auto">
                         @{
                             var userRole = HttpContextAccessor.HttpContext.Session.GetString("Role");
                             var username = HttpContextAccessor.HttpContext.Session.GetString("Username");
@@ -72,21 +84,25 @@
                             if (userRole == "Admin")
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-warning" asp-controller="Admin" asp-action="Dashboard"><i class="bi bi-person-fill-gear"></i> Admin Dashboard</a>
+                                    <a class="nav-link text-warning fw-semibold" asp-controller="Admin" asp-action="Dashboard">
+                                        <i class="bi bi-person-fill-gear me-1"></i> Admin Dashboard
+                                    </a>
                                 </li>
                             }
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-person-circle"></i> Welcome, @username
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle me-1"></i> <span class="fw-semibold">@username</span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                                     @if (userRole == "Customer")
                                     {
-                                        <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile"><i class="bi bi-person-vcard"></i> My Profile</a></li>
-                                       
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="Profile">
+                                                <i class="bi bi-person-vcard me-2"></i> My Profile
+                                            </a>
+                                        </li>
                                         <li><hr class="dropdown-divider"></li>
                                     }
-                                    
 
                                     @{
                                         var userId = HttpContextAccessor.HttpContext.Session.GetInt32("UserID");
@@ -108,24 +124,24 @@
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <form asp-controller="Account" asp-action="Logout" method="post">
-                                            <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                                            <button type="submit" class="dropdown-item">
+                                                <i class="bi bi-box-arrow-right me-2"></i> Logout
+                                            </button>
                                         </form>
                                     </li>
-
-
                                 </ul>
                             </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="btn btn-outline-success me-2 fs-5" asp-controller="Account" asp-action="Login">
-                                    <i class="bi bi-box-arrow-in-right"></i> Login
+                            <li class="nav-item me-2">
+                                <a class="btn btn-sm btn-outline-success" asp-controller="Account" asp-action="Login">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Login
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary fs-5" asp-controller="Account" asp-action="Register">
-                                    <i class="bi bi-person-plus-fill"></i> Register
+                                <a class="btn btn-sm btn-outline-primary" asp-controller="Account" asp-action="Register">
+                                    <i class="bi bi-person-plus-fill me-1"></i> Register
                                 </a>
                             </li>
                         }
@@ -134,6 +150,7 @@
             </div>
         </nav>
     </header>
+
     
         <main role="main">
             @RenderBody()
@@ -150,7 +167,7 @@
             <div class="row text-center text-md-start">
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 d-flex flex-column align-items-center align-items-md-start">
                     <a class="navbar-brand d-block mb-2" href="#">
-                        <img src="~/images/cars/Velocity Car Rentals-logo.png" alt="CarRentalSystem Logo" height="65" width="148" class="img-fluid">
+                        <img src="~/images/logo/loko.png" alt="CarRentalSystem Logo" height="65" width="148" class="img-fluid">
                     </a>
                     <p class="tagline text-white mb-0">Your journey starts here.</p>
                     <p class="tagline text-white mt-0">Rent with confidence, drive with style.</p>

@@ -2,31 +2,52 @@
     ViewData["Title"] = "Verify Your Account";
 }
 
-<div class="text-center">
-    <h2>Verify Your Account</h2>
-    <p class="lead">An OTP has been sent to your email address: <strong>@ViewBag.Email</strong></p>
-    <p>Please check your inbox and enter the 6-digit code below.</p>
-</div>
-<hr />
+<div class="container d-flex align-items-center justify-content-center" style="min-height:100vh;">
+    <div class="col-md-5">
+        <div class="card border-0 shadow-lg rounded-4">
+            <div class="card-body p-5">
+                <div class="text-center mb-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle" style="width:60px; height:60px; font-size:24px;">
+                            🔐
+                        </span>
+                    </div>
+                    <h3 class="fw-bold text-dark">Verify Your Account</h3>
+                    <p class="text-muted mb-1">We’ve sent a 6-digit code to</p>
+                    <p class="fw-semibold text-primary">@ViewBag.Email</p>
+                </div>
 
-<div class="row justify-content-center">
-    <div class="col-md-4">
-        <div class="card shadow-sm">
-            <div class="card-body">
                 @if (ViewBag.Error != null)
                 {
-                    <div class="alert alert-danger">@ViewBag.Error</div>
+                    <div class="alert alert-danger rounded-3 shadow-sm text-center">@ViewBag.Error</div>
                 }
+
                 <form asp-action="VerifyRegistrationOtp">
                     <input type="hidden" name="email" value="@ViewBag.Email" />
-                    <div class="form-group mb-3">
-                        <label for="otp" class="form-label">6-Digit OTP</label>
-                        <input name="otp" class="form-control form-control-lg text-center" maxlength="6" />
+
+                    <!-- OTP input styled -->
+                    <div class="form-group mb-4">
+                        <label for="otp" class="form-label fw-semibold">Enter OTP</label>
+                        <input name="otp"
+                               class="form-control form-control-lg text-center fw-bold tracking-widest rounded-3 shadow-sm"
+                               maxlength="6"
+                               placeholder="● ● ● ● ● ●"
+                               style="letter-spacing:8px; font-size:24px;" />
                     </div>
+
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Verify and Complete Registration</button>
+                        <button type="submit" class="btn btn-primary btn-lg rounded-3 shadow-sm fw-semibold">
+                            Verify & Complete Registration
+                        </button>
                     </div>
                 </form>
+
+                <div class="text-center mt-4">
+                    <small class="text-muted">
+                        Didn’t receive the code?
+                        <a href="#" class="fw-semibold text-decoration-none text-primary">Resend OTP</a>
+                    </small>
+                </div>
             </div>
         </div>
     </div>

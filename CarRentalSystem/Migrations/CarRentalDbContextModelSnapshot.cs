@@ -139,8 +139,8 @@ namespace CarRentalSystem.Migrations
 
                     b.Property<string>("RegistrationNumber")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<int>("SeatingCapacity")
                         .HasColumnType("int");
@@ -271,8 +271,8 @@ namespace CarRentalSystem.Migrations
 
                     b.Property<string>("IdentificationNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");

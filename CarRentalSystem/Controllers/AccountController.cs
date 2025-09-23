@@ -19,7 +19,7 @@ namespace CarRentalSystem.Controllers
             _emailService = emailService;
         }
 
-        // --- REGISTRATION & OTP VERIFICATION ---
+        
         public IActionResult Register()
         {
             return View();
@@ -41,16 +41,44 @@ namespace CarRentalSystem.Controllers
                 var otp = new Random().Next(100000, 999999).ToString();
                 user.VerificationOtp = otp;
                 user.VerificationOtpExpires = DateTime.Now.AddMinutes(10);
-
-                var emailBody = $"<h3>Welcome to DriveEase!</h3><p>Your One-Time Password (OTP) is: <strong>{otp}</strong></p>";
-                await _emailService.SendEmailAsync(user.Email, "Verify Your Account with OTP", emailBody);
-
-                HttpContext.Session.SetString("TempUser", JsonSerializer.Serialize(user));
+                try
+                {
+                    var emailBody = $@"
+                     <div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'>
+                          <div style='max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
+                            <h2 style='color: #007bff; text-align: center;'>Welcome to  VeloCity!</h2>
+                            <p>Thank you for registering. Please use the One-Time Password (OTP) below to verify your account.</p>
+                            <p>Your OTP is:</p>
+                            <div style='font-size: 36px; font-weight: bold; letter-spacing: 5px; text-align: center; background-color: #f2f2f2; padding: 15px 20px; border-radius: 5px; margin: 20px 0;'>
+                                {otp}
+                            </div>
+                            <p>This OTP is valid for 10 minutes.</p>
+                            <p>If you did not request this, please ignore this email.</p>
+                            <hr style='border: none; border-top: 1px solid #eee;'/>
+                            <p style='font-size: 0.9em; color: #777; text-align: center;'>&copy; {DateTime.Now.Year} DriveEase Car Rentals</p>
+                        </div>
+                    </div>"; await _emailService.SendEmailAsync(user.Email, "Verify Your Account with OTP", emailBody);
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Could not connect to the Interne. Please check your internet connection and try again.");
+                    return View(user);
+                }
+                HttpContext.Session.SetString("TempUser", JsonSerializer.Serialize(user)); //parcel
                 TempData["VerificationEmail"] = user.Email;
                 return RedirectToAction("VerifyRegistrationOtp");
             }
             return View(user);
         }
+
+
+
+
+
+
+
+
+
 
         public IActionResult VerifyRegistrationOtp()
         {
@@ -70,7 +98,7 @@ namespace CarRentalSystem.Controllers
                 return View();
             }
 
-            var user = JsonSerializer.Deserialize<User>(tempUserJson);
+            var user = JsonSerializer.Deserialize<User>(tempUserJson);  //unparcel
 
             if (user.Email != email || user.VerificationOtp != otp)
             {
@@ -103,7 +131,14 @@ namespace CarRentalSystem.Controllers
         }
 
 
-        // --- LOGIN (CUSTOMER & ADMIN) ---
+
+
+
+
+
+
+
+       
         public IActionResult Login()
         {
             return View();
@@ -159,6 +194,16 @@ namespace CarRentalSystem.Controllers
             return View();
         }
 
+
+
+
+
+
+
+
+
+
+
         [HttpGet("Account/admin/Login")]
         public IActionResult AdminLogin()
         {
@@ -166,7 +211,7 @@ namespace CarRentalSystem.Controllers
         }
 
 
-        // --- FORGOT PASSWORD FLOW ---
+        
         [HttpGet]
         public IActionResult ForgotPassword()
         {
@@ -184,17 +229,45 @@ namespace CarRentalSystem.Controllers
                 user.PasswordResetOtp = otp;
                 user.PasswordResetOtpExpires = DateTime.Now.AddMinutes(10);
                 await _context.SaveChangesAsync();
-
-                var emailBody = $"<h3>Password Reset Request</h3><p>Your One-Time Password (OTP) is: <strong>{otp}</strong></p>";
-                await _emailService.SendEmailAsync(user.Email, "Your Password Reset OTP", emailBody);
-
+                try {
+                    var emailBody = $@"
+            <div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'>
+                <div style='max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
+                    <h2 style='color: #007bff; text-align: center;'>Password Reset Request</h2>
+                    <p>We received a request to reset your password. Please use the One-Time Password (OTP) below to proceed.</p>
+                    <p>Your OTP is:</p>
+                    <div style='font-size: 36px; font-weight: bold; letter-spacing: 5px; text-align: center; background-color: #f2f2f2; padding: 15px 20px; border-radius: 5px; margin: 20px 0;'>
+                        {otp}
+                    </div>
+                    <p>This OTP is valid for 10 minutes.</p>
+                    <p>If you did not request this, please ignore this email.</p>
+                    <hr style='border: none; border-top: 1px solid #eee;'/>
+                    <p style='font-size: 0.9em; color: #777; text-align: center;'>&copy; {DateTime.Now.Year} DriveEase Car Rentals</p>
+                </div>
+            </div>";
+                    
+                    await _emailService.SendEmailAsync(user.Email, "Your Password Reset OTP", emailBody);
+                }
+                catch
+                {
+                    ViewBag.Message = "Could not connect to the internet. Please check your internet connection and try again.";
+                    return View();
+                }
                 TempData["ResetEmail"] = user.Email;
                 return RedirectToAction("VerifyOtp");
             }
 
-            ViewBag.Message = "If an account with that email exists, an OTP has been sent.";
+            ViewBag.Message = "You are noy our customer";
             return View();
         }
+
+
+
+
+
+
+
+
 
         [HttpGet]
         public IActionResult VerifyOtp()
@@ -220,6 +293,15 @@ namespace CarRentalSystem.Controllers
             ViewBag.Email = email;
             return View();
         }
+
+
+
+
+
+
+
+
+
 
         [HttpGet]
         public IActionResult ResetPassword()
@@ -274,7 +356,15 @@ namespace CarRentalSystem.Controllers
         }
 
 
-        // --- PROFILE & NOTIFICATIONS ---
+
+
+
+
+
+
+
+
+
         [HttpPost]
         public IActionResult Logout()
         {
@@ -294,6 +384,13 @@ namespace CarRentalSystem.Controllers
             if (user == null) return NotFound();
             return View(user);
         }
+
+
+
+
+
+
+
 
         public async Task<IActionResult> EditProfile()
         {
@@ -335,6 +432,15 @@ namespace CarRentalSystem.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Profile));
         }
+
+
+
+
+
+
+
+
+
 
         public async Task<IActionResult> Notifications()
         {

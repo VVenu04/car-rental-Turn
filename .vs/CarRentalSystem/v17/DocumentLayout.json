@@ -3,6 +3,69 @@
   "WorkspaceRootPath": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\verifyregistrationotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\verifyregistrationotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venujan\\AppData\\Roaming\\Microsoft\\UserSecrets\\5a0edb19-7b53-4e48-81ab-aabc356debe8\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\home\\whychooseus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\whychooseus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,36 +78,16 @@
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\services\\sitesettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\services\\sitesettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -53,14 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,35 +122,8 @@
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\data\\carrentaldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venujan\\AppData\\Roaming\\Microsoft\\UserSecrets\\5a0edb19-7b53-4e48-81ab-aabc356debe8\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\verifyregistrationotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\verifyregistrationotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -123,14 +131,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922075211_Initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\admin\\customerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -151,10 +151,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\js\\manage contact info.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -199,10 +195,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\css\\adminlogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\wwwroot\\css\\adminlogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\views\\home\\whychooseus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\views\\home\\whychooseus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\wwwroot\\css\\home_page.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -269,8 +261,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\migrations\\20250922094852_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\migrations\\20250922094852_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|c:\\unicomtic\\gmail verified\\car-rental-turn\\carrentalsystem\\migrations\\20250923141839_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B0BDB2D-FCA9-4AA0-AB2F-6DDD4A38FDEA}|CarRentalSystem\\CarRentalSystem.csproj|solutionrelative:carrentalsystem\\migrations\\20250923141839_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -280,7 +272,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -288,111 +280,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Booking.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Booking.cs",
-              "RelativeToolTip": "CarRentalSystem\\Models\\Booking.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Car.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Car.cs",
+              "RelativeToolTip": "CarRentalSystem\\Models\\Car.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wB8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T11:16:54.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T08:10:11.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-22T08:13:14.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T18:50:26.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdminLogin.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T02:52:22.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T13:18:39.725Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T13:13:44.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\EmailService.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\EmailService.cs",
+              "RelativeToolTip": "CarRentalSystem\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:55:24.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwGEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:14:11.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswF0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-06T18:51:24.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAUwNYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T06:44:19.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VerifyRegistrationOtp.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T09:50:39.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "VerifyOtp.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyOtp.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\VerifyOtp.cshtml",
               "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyOtp.cshtml",
               "RelativeToolTip": "CarRentalSystem\\Views\\Account\\VerifyOtp.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-22T08:13:34.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\IEmailService.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\IEmailService.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\IEmailService.cs",
-              "RelativeToolTip": "CarRentalSystem\\Services\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAADwv3gAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:54:55.675Z",
+              "WhenOpened": "2025-09-06T18:38:57.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Program.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Program.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Program.cs",
-              "RelativeToolTip": "CarRentalSystem\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwBsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T06:09:42.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SiteSettingsService.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\SiteSettingsService.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\SiteSettingsService.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\SiteSettingsService.cs",
-              "RelativeToolTip": "CarRentalSystem\\Services\\SiteSettingsService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T17:15:58.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Index.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
@@ -400,60 +413,7 @@
               "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Index.cshtml",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-16T16:27:30.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Car.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Car.cs",
-              "RelativeToolTip": "CarRentalSystem\\Models\\Car.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:10:11.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\User.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\User.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\User.cs",
-              "RelativeToolTip": "CarRentalSystem\\Models\\User.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:44:58.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\BookingController.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwGcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:15:32.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T18:38:57.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T16:27:30.777Z"
             },
             {
               "$type": "Bookmark",
@@ -461,105 +421,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\CarsController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAcwHYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T06:44:19.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T06:36:52.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T08:15:14.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T18:56:03.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T08:14:38.298Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "CarRentalDbContext.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Data\\CarRentalDbContext.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Data\\CarRentalDbContext.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Data\\CarRentalDbContext.cs",
-              "RelativeToolTip": "CarRentalSystem\\Data\\CarRentalDbContext.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAADwv0AAAAAkAAAAAAAAAA==",
+              "Title": "SiteSettingsService.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\SiteSettingsService.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\SiteSettingsService.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\SiteSettingsService.cs",
+              "RelativeToolTip": "CarRentalSystem\\Services\\SiteSettingsService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:12:40.01Z"
+              "WhenOpened": "2025-09-07T17:15:58.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "CarRentalSystem\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Program.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Program.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Program.cs",
+              "RelativeToolTip": "CarRentalSystem\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwBsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T06:14:11.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T06:09:42.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\NotificationService.cs",
-              "RelativeToolTip": "CarRentalSystem\\Services\\NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\IEmailService.cs",
+              "RelativeToolTip": "CarRentalSystem\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T06:08:50.186Z"
+              "WhenOpened": "2025-09-22T07:54:55.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T17:25:10.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T08:13:14.49Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "AdminLogin.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\AdminLogin.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-21T02:52:22.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20250923141839_Initialcreate.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250923141839_Initialcreate.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Migrations\\20250923141839_Initialcreate.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250923141839_Initialcreate.cs",
+              "RelativeToolTip": "CarRentalSystem\\Migrations\\20250923141839_Initialcreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T14:18:39.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\Venujan\\AppData\\Roaming\\Microsoft\\UserSecrets\\5a0edb19-7b53-4e48-81ab-aabc356debe8\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\Venujan\\AppData\\Roaming\\Microsoft\\UserSecrets\\5a0edb19-7b53-4e48-81ab-aabc356debe8\\secrets.json",
@@ -571,31 +517,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\EmailService.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\EmailService.cs",
-              "RelativeToolTip": "CarRentalSystem\\Services\\EmailService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswCkAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-06T18:50:26.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "CarRentalSystem\\appsettings.json",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\appsettings.json",
+              "RelativeToolTip": "CarRentalSystem\\appsettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwAoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-16T07:22:33.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WhyChooseUs.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T20:58:22.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Booking.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Booking.cs",
+              "RelativeToolTip": "CarRentalSystem\\Models\\Booking.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwC0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:55:24.091Z"
+              "WhenOpened": "2025-09-23T11:16:54.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Models\\User.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\User.cs",
+              "RelativeToolTip": "CarRentalSystem\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:44:58.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwGcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T08:15:32.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CarRentalSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T06:36:52.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Edit.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T08:15:14.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-06T18:56:03.959Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "2025-09-22_13-49-06_vvenujan04@gmail.com.html",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html",
-              "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html",
-              "RelativeToolTip": "CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-49-06_vvenujan04@gmail.com.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-09-22T08:20:07.95Z"
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "RelativeToolTip": "CarRentalSystem\\Views\\Cars\\Create.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T08:14:38.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
+              "Title": "CarRentalDbContext.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Data\\CarRentalDbContext.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Data\\CarRentalDbContext.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Data\\CarRentalDbContext.cs",
+              "RelativeToolTip": "CarRentalSystem\\Data\\CarRentalDbContext.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv0AAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T08:12:40.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Services\\NotificationService.cs",
+              "RelativeToolTip": "CarRentalSystem\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:08:50.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\ResetPassword.cshtml",
@@ -607,55 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\appsettings.json",
-              "RelativeDocumentMoniker": "CarRentalSystem\\appsettings.json",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\appsettings.json",
-              "RelativeToolTip": "CarRentalSystem\\appsettings.json",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwAoAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-16T07:22:33.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "20250922094852_Initialcreate.cs",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922094852_Initialcreate.cs",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Migrations\\20250922094852_Initialcreate.cs",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922094852_Initialcreate.cs",
-              "RelativeToolTip": "CarRentalSystem\\Migrations\\20250922094852_Initialcreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T09:48:52.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "VerifyRegistrationOtp.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\VerifyRegistrationOtp.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-22T09:50:39.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "2025-09-22_13-52-23_venujan20000@gmail.com.html",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html",
-              "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html",
-              "RelativeToolTip": "CarRentalSystem\\wwwroot\\sent_emails\\2025-09-22_13-52-23_venujan20000@gmail.com.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAADeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-09-22T08:25:12.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "20250922075211_Initialcreate.cs",
               "DocumentMoniker": "C:\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922075211_Initialcreate.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\Venujan\\Desktop\\final car rental\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250922075211_Initialcreate.cs",
@@ -664,31 +682,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T07:52:11.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-15T13:13:44.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-15T13:18:39.725Z"
             },
             {
               "$type": "Document",
@@ -704,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Register.cshtml",
@@ -713,18 +706,6 @@
               "ViewState": "AgIAAGMAAAAAAAAAAAAmwHUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-06T18:50:08.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Profile.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\Profile.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-06T18:51:24.292Z"
             },
             {
               "$type": "Document",
@@ -764,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "Manage Contact Info.js",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\js\\Manage Contact Info.js",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\js\\Manage Contact Info.js",
@@ -788,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Contact.cshtml",
@@ -800,19 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EditProfile.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Account\\EditProfile.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-18T17:25:10.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\_ViewImports.cshtml",
@@ -824,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "BookingConfirmation.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\BookingConfirmation.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\BookingConfirmation.cshtml",
@@ -836,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "SendNotification.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\SendNotification.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\SendNotification.cshtml",
@@ -848,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "ViewCustomers.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\ViewCustomers.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\ViewCustomers.cshtml",
@@ -860,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "login.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\login.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\login.css",
@@ -872,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "Manage Contact Info.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Manage Contact Info.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Manage Contact Info.css",
@@ -884,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "site.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\site.css",
@@ -896,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\Dashboard.cshtml",
@@ -908,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "Adminlogin.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Adminlogin.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Adminlogin.css",
@@ -920,19 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "WhyChooseUs.cshtml",
-              "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
-              "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
-              "ToolTip": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
-              "RelativeToolTip": "CarRentalSystem\\Views\\Home\\WhyChooseUs.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAD4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-20T20:58:22.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 49,
               "Title": "Home_Page.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Home_Page.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Home_Page.css",
@@ -944,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 50,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Home\\Privacy.cshtml",
@@ -956,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 51,
               "Title": "ManageContactInfo.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Admin\\ManageContactInfo.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Admin\\ManageContactInfo.cshtml",
@@ -968,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 52,
               "Title": "Admin Dashboard.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Admin Dashboard.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Admin Dashboard.css",
@@ -980,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 53,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Shared\\Error.cshtml",
@@ -992,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 54,
               "Title": "Car Details.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Car Details.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Car Details.css",
@@ -1004,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 55,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Bookings\\Create.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Bookings\\Create.cshtml",
@@ -1016,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 56,
               "Title": "Notifications.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\Account\\Notifications.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\Account\\Notifications.cshtml",
@@ -1028,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 58,
               "Title": "Browse Cars.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Browse Cars.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Browse Cars.css",
@@ -1040,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 57,
               "Title": "Edit profile.css",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\wwwroot\\css\\Edit profile.css",
               "RelativeDocumentMoniker": "CarRentalSystem\\wwwroot\\css\\Edit profile.css",
@@ -1052,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 59,
               "Title": "20250918061957_AddNotificationSystem.cs",
               "DocumentMoniker": "C:\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918061957_AddNotificationSystem.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918061957_AddNotificationSystem.cs",
@@ -1064,7 +1021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 60,
               "Title": "20250918054954_AddNotificationSystem.cs",
               "DocumentMoniker": "C:\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918054954_AddNotificationSystem.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\SHATHULAX\\Desktop\\New folder (3)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250918054954_AddNotificationSystem.cs",
@@ -1076,7 +1033,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 61,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Models\\Notification.cs",
@@ -1088,7 +1045,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 62,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "CarRentalSystem\\Views\\_ViewStart.cshtml",
@@ -1100,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 63,
               "Title": "CarLocation.cs",
               "DocumentMoniker": "C:\\UnicomTic\\gmail verified\\car-rental-Turn\\CarRentalSystem\\Models\\CarLocation.cs",
               "RelativeDocumentMoniker": "CarRentalSystem\\Models\\CarLocation.cs",
@@ -1112,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 64,
               "Title": "20250917081317_AddCarLocations.cs",
               "DocumentMoniker": "C:\\UnicomTic\\New folder (2)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250917081317_AddCarLocations.cs",
               "RelativeDocumentMoniker": "..\\..\\New folder (2)\\car-rental-Turn\\CarRentalSystem\\Migrations\\20250917081317_AddCarLocations.cs",
@@ -1124,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 65,
               "Title": "20250906190302_InitialCreate.cs",
               "DocumentMoniker": "C:\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\New folder\\tday\\CarRentalSystem\\CarRentalSystem\\Migrations\\20250906190302_InitialCreate.cs",

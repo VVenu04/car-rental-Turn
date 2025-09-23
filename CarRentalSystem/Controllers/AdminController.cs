@@ -23,9 +23,7 @@ namespace CarRentalSystem.Controllers
             }
             base.OnActionExecuting(filterContext);
         }
-
-        // === DASHBOARD ACTION (MODIFIED) ===
-        // This action now fetches all the required counts for the dashboard cards.
+        //dashboard
         public async Task<IActionResult> Dashboard()
         {
             ViewBag.TotalCars = await _context.Cars.CountAsync();
@@ -33,10 +31,7 @@ namespace CarRentalSystem.Controllers
             ViewBag.TotalCustomers = await _context.Users.CountAsync(u => u.Role == "Customer");
             return View();
         }
-
-        // === ENHANCED CUSTOMER MANAGEMENT ===
-
-        // GET: /Admin/ViewCustomers
+        //view customer
         public async Task<IActionResult> ViewCustomers()
         {
             var customers = await _context.Users.Where(u => u.Role == "Customer").ToListAsync();

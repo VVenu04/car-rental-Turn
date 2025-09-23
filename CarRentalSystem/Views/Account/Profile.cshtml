@@ -5,7 +5,8 @@
 }
 
 <div class="text-center text-light mb-4">
-    <h2 class="display-4">My Profile</h2>
+    <h1 class="display-4 fw-bold">My Profile</h1>
+    <p class="lead">View your details and manage your bookings.</p>
     <hr style="border-color: rgba(255, 255, 255, 0.2);" />
 </div>
 
@@ -13,84 +14,81 @@
 {
     <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-lg-4 mb-4">
         <div class="card glass-effect text-light h-100">
-            <div class="card-header bg-transparent">
-                <h4>Profile Details</h4>
-            </div>
-            <div class="card-body">
-                <p><strong>Full Name:</strong> @Model.FullName</p>
-                <p><strong>Username:</strong> @Model.Username</p>
-                <p><strong>NIC/License No:</strong> @Model.IdentificationNumber</p>
-                <p><strong>Email:</strong> @Model.Email</p>
-                <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
-                <p><strong>Date Joined:</strong> @Model.DateJoined.ToShortDateString()</p>
-                <a asp-action="EditProfile" class="btn btn-primary">Edit Profile</a>
+            <div class="card-body text-center">
+                <i class="bi bi-person-circle" style="font-size: 80px;"></i>
+                <h4 class="card-title mt-3">@Model.FullName</h4>
+                <p class="text-white-50">@Model.Username</p>
+                <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+                <ul class="list-unstyled text-start mt-4">
+                    <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> @Model.Email</li>
+                    <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> @Model.PhoneNumber</li>
+                    <li class="mb-2"><i class="bi bi-card-heading me-2"></i> @Model.IdentificationNumber</li>
+                    <li class="mb-2"><i class="bi bi-calendar-check-fill me-2"></i> Joined: @Model.DateJoined.ToShortDateString()</li>
+                </ul>
+                <div class="d-grid mt-4">
+                    <a asp-action="EditProfile" class="btn btn-primary"><i class="bi bi-pencil-fill me-2"></i>Edit Profile</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-8">
-        @if (TempData["Success"] != null)
-        {
-            <div class="alert alert-success">@TempData["Success"]</div>
-        }
-        @if (TempData["Error"] != null)
-        {
-            <div class="alert alert-danger">@TempData["Error"]</div>
-        }
+    <div class="col-lg-8">
+        <h3 class="text-light">My Booking History</h3>
 
-        <table class="table table-striped table-bordered">
-            <thead class="table-dark">
-                <tr>
-                    <th>Car</th>
-                    <th>Registration No.</th>
-
-                    <th>Pickup Date</th>
-                    <th>Pickup Location</th>
-                    <th>Return Date</th>
-                    <th>Drop-off Location</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Bookings.Any())
-                {
-                    @foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
+        @if (Model.Bookings.Any())
+        {
+            foreach (var booking in Model.Bookings.OrderByDescending(b => b.BookingDate))
+            {
+                <div class="card glass-effect text-light mb-3">
+                    <div class="card-header bg-transparent d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">@booking.Car.CarName <small class="text-white-50">(@booking.Car.RegistrationNumber)</small></h5>
+                        <span class="badge @(booking.BookingStatus == "Confirmed" ? "bg-success" : booking.BookingStatus == "Completed" ? "bg-info" : booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
+                            @booking.BookingStatus
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Pickup:</strong> @booking.PickupDate.ToString("MMM dd, yyyy")</p>
+                                <p class="text-white-50"><i class="bi bi-geo-alt-fill me-2"></i>@booking.PickupLocation</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Return:</strong> @booking.ReturnDate.ToString("MMM dd, yyyy")</p>
+                                <p class="text-white-50"><i class="bi bi-geo-alt-fill me-2"></i>@booking.ReturnLocation</p>
+                            </div>
+                        </div>
+                    </div>
+                    @if (booking.BookingStatus == "Confirmed" && booking.PickupDate > DateTime.Today)
                     {
-                        <tr>
-                            <td>@booking.Car.CarName</td>
-                            <td>@booking.Car.RegistrationNumber</td>
-                            <td>@booking.PickupDate.ToShortDateString()</td>
-                            <td>@booking.PickupLocation</td>
-                            <td>@booking.ReturnDate.ToShortDateString()</td>
-                            <td>@booking.ReturnLocation</td>
-                            <td>
-                                <span class="badge @(booking.BookingStatus == "Confirmed" ? "bg-success" : booking.BookingStatus == "Completed" ? "bg-info" : booking.BookingStatus == "Cancelled" ? "bg-danger" : "bg-secondary")">
-                                    @booking.BookingStatus
-                                </span>
-                            </td>
-                            <td>
-                                @if (booking.BookingStatus == "Confirmed" && booking.PickupDate > DateTime.Today)
-                                {
-                                    <form asp-controller="Bookings" asp-action="Cancel" asp-route-id="@booking.BookingID" method="post" onsubmit="return confirm('Are you sure you want to cancel this booking?');">
-                                        <button type="submit" class="btn btn-sm btn-danger">Cancel</button>
-                                    </form>
-                                }
-                            </td>
-                        </tr>
+                        <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                            <span>Total Cost: <strong class="fs-5">@booking.TotalCost.ToString("C")</strong></span>
+                            <form asp-controller="Bookings" asp-action="Cancel" asp-route-id="@booking.BookingID" method="post" onsubmit="return confirm('Are you sure you want to cancel this booking?');">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Cancel Booking</button>
+                            </form>
+                        </div>
                     }
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="7" class="text-center">You have no booking history.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="card glass-effect text-light">
+                <div class="card-body text-center">
+                    <p class="lead mb-0">You have no booking history.</p>
+                </div>
+            </div>
+        }
     </div>
 </div>
